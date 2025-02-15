@@ -959,7 +959,7 @@ spider_eye:                # 要编辑的食物
 * ##### breeding-delay-ticks
     - **默认值**: 6000
     - **描述**: 间隔多少刻才能再次繁殖
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 14.0
         - **描述**: 最大生命值属性
@@ -985,7 +985,7 @@ spider_eye:                # 要编辑的食物
 * ##### ridable-max-y
     - **默认值**: 256
     - **描述**: 被骑乘时能飞到的最大高度
-* ##### 属性
+* ##### attributes
     * ###### follow_range
         - **默认值**: 16.0
         - **描述**: 跟随距离
@@ -1037,17 +1037,17 @@ spider_eye:                # 要编辑的食物
     - **描述**: 间隔多少刻才能再次繁殖
 * ##### can-work-at-night
     - **默认值**: false
-    - **描述**: Controls whether bees can work during the night
+    - **描述**: 蜜蜂是否能在晚上工作
 * ##### can-work-in-rain
     - **默认值**: false
-    - **描述**: Controls whether bees can work during rainy weather
+    - **描述**: 蜜蜂是否能在下雨天工作
 * ##### can-instantly-start-drowning
     - **默认值**: true
-    - **描述**: If disabled, bees will stop instantly taking damage the moment they begin touching water. Bees will still be able to "drown" when they run out of air while underwater.
+    - **描述**: 蜜蜂碰到水后是否立即开始溺水
 * ##### dies-after-sting
     - **默认值**: true
-    - **描述**: Set whether a bee should die after stinging
-* ##### 属性
+    - **描述**: 蜜蜂失去蜇针后是否死亡
+* ##### attributes
     * ###### max_health
         - **默认值**: 10.0
         - **描述**: 最大生命值属性
@@ -1073,7 +1073,7 @@ spider_eye:                # 要编辑的食物
 * ##### 是否在水中受到伤害（takes-damage-from-water）
     - **默认值**: true
     - **描述**: 设置为false来让该生物在碰到水时不再扣血
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 20.0
         - **描述**: 最大生命值属性
@@ -1090,7 +1090,7 @@ spider_eye:                # 要编辑的食物
 * ##### breeding-delay-ticks
     - **默认值**: 6000
     - **描述**: 间隔多少刻才能再次繁殖
-* ##### 属性
+* ##### attributes
     * ###### max_health
         * min
             - **默认值**: 32.0
@@ -1141,7 +1141,7 @@ spider_eye:                # 要编辑的食物
 * ##### breeding-delay-ticks
     - **默认值**: 6000
     - **描述**: 间隔多少刻才能再次繁殖
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 10.0
         - **描述**: 最大生命值属性
@@ -1164,7 +1164,7 @@ spider_eye:                # 要编辑的食物
 * ##### 是否在水中受到伤害（takes-damage-from-water）
     - **默认值**: false
     - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 12.0
         - **描述**: 最大生命值属性
@@ -1193,7 +1193,7 @@ spider_eye:                # 要编辑的食物
 * ##### breeding-delay-ticks
     - **默认值**: 6000
     - **描述**: 间隔多少刻才能再次繁殖
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 4.0
         - **描述**: 最大生命值属性
@@ -1213,7 +1213,7 @@ spider_eye:                # 要编辑的食物
 * ##### 是否在水中受到伤害（takes-damage-from-water）
     - **默认值**: false
     - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 3.0
         - **描述**: 最大生命值属性
@@ -1249,7 +1249,7 @@ spider_eye:                # 要编辑的食物
     * ###### damage
         - **默认值**: 2.0
         - **描述**: The amount of damage it will do to players
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 10.0
         - **描述**: 最大生命值属性
@@ -1269,7 +1269,7 @@ spider_eye:                # 要编辑的食物
 * ##### 是否可在水中骑乘（ridable-in-water）
     - **默认值**: true
     - **描述**: 使该生物可以在水中骑乘
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 1.0
         - **描述**: 最大生命值属性
@@ -1307,7 +1307,7 @@ spider_eye:                # 要编辑的食物
 * ##### health-impacts-explosion
     - **默认值**: false
     - **描述**: Makes the creeper's explosion be proportionate to the amount of health it has (lower health, weaker explosion)
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 10.0
         - **描述**: 最大生命值属性
@@ -1346,7 +1346,7 @@ spider_eye:                # 要编辑的食物
     * ###### damage
         - **默认值**: 2.0
         - **描述**: The damage of the dolphin spit
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 10.0
         - **描述**: 最大生命值属性
@@ -1366,7 +1366,7 @@ spider_eye:                # 要编辑的食物
 * ##### breeding-delay-ticks
     - **默认值**: 6000
     - **描述**: 间隔多少刻才能再次繁殖
-* ##### 属性
+* ##### attributes
     * ###### max_health
         * min
             - **默认值**: 15.0
@@ -1417,7 +1417,7 @@ spider_eye:                # 要编辑的食物
     * ###### try-existing-chickens
         - **默认值**: true
         - **描述**: Scan for existing chickens to spawn on
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 20.0
         - **描述**: 最大生命值属性
@@ -1440,7 +1440,7 @@ spider_eye:                # 要编辑的食物
 * ##### 是否在水中受到伤害（takes-damage-from-water）
     - **默认值**: false
     - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 80.0
         - **描述**: 最大生命值属性
@@ -1475,7 +1475,7 @@ spider_eye:                # 要编辑的食物
 * ##### can-ride-vehicles
     - **默认值**: false
     - **描述**: Set to true for the ender dragon to gain the ability to ride vehicles
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 200.0
         - **描述**: 最大生命值属性
@@ -1519,7 +1519,7 @@ spider_eye:                # 要编辑的食物
 * ##### disable-player-stare-aggression
     - **默认值**: false
     - **描述**: Set to true to stop an enderman from going aggro by a player looking into the enderman's eyes
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 40.0
         - **描述**: 最大生命值属性
@@ -1542,7 +1542,7 @@ spider_eye:                # 要编辑的食物
 * ##### 是否在水中受到伤害（takes-damage-from-water）
     - **默认值**: false
     - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 8.0
         - **描述**: 最大生命值属性
@@ -1568,7 +1568,7 @@ spider_eye:                # 要编辑的食物
 * ##### bypass-mob-griefing
     - **默认值**: false
     - **描述**: Set to true for evokers to bypass the mob griefing gamerule
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 24.0
         - **描述**: 最大生命值属性
@@ -1600,7 +1600,7 @@ spider_eye:                # 要编辑的食物
 * ##### bypass-mob-griefing
     - **默认值**: false
     - **描述**: Set to true for foxes to bypass the mob griefing gamerule
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 10.0
         - **描述**: 最大生命值属性
@@ -1642,7 +1642,7 @@ spider_eye:                # 要编辑的食物
 * ##### ridable-max-y
     - **默认值**: 256
     - **描述**: 被骑乘时能飞到的最大高度
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 10.0
         - **描述**: 最大生命值属性
@@ -1683,7 +1683,7 @@ spider_eye:                # 要编辑的食物
 * ##### have-hostile-ai
     - **默认值**: false
     - **描述**: Control if giant zombies have hostile AI also
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 100.0
         - **描述**: 最大生命值属性
@@ -1706,7 +1706,7 @@ spider_eye:                # 要编辑的食物
 * ##### 是否在水中受到伤害（takes-damage-from-water）
     - **默认值**: false
     - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 10.0
         - **描述**: 最大生命值属性
@@ -1732,7 +1732,7 @@ spider_eye:                # 要编辑的食物
 * ##### breeding-delay-ticks
     - **默认值**: 6000
     - **描述**: 间隔多少刻才能再次繁殖
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 10.0
         - **描述**: 最大生命值属性
@@ -1752,7 +1752,7 @@ spider_eye:                # 要编辑的食物
 * ##### 是否在水中受到伤害（takes-damage-from-water）
     - **默认值**: false
     - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 30.0
         - **描述**: 最大生命值属性
@@ -1778,7 +1778,7 @@ spider_eye:                # 要编辑的食物
 * ##### breeding-delay-ticks
     - **默认值**: 6000
     - **描述**: 间隔多少刻才能再次繁殖
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 40.0
         - **描述**: 最大生命值属性
@@ -1798,7 +1798,7 @@ spider_eye:                # 要编辑的食物
 * ##### breeding-delay-ticks
     - **默认值**: 6000
     - **描述**: 间隔多少刻才能再次繁殖
-* ##### 属性
+* ##### attributes
     * ###### max_health
         * min
             - **默认值**: 15.0
@@ -1846,7 +1846,7 @@ spider_eye:                # 要编辑的食物
     * ###### try-existing-chickens
         - **默认值**: true
         - **描述**: Scan for existing chickens to spawn on
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 20.0
         - **描述**: 最大生命值属性
@@ -1881,7 +1881,7 @@ spider_eye:                # 要编辑的食物
 * ##### follow-range
     - **默认值**: 18.0
     - **描述**: 跟随距离
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 32.0
         - **描述**: 最大生命值属性
@@ -1916,7 +1916,7 @@ spider_eye:                # 要编辑的食物
 * ##### poppy-calms-anger
     - **默认值**: false
     - **描述**: Giving the iron golem a poppy calms it down when it's angry
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 100.0
         - **描述**: 最大生命值属性
@@ -1945,7 +1945,7 @@ spider_eye:                # 要编辑的食物
 * ##### join-caravans
     - **默认值**: true
     - **描述**: Set to false to disable the [llama caravan feature](https://minecraft.wiki/w/Llama#Caravans)
-* ##### 属性
+* ##### attributes
     * ###### max_health
         * min
             - **默认值**: 15.0
@@ -1983,7 +1983,7 @@ spider_eye:                # 要编辑的食物
 * ##### 是否在水中受到伤害（takes-damage-from-water）
     - **默认值**: false
     - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: "size * size"
         - **描述**: The Max health equation used to calculate the max health
@@ -2009,7 +2009,7 @@ spider_eye:                # 要编辑的食物
 * ##### breeding-delay-ticks
     - **默认值**: 6000
     - **描述**: 间隔多少刻才能再次繁殖
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 10.0
         - **描述**: 最大生命值属性
@@ -2029,7 +2029,7 @@ spider_eye:                # 要编辑的食物
 * ##### breeding-delay-ticks
     - **默认值**: 6000
     - **描述**: 间隔多少刻才能再次繁殖
-* ##### 属性
+* ##### attributes
     * ###### max_health
         * min
             - **默认值**: 15.0
@@ -2073,7 +2073,7 @@ spider_eye:                # 要编辑的食物
 * ##### breeding-delay-ticks
     - **默认值**: 6000
     - **描述**: 间隔多少刻才能再次繁殖
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 10.0
         - **描述**: 最大生命值属性
@@ -2099,7 +2099,7 @@ spider_eye:                # 要编辑的食物
 * ##### breeding-delay-ticks
     - **默认值**: 6000
     - **描述**: 间隔多少刻才能再次繁殖
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 20.0
         - **描述**: 最大生命值属性
@@ -2128,7 +2128,7 @@ spider_eye:                # 要编辑的食物
 * ##### can-breed
     - **默认值**: false
     - **描述**: Gives parrots the ability to breed using any type of seeds (baby parrots don't exist D:, so "adult" parrots pop out)
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 6.0
         - **描述**: 最大生命值属性
@@ -2202,7 +2202,7 @@ spider_eye:                # 要编辑的食物
         * max
             - **默认值**: -1
             - **描述**: Maximum number of phantoms to spawn per attempt (Use -1 to base this off of world difficulty)
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 20.0
         - **描述**: 最大生命值属性
@@ -2234,7 +2234,7 @@ spider_eye:                # 要编辑的食物
 * ##### breeding-delay-ticks
     - **默认值**: 6000
     - **描述**: 间隔多少刻才能再次繁殖
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 10.0
         - **描述**: 最大生命值属性
@@ -2264,7 +2264,7 @@ spider_eye:                # 要编辑的食物
     - **默认值**: 2000
     - **描述**: Allows changing the modifier for the piglin spawn chance from a portal block
 based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a557fc0eedececd63d44d43ce6431bc23bb/patches/server/0167-Piglin-portal-spawn-modifier.patch)
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 16.0
         - **描述**: 最大生命值属性
@@ -2290,7 +2290,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### 是否在水中受到伤害（takes-damage-from-water）
     - **默认值**: false
     - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 50.0
         - **描述**: 最大生命值属性
@@ -2316,7 +2316,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### bypass-mob-griefing
     - **默认值**: false
     - **描述**: Set to true for pillagers to bypass the mob griefing gamerule
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 24.0
         - **描述**: 最大生命值属性
@@ -2345,7 +2345,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### breeding-delay-ticks
     - **默认值**: 6000
     - **描述**: 间隔多少刻才能再次繁殖
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 30.0
         - **描述**: 最大生命值属性
@@ -2365,7 +2365,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### 是否在水中受到伤害（takes-damage-from-water）
     - **默认值**: false
     - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 3.0
         - **描述**: 最大生命值属性
@@ -2391,7 +2391,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### bypass-mob-griefing
     - **默认值**: false
     - **描述**: Set to true for rabbits to bypass the mob griefing gamerule
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 3.0
         - **描述**: 最大生命值属性
@@ -2432,7 +2432,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
         - minecraft:wheat
         ```
     - **描述**: Whitelist of blocks that can be broken by the ravager
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 100.0
         - **描述**: 最大生命值属性
@@ -2455,7 +2455,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### 是否在水中受到伤害（takes-damage-from-water）
     - **默认值**: false
     - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 3.0
         - **描述**: 最大生命值属性
@@ -2484,7 +2484,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### bypass-mob-griefing
     - **默认值**: false
     - **描述**: Set to true for sheep to bypass the mob griefing gamerule
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 8.0
         - **描述**: 最大生命值属性
@@ -2526,7 +2526,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### random-color
         - **默认值**: false
         - **描述**: Set the shulker to a random color when spawned from a bullet
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 30.0
         - **描述**: 最大生命值属性
@@ -2552,7 +2552,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### bypass-mob-griefing
     - **默认值**: false
     - **描述**: Set to true for silverfish to bypass the mob griefing gamerule
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 8.0
         - **描述**: 最大生命值属性
@@ -2581,7 +2581,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### 是否在水中受到伤害（takes-damage-from-water）
     - **默认值**: false
     - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 8.0
         - **描述**: 最大生命值属性
@@ -2618,7 +2618,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### 是否在水中受到伤害（takes-damage-from-water）
     - **默认值**: false
     - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
-* ##### 属性
+* ##### attributes
     * ###### max_health
         * min
             - **默认值**: 15.0
@@ -2656,7 +2656,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### 是否可在水中骑乘（ridable-in-water）
     - **默认值**: true
     - **描述**: 使该生物可以在水中骑乘
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: "size * size"
         - **描述**: The Max health equation used to calculate the max health
@@ -2679,7 +2679,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### breeding-delay-ticks
     - **默认值**: 6000
     - **描述**: 间隔多少刻才能再次繁殖
-* ##### 属性
+* ##### attributes
     * ###### max_health
     - **默认值**: 14.0
     - **描述**: 最大生命值属性
@@ -2723,7 +2723,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### 是否在水中受到伤害（takes-damage-from-water）
     - **默认值**: true
     - **描述**: 设置为false来让该生物在碰到水时不再扣血
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 4.0
         - **描述**: 最大生命值属性
@@ -2746,7 +2746,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### 是否在水中受到伤害（takes-damage-from-water）
     - **默认值**: false
     - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 16.0
         - **描述**: 最大生命值属性
@@ -2775,7 +2775,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### can-fly
     - **默认值**: false
     - **描述**: Makes it so squids can fly, Oh my!
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 10.0
         - **描述**: 最大生命值属性
@@ -2798,7 +2798,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### 是否在水中受到伤害（takes-damage-from-water）
     - **默认值**: false
     - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 20.0
         - **描述**: 最大生命值属性
@@ -2827,7 +2827,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### 是否在水中受到伤害（takes-damage-from-water）
     - **默认值**: true
     - **描述**: 设置为false来让该生物在碰到水时不再扣血
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 20.0
         - **描述**: 最大生命值属性
@@ -2863,7 +2863,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### breeding-delay-ticks
     - **默认值**: 6000
     - **描述**: 间隔多少刻才能再次繁殖
-* ##### 属性
+* ##### attributes
     * ###### max_health
         * min
             - **默认值**: 15.0
@@ -2898,7 +2898,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### 是否在水中受到伤害（takes-damage-from-water）
     - **默认值**: false
     - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 3.0
         - **描述**: 最大生命值属性
@@ -2924,7 +2924,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### breeding-delay-ticks
     - **默认值**: 6000
     - **描述**: 间隔多少刻才能再次繁殖
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 30.0
         - **描述**: 最大生命值属性
@@ -2950,7 +2950,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### ridable-max-y
     - **默认值**: 256
     - **描述**: 被骑乘时能飞到的最大高度
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 14.0
         - **描述**: 最大生命值属性
@@ -3027,7 +3027,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### nearest-bed-sensor
         - **默认值**: 48
         - **描述**: Radius within which villagers search to detect the nearest bed.
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 20.0
         - **描述**: 最大生命值属性
@@ -3057,7 +3057,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### spawn-chance
         - **默认值**: 0.0
         - **描述**: Percent chance (0.0 - 1.0) a vindicator named "Johnny" will spawn instead of a vindicator
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 24.0
         - **描述**: 最大生命值属性
@@ -3089,7 +3089,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### follow-emerald-blocks
     - **默认值**: false
     - **描述**: Villagers will be tempted by emerald blocks and follow players holding them
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 20.0
         - **描述**: 最大生命值属性
@@ -3125,7 +3125,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### 是否在水中受到伤害（takes-damage-from-water）
     - **默认值**: false
     - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 26.0
         - **描述**: 最大生命值属性
@@ -3169,7 +3169,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### bypass-mob-griefing
     - **默认值**: false
     - **描述**: Set to true for withers to bypass the mob griefing gamerule
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 300.0
         - **描述**: 最大生命值属性
@@ -3192,7 +3192,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### 是否在水中受到伤害（takes-damage-from-water）
     - **默认值**: false
     - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 20.0
         - **描述**: 最大生命值属性
@@ -3227,7 +3227,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### breeding-delay-ticks
     - **默认值**: 6000
     - **描述**: 间隔多少刻才能再次繁殖
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 8.0
         - **描述**: 最大生命值属性
@@ -3250,7 +3250,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### 是否在水中受到伤害（takes-damage-from-water）
     - **默认值**: false
     - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 40.0
         - **描述**: 最大生命值属性
@@ -3289,7 +3289,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### bypass-mob-griefing
     - **默认值**: false
     - **描述**: Set to true for zombies to bypass the mob griefing gamerule
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 20.0
         - **描述**: 最大生命值属性
@@ -3321,7 +3321,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
 * ##### spawn-chance
     - **默认值**: 0.0
     - **描述**: Percent chance (0.0 - 1.0) a zombie horse will spawn instead of a skeleton horse (natural spawns during thunderstorms)
-* ##### 属性
+* ##### attributes
     * ###### max_health
         * min
             - **默认值**: 15.0
@@ -3380,7 +3380,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### try-existing-chickens
         - **默认值**: true
         - **描述**: Scan for existing chickens to spawn on
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 20.0
         - **描述**: 最大生命值属性
@@ -3419,7 +3419,7 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     * ###### try-existing-chickens
         - **默认值**: true
         - **描述**: Scan for existing chickens to spawn on
-* ##### 属性
+* ##### attributes
     * ###### max_health
         - **默认值**: 20.0
         - **描述**: 最大生命值属性
@@ -3921,15 +3921,15 @@ Requires the [`purpur.drop.spawners`](permissions#purpurdropspawners) and [`purp
 
 ### ridable-settings
 
-#### babies-are-是否可骑乘（ridable）
+#### babies-are-ridable
 - **默认值**: true
-- **描述**: Set to false to stop babies from being 是否可骑乘（ridable）
-#### untamed-tamables-are-是否可骑乘（ridable）
+- **描述**: 设置为false来阻止幼年生物被骑乘
+#### untamed-tamables-are-ridable
 - **默认值**: true
-- **描述**: Set to false to stop untamed tamables from being 是否可骑乘（ridable）
+- **描述**: 设置为false来阻止未驯服的生物被骑乘
 #### use-dismounts-underwater-tag
 - **默认值**: true
-- **描述**: Set to false to use `<mob>.ridable-in-water` options instead of the [`DISMOUNTS_UNDERWATER`](https://minecraft.wiki/w/Tag#Entity_types) tag
+- **描述**: 设置为false来使用选项 `<mob>.ridable-in-water` 而不是 [`DISMOUNTS_UNDERWATER`](https://minecraft.wiki/w/Tag#Entity_types) 标签
 #### use-night-vision
 - **默认值**: false
-- **描述**: Set to true to give night vision to riders while on a 是否可骑乘（ridable）
+- **描述**: 设置为true来在骑乘时给予骑乘者夜视效果
