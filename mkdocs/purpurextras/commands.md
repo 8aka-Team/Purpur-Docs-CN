@@ -2,14 +2,14 @@
 
 ### reload
 
-Usage: `/purpurextras reload`
+用法：`/purpurextras reload`
 
-Permission required: `purpurextras.reload`
+所需权限：`purpurextras.reload`
 
-Reloads the configuration file.
+重新加载配置文件。
 
 ### version
 
-Usage: `/purpurextras version`
+用法：`/purpurextras version`
 
-Displays the version of PurpurExtras.
+显示PurpurExtras的版本。

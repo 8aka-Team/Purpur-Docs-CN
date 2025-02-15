@@ -1,137 +1,135 @@
-## Smithing Recipes
+## 锻造配方
 
-#### [Upgrade Diamond Armor to Netherite Without A Template](https://modrinth.com/datapack/purpurpacks-no-template-netherite-armor-upgrades)
-* Allows upgrading diamond armor to netherite armor in a smithing table without the use of a netherite upgrade template
-* Re-enables the functionality from pre-1.20
+#### [将钻石盔甲升级为下界合金盔甲而无需模板](https://modrinth.com/datapack/purpurpacks-no-template-netherite-armor-upgrades)
+* 允许在锻造台中将钻石盔甲升级为下界合金盔甲，无需使用下界合金升级模板
+* 重新启用了1.20版本之前的功能
 
-#### [Upgrade Diamond Tools to Netherite Without A Template](https://modrinth.com/datapack/purpurpacks-no-template-netherite-tool-upgrades/versions)
-* Allows upgrading diamond tools to netherite tools in a smithing table without the use of a netherite upgrade template
-* Re-enables the functionality from pre-1.20
+#### [将钻石工具升级为下界合金工具而无需模板](https://modrinth.com/datapack/purpurpacks-no-template-netherite-tool-upgrades/versions)
+* 允许在锻造台中将钻石工具升级为下界合金工具，无需使用下界合金升级模板
+* 重新启用了1.20版本之前的功能
 
-#### [Upgrade Iron Armor to Diamond Armor](https://modrinth.com/datapack/purpurpacks-iron-to-diamond-armor-upgrades/versions)
-* Allows upgrading iron armor to diamond armor by combining a piece of iron armor with a diamond in a smithing table
-* Does not require an upgrade template
+#### [将铁制盔甲升级为钻石盔甲](https://modrinth.com/datapack/purpurpacks-iron-to-diamond-armor-upgrades/versions)
+* 允许将铁制盔甲与钻石在锻造台中合成，升级为钻石盔甲
+* 不需要升级模板
 
-#### [Upgrade Iron Tools To Diamond Ones](https://modrinth.com/datapack/purpurpacks-iron-to-diamond-tools-upgrades/versions)
-* Allows upgrading iron tools to diamond tools by combining an iron tool with a diamond in a smithing table
-* Does not require an upgrade template
+#### [将铁制工具升级为钻石工具](https://modrinth.com/datapack/purpurpacks-iron-to-diamond-tools-upgrades/versions)
+* 允许将铁制工具与钻石在锻造台中合成，升级为钻石工具
+* 不需要升级模板
 
-#### [Upgrade Stone Tools To Iron Ones](https://modrinth.com/datapack/purpurpacks-stone-to-iron-tools-upgrades/versions)
-* Allows upgrading stone tools to iron tools by combining a stone tool with an iron ingot in a smithing table
-* Does not require an upgrade template
+#### [将石制工具升级为铁制工具](https://modrinth.com/datapack/purpurpacks-stone-to-iron-tools-upgrades/versions)
+* 允许将石制工具与铁锭在锻造台中合成，升级为铁制工具
+* 不需要升级模板
 
-#### [Upgrade Wood Tools To Stone Ones](https://modrinth.com/datapack/purpurpacks-wooden-to-stone-tools-upgrades/versions)
-* Allows upgrading wooden tools to stone tools by combining a wooden tool with cobblestone, blackstone, or cobbled
-  deepslate in a smithing table
-* Does not require an upgrade template
+#### [将木制工具升级为石制工具](https://modrinth.com/datapack/purpurpacks-wooden-to-stone-tools-upgrades/versions)
+* 允许将木制工具与石英、黑石或石炭深板块在锻造台中合成，升级为石制工具
+* 不需要升级模板
 
-## Crafting Recipes
+## 合成配方
 
-#### [Re-Dye All Colors of Terracotta](https://modrinth.com/datapack/purpurpacks-re-dye-terracotta/versions)
-* Allows crafting dyed terracotta with any type of terracotta that has not been glazed.
+#### [重新染色所有颜色的陶瓦](https://modrinth.com/datapack/purpurpacks-re-dye-terracotta/versions)
+* 允许使用任何未上釉的陶瓦合成染色陶瓦
 
-#### [Re-Dye All Colors of Concrete](https://modrinth.com/datapack/purpurpacks-re-dye-concrete-powder/versions)
-* Allows crafting a different color of concrete powder with concrete powder
+#### [重新染色所有颜色的混凝土粉](https://modrinth.com/datapack/purpurpacks-re-dye-concrete-powder/versions)
+* 允许使用混凝土粉合成不同颜色的混凝土粉
 
-#### [Re-Dye All Colors Of Glass](https://modrinth.com/datapack/purpurpacks-re-dye-glass/versions)
-* Allows crafting stained-glass and stained-glass panes with all colors of glass and glass panes
+#### [重新染色所有颜色的玻璃](https://modrinth.com/datapack/purpurpacks-re-dye-glass/versions)
+* 允许使用所有颜色的玻璃和玻璃板合成染色玻璃和染色玻璃板
 
-#### [Dye 8 Wool or Carpet at a Time Instead Of One](https://modrinth.com/datapack/purpurpacks-more-dyed-wool-and-carpet/versions)
-* Adds a recipe that allows for 8 wool or carpet to be dyed instead of only one.
+#### [一次性染色8块羊毛或地毯](https://modrinth.com/datapack/purpurpacks-more-dyed-wool-and-carpet/versions)
+* 添加了一种配方，允许一次性染色8块羊毛或地毯，而不仅仅是一块。
 
-#### [Craft Dyed Shulkers From Scratch](https://modrinth.com/datapack/purpurpacks-one-step-dyed-shulker-boxes/versions)
-* Adds a recipe to craft dyed shulkers from the base ingredients (chest, 2 shulker shells, and dye)
+#### [从头开始制作染色潜影贝](https://modrinth.com/datapack/purpurpacks-one-step-dyed-shulker-boxes/versions)
+* 添加了一种配方，可以从基本材料（箱子、2个鹦鹉贝壳和染料）制作染色潜影贝
 
-#### [Smelt Raw Ore Blocks](https://modrinth.com/datapack/purpurpack-smelt-raw-ore-blocks)
-* Adds a furnace and blast furnace recipe for raw ore blocks
+#### [熔炼粗矿石块](https://modrinth.com/datapack/purpurpack-smelt-raw-ore-blocks)
+* 添加了粗矿石块的熔炉和高炉配方
 
-#### [Blasting Furnace Smelts Glass](https://modrinth.com/datapack/purpurpack-blasting-smelts-glass)
-* Adds a blast furnace recipe for glass
+#### [炼炉可以熔炼玻璃](https://modrinth.com/datapack/purpurpack-blasting-smelts-glass)
+* 添加了玻璃的高炉配方
 
-## Loot Tables
+## 战利品表
 
-#### [Add Netherite Smithing Template to Piglin barter table](https://modrinth.com/datapack/purpurpacks-rebalanced-piglin-bartering/versions)
-* Adds the netherite smithing template to the piglin barter trade loot table
+#### [将下界合金锻造模板添加到猪灵交易表中](https://modrinth.com/datapack/purpurpacks-rebalanced-piglin-bartering/versions)
+* 将下界合金锻造模板添加到猪灵交易战利品表中
 
-#### [Pick Up Budding Amethyst blocks with Silk Touch](https://modrinth.com/datapack/purpurpacks-silk-touch-budding-amethyst/versions)
-* Enables picking up budding amethyst blocks with silk-touch tools
+#### [使用精准采集可以捡起紫水晶母岩](https://modrinth.com/datapack/purpurpacks-silk-touch-budding-amethyst/versions)
+* 启用使用精准采集工具可以捡起紫水晶母岩
 
-#### [Pick Up Reinforced Deepslate blocks with Silk Touch](https://modrinth.com/datapack/purpurpacks-silk-touch-reinforced-deepslate/versions)
-* Enables picking up reinforced deepslate blocks with silk-touch tools
+#### [使用精准采集可以捡起强化深板岩](https://modrinth.com/datapack/purpurpacks-silk-touch-reinforced-deepslate/versions)
+* 启用使用精准采集工具可以捡起强化深板岩
 
-## Effective tools
+## 有效工具
 
-#### [Light Source Blocks Break Faster With A Pickaxe](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-light-source-blocks/versions)
-* Adds glowstone, sea lanterns and other light source blocks to the pickaxe minable tag
-* Allows pickaxes to break light source blocks far faster
+#### [用镐头更快地打破光源方块](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-light-source-blocks/versions)
+* 将荧石、海晶灯和其他光源方块添加到镐头可挖掘标签
+* 允许镐头更快地打破光源方块
 
-#### [Glass Breaks Faster With A Pickaxe](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-glass/versions)
-* Adds glass to the pickaxe minable tag
-* Allows pickaxes to break glass blocks and panes far faster
+#### [用镐头更快地打破玻璃](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-glass/versions)
+* 将玻璃添加到镐头可挖掘标签
+* 允许镐头更快地打破玻璃方块和玻璃板
 
-#### [Reinforced Deepslate Breaks Faster With A Pickaxe](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-reinforced-deepslate/versions)
-* Adds reinforced deepslate to the pickaxe minable tag
-* Allows pickaxes to break reinforced deepslate blocks far faster
+#### [用镐头更快地打破强化深板](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-reinforced-deepslate/versions)
+* 将强化深板添加到镐头可挖掘标签
+* 允许镐头更快地打破强化深板方块
 
-#### [Froglights Break Faster Using A Hoe](https://modrinth.com/datapack/purpurpacks-hoe-effective-froglights/versions)
-* Adds froglights to the hoe mineable tag
-* Allows hoes to break froglights far faster
+#### [用锄头更快地打破蛙明灯](https://modrinth.com/datapack/purpurpacks-hoe-effective-froglights/versions)
+* 将蛙明灯添加到锄头可挖掘标签
+* 允许锄头更快地打破蛙明灯
 
-#### [Cactus Breaks Faster With A Hoe](https://modrinth.com/datapack/purpurpacks-hoe-effective-cactus/versions)
-* Adds cactus to the hoe mineable tag
-* Allows hoes to break cactus far faster
+#### [用锄头更快地打破仙人掌](https://modrinth.com/datapack/purpurpacks-hoe-effective-cactus/versions)
+* 将仙人掌添加到锄头可挖掘标签
+* 允许锄头更快地打破仙人掌
 
-#### [Skulls And Heads Break Faster With An Axe](https://modrinth.com/datapack/purpurpacks-axe-effective-skulls/versions)
-* Adds skulls and heads to the axe mineable tag
-* Allows axes to break skulls and heads far faster
+#### [用斧头更快地打破头骨和头颅](https://modrinth.com/datapack/purpurpacks-axe-effective-skulls/versions)
+* 将头骨和头颅添加到斧头可挖掘标签
+* 允许斧头更快地打破头骨和头颅
 
-## Mob behavior
+## 生物行为
 
-#### [Axolotls Do Not Attack Passive Mobs](https://modrinth.com/datapack/purpurpack-axolotls-ignore-passives/versions)
-* Disables axolotls attacking passive mobs
-* Does not disable axolotls from attacking hostile mobs or fighting back
+#### [美西螈不会攻击被动生物](https://modrinth.com/datapack/purpurpack-axolotls-ignore-passives/versions)
+* 禁止美西螈攻击被动生物
+* 不会禁止美西螈攻击敌对生物或进行还击
 
-#### [Axolotl Breed With Tropical Fish Item](https://modrinth.com/datapack/purpurpack-breed-axolotl-with-tropical-fish-item)
-* Allows axolotls to breed when fed tropical fish items and not only the tropical fish bucket
+#### [用热带鱼物品喂养美西螈进行繁殖](https://modrinth.com/datapack/purpurpack-breed-axolotl-with-tropical-fish-item)
+* 允许用热带鱼物品喂养美西螈进行繁殖，而不仅仅是使用热带鱼桶
 
-## World Behavior
+## 世界行为
 
-#### [The Four New Paintings Are Placeable](https://modrinth.com/datapack/purpurpacks-placeable-new-paintings/versions)
-* Allows players to place the 4 new paintings in survival
+#### [四幅新画可放置](https://modrinth.com/datapack/purpurpacks-placeable-new-paintings/versions)
+* 允许玩家在生存模式下放置四幅新画
 
-#### [Chiseled Bookshelves Add To Enchantment Power](https://modrinth.com/datapack/purpurpacks-chiseled-bookshelves-add-enchantment-power/versions)
-* Allows chiseled bookshelves to contribute to the enchant power total like a normal bookshelf
+#### [雕纹书架增加附魔能量](https://modrinth.com/datapack/purpurpacks-chiseled-bookshelves-add-enchantment-power/versions)
+* 允许雕纹书架像普通书架一样为附魔能量总值做出贡献
 
-#### [Transparent Blocks Do Not Reduce Enchant Power In Enchant Area](https://modrinth.com/datapack/purpurpacks-transparent-blocks-in-enchant-area/versions)
-* Allows most transparent/non-full blocks to be used in the enchant area without taking enchant power away from the
-  enchant table
+#### [透明方块不会降低附魔区域的附魔能量](https://modrinth.com/datapack/purpurpacks-transparent-blocks-in-enchant-area/versions)
+* 允许大多数透明/非实心方块在附魔区域中使用，而不会从附魔台中取走附魔能量
 
-## Beacon Base Materials
+## 光柱基座材料
 
-#### [Copper Blocks Can Be Used As A Beacon Base](https://modrinth.com/datapack/purpurpacks-copper-block-beacon-base/versions)
-* Allows all types of full copper blocks to be used in a beacon base
-* Allows using a copper ingot as a beacon payment item
+#### [铜块可用作光柱基座](https://modrinth.com/datapack/purpurpacks-copper-block-beacon-base/versions)
+* 允许所有类型的整体铜块用作光柱基座
+* 允许使用铜锭作为光柱支付物品
 
-#### [Redstone Blocks Can Be Used As A Beacon Base](https://modrinth.com/datapack/purpurpacks-redstone-beacon-base/versions)
-* Allows redstone blocks to be used in a beacon base
-* Allows using redstone dust as a beacon payment item
+#### [红石块可用作光柱基座](https://modrinth.com/datapack/purpurpacks-redstone-beacon-base/versions)
+* 允许红石块用作光柱基座
+* 允许使用红石粉作为光柱支付物品
 
-#### [Lapis Blocks Can Be Used As A Beacon Base](https://modrinth.com/datapack/purpurpacks-lapis-beacon-base/versions)
-* Allows lapis blocks to be used in a beacon base
-* Allows using lapis lazuli as a beacon payment item
+#### [青金石块可用作光柱基座](https://modrinth.com/datapack/purpurpacks-lapis-beacon-base/versions)
+* 允许青金石块用作光柱基座
+* 允许使用青金石作为光柱支付物品
 
-#### [Amethyst Blocks Can Be Used As A Beacon Base](https://modrinth.com/datapack/purpurpacks-amethyst-beacon-base/versions)
-* Allows amethyst blocks and budding amethyst to be used in a beacon base
-* Allows using amethyst shards as a beacon payment item
+#### [紫水晶块可用作光柱基座](https://modrinth.com/datapack/purpurpacks-amethyst-beacon-base/versions)
+* 允许使用阿玛斯蒂块和发芽阿玛斯蒂作为光柱基座
+* 允许使用阿玛斯蒂碎片作为光柱支付物品
 
-#### [Raw Gold Blocks Can Be Used As A Beacon Base](https://modrinth.com/datapack/purpurpacks-raw-gold-beacon-base/versions)
-* Allows raw gold blocks to be used in a beacon base
-* Allows using raw gold as a beacon payment item
+#### [粗金块可用作光柱基座](https://modrinth.com/datapack/purpurpacks-raw-gold-beacon-base/versions)
+* 允许使用粗金块作为光柱基座
+* 允许使用粗金作为光柱支付物品
 
-#### [Raw Iron Blocks Can Be Used As A Beacon Base](https://modrinth.com/datapack/purpurpacks-raw-iron-block-beacon-base/versions)
-* Allows raw iron blocks to be used in a beacon base
-* Allows using raw iron as a beacon payment item
+#### [粗铁块可用作光柱基座](https://modrinth.com/datapack/purpurpacks-raw-iron-block-beacon-base/versions)
+* 允许使用粗铁块作为光柱基座
+* 允许使用粗铁作为光柱支付物品
 
-#### [Raw Copper Blocks Can Be Used As A Beacon Base](https://modrinth.com/datapack/purpurpacks-raw-copper-beacon-base/versions)
-* Allows raw copper blocks to be used in a beacon base
-* Allows using raw copper as a beacon payment item
+#### [粗铜块可用作光柱基座](https://modrinth.com/datapack/purpurpacks-raw-copper-beacon-base/versions)
+* 允许使用粗铜块作为光柱基座
+* 允许使用粗铜作为光柱支付物品

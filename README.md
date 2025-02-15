@@ -1,35 +1,35 @@
 # PurpurDocs
 
-This is the documentation for [Purpur](https://purpurmc.org/) that uses [Mkdocs](https://github.com/mkdocs/mkdocs) to generate a static site hosted on https://purpurmc.org/docs. Included is a Python script that compares the diff of two commit hashes and outputs the config/permission additions/removals into a YAML file.
+这是用[Mkdocs](https://github.com/mkdocs/mkdocs)生成的静态站点文档，托管在[Purpur](https://purpurmc.org/)的https://purpurmc.org/docs上。其中包含一个Python脚本，用于比较两个提交哈希的差异，并将配置/权限的添加/移除输出到一个YAML文件中。
 
-## Building
+## 构建
 
-[Create and activate a Python 3 virtual environment](https://docs.python.org/3/tutorial/venv.html)
+[创建并激活一个Python 3虚拟环境](https://docs.python.org/3/tutorial/venv.html)
 ```sh
 $ pip install --user virtualenv
 $ virtualenv env
 $ source env/bin/activate
 ```
 
-Install the required packages
+安装所需的包
 ```sh
 pip install -r requirements.txt
 ```
 
-#### Preview changes
+#### 预览更改
 
-To preview your changes to the documentation, run `mkdocs serve`. This will start a web server that will preview the documentation and recompile it as you make changes. More info is shown here: https://www.mkdocs.org/#getting-started
+要预览文档的更改，运行 `mkdocs serve`。这将启动一个Web服务器，用于预览文档并在您进行更改时重新编译它。更多信息请参见：https://www.mkdocs.org/#getting-started
 ```sh
 $ mkdocs serve
 ```
 
-### Compare commits for config/permission additions/removals
+### 比较配置/权限添加/移除的提交
 
-Run the `compare-commits.sh` script to run an interactive script that compares between Purpur commits and generates a file of config option/permission additions/removals. 
+运行 `compare-commits.sh` 脚本，运行一个交互式脚本，比较Purpur提交之间的差异，并生成一个配置选项/权限添加/移除的文件。
 
 <details>
 <summary><code>./compare-commits.sh &lt;prev_hash> &lt;curr_hash> </code></summary>
-You can also add two commit hashes as command line arguments and it will skip the interactive aspect of the script.
+您还可以将两个提交哈希作为命令行参数添加，这样将跳过脚本的交互部分。
 
 ```sh
 $ ./compare-commits.sh 885092 22b876
@@ -52,7 +52,7 @@ permission:
 
 <details>
 <summary><code>./compare-commits.sh &lt;prev_hash> </code></summary>
-Including only one hash will compare it to the latest commit of the branch specified (which is `ver/1.16.5` at the time of writing).
+只包括一个哈希将与指定分支的最新提交进行比较（在撰写本文时为`ver/1.16.5`）。
 
 ```sh
 $ ./compare-commits.sh 885092
@@ -75,10 +75,10 @@ permission:
 
 <details>
 <summary><code>./compare-commits.sh --no-commits </code></summary>
-Running the script with the option `--no-commits` or `-nc` will create a `last_commit` file that includes the most recent commit at runtime. Running it again will make it use the hash located in `last_commit` as the first commit hash, replacing it with the most recent commit after generating the file.
+使用选项 `--no-commits` 或 `-nc` 运行脚本将创建一个`last_commit`文件，其中包含运行时最近的提交。再次运行将使用`last_commit`中的哈希作为第一个提交哈希，在生成文件后用最新的提交替换它。
 
 ```sh
-# First time running it
+# 第一次运行
 $ ./compare-commits.sh -nc
 ```
 
@@ -97,14 +97,14 @@ permission:
 ```
 
 ```yml
-# Creates a last_commit file
+# 创建一个last_commit文件
 885092
 ```
 
 
 
 ```sh
-# Running it again after new commits are pushed to Purpur
+# 在Purpur推送新提交后再次运行
 $ ./compare-commits.sh -nc
 ```
 
@@ -123,7 +123,7 @@ permission:
 ```
 
 ```yml
-# Modifies the last_commit file
+# 修改last_commit文件
 22b876
 ```
 </details>

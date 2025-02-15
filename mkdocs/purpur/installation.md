@@ -1,1 +1,1 @@
-Since Purpur is a drop-in replacement for Paper (with no changes required), you can follow their [Getting Started](https://docs.papermc.io/paper/getting-started) guide to install Purpur.
+由于 Purpur 是 Paper 的即插即用替代品（无需更改），您可以按照他们的 [入门指南](https://paper.8aka.org/paper/getting-started) 安装 Purpur。

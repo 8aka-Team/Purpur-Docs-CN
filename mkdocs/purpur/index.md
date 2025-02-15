@@ -1,48 +1,48 @@
-[![Purpur Image](https://user-images.githubusercontent.com/74448585/150906023-101cd383-da82-4a3c-9603-a3b5741c3994.png)]({{ project.website }})
+[![Purpur 图片](https://user-images.githubusercontent.com/74448585/150906023-101cd383-da82-4a3c-9603-a3b5741c3994.png)]({{ project.website }})
 
 <div markdown="1" id="center">
 
-[![MIT License](https://img.shields.io/github/license/PurpurMC/Purpur?&logo=github)](License)&nbsp;
-[![Github Actions Build](https://img.shields.io/github/workflow/status/purpurmc/purpur/Build?event=push&logo=github)]({{ project.downloads }})
+[![MIT 许可证](https://img.shields.io/github/license/PurpurMC/Purpur?&logo=github)](许可证)&nbsp;
+[![Github Actions 构建](https://img.shields.io/github/workflow/status/purpurmc/purpur/Build?event=push&logo=github)]({{ project.downloads }})
 [![CodeFactor](https://www.codefactor.io/repository/github/purpurmc/purpur/badge)](https://www.codefactor.io/repository/github/purpurmc/purpur)&nbsp;
-[![Join us on Discord](https://img.shields.io/discord/685683385313919172.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)]({{ social[0].link }})&nbsp;  
+[![加入我们的 Discord](https://img.shields.io/discord/685683385313919172.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)]({{ social[0].link }})&nbsp;  
 
-[![Purpur's Stargazers](https://img.shields.io/github/stars/PurpurMC/Purpur?label=stars&logo=github)]({{ project.source }}/stargazers)&nbsp;
-[![Purpur Forks](https://img.shields.io/github/forks/PurpurMC/Purpur?label=forks&logo=github)]({{ project.source }}/network/members)&nbsp;
-[![Purpur Watchers](https://img.shields.io/github/watchers/PurpurMC/Purpur?label=watchers&logo=github)]({{ project.source }}/watchers)&nbsp;
+[![Purpur 的点赞者](https://img.shields.io/github/stars/PurpurMC/Purpur?label=stars&logo=github)]({{ project.source }}/stargazers)&nbsp;
+[![Purpur 的分支](https://img.shields.io/github/forks/PurpurMC/Purpur?label=forks&logo=github)]({{ project.source }}/network/members)&nbsp;
+[![Purpur 的关注者](https://img.shields.io/github/watchers/PurpurMC/Purpur?label=watchers&logo=github)]({{ project.source }}/watchers)&nbsp;
 
-Welcome to the official documentation source for the&nbsp;[Purpur]({{ project.source }}/)&nbsp;project.
+欢迎访问[Purpur]({{ project.source }}/)&nbsp;项目的官方文档源。
 
-This documentation is current to Build&nbsp;[#{{ project.build.number }}](https://api.purpurmc.org/v2/purpur/{{ project.version }}/{{ project.build.number }}/download)&nbsp;([`{{ project.build.commit }}`]({{ project.source }}/commit/{{ project.build.commit }}))
+本文档适用于构建&nbsp;[#{{ project.build.number }}](https://api.purpurmc.org/v2/purpur/{{ project.version }}/{{ project.build.number }}/download)&nbsp;（[`{{ project.build.commit }}`]({{ project.source }}/commit/{{ project.build.commit }})）
 
-Purpur is a drop-in replacement for [Paper](https://github.com/PaperMC/Paper) servers that's designed for configurability, and new fun and exciting gameplay features.
+Purpur 是 [Paper](https://github.com/PaperMC/Paper) 服务器的一个可配置的、设计新颖且充满乐趣的游戏功能的替代品。
 
 </div>
 
-## Contact [![Discord shield.io](https://img.shields.io/discord/685683385313919172.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)]({{ social[0].link }})
+## 联系 [![Discord shield.io](https://img.shields.io/discord/685683385313919172.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)]({{ social[0].link }})
 
-Join us on [Discord]({{ social[0].link }})!
+加入我们的 [Discord]({{ social[0].link }})！
 
-## Downloads
+## 下载
 
-You can download Purpur from the [downloads page]({{ project.downloads }}) or the [downloads API](https://api.purpurmc.org/).
+您可以从[下载页面]({{ project.downloads }})或[下载 API](https://api.purpurmc.org/)下载 Purpur。
 
-Downloads API endpoints:
+下载 API 端点：
 
- * List versions of Minecraft with builds available:  
+ * 列出具有可用构建的 Minecraft 版本：  
  `https://api.purpurmc.org/v2/purpur/`
- * List builds for a version of Minecraft:  
+ * 列出某个 Minecraft 版本的构建：  
  `https://api.purpurmc.org/v2/purpur/<version>`
- * Download a specific build of a specific version:  
+ * 下载特定版本的特定构建：  
  `https://api.purpurmc.org/v2/purpur/<version>/<build>/download`
- * Download the latest build for a version of Minecraft:  
+ * 下载 Minecraft 版本的最新构建：  
  `https://api.purpurmc.org/v2/purpur/<version>/latest/download`
 
-## License [![MIT License](https://img.shields.io/github/license/PurpurMC/Purpur?&logo=github)](./#license)
+## 许可证 [![MIT 许可证](https://img.shields.io/github/license/PurpurMC/Purpur?&logo=github)](./#license)
 
-This project licenses all patches under the MIT license, unless the patch headers note otherwise.
+该项目将所有补丁都授权为 MIT 许可证，除非补丁头部另有说明。
 
-See [PaperMC/Paper](https://github.com/PaperMC/Paper) for the license of material this project uses.
+有关此项目使用的材料许可，请参阅[PaperMC/Paper](https://github.com/PaperMC/Paper)。
 
 ## bStats
 
@@ -52,32 +52,32 @@ See [PaperMC/Paper](https://github.com/PaperMC/Paper) for the license of materia
 ## API
 
 ### Javadoc
-You can find the Javadocs for Purpur at: {{ project.javadoc }}
+您可以在这里找到 Purpur 的 Javadoc：{{ project.javadoc }}
 
-### Dependency Information
+### 依赖信息
 === "Maven"
 
     ``` xml linenums="1"
     <repositories>
-        <!-- other repos... -->
+        <!-- 其他仓库... -->
         <repository>
             <id>purpur</id>
-            <name>Purpur Maven Repo</name>
+            <name>Purpur Maven 仓库</name>
             <url>https://repo.purpurmc.org/snapshots</url>
         </repository>
-        <!-- other repos... -->
+        <!-- 其他仓库... -->
     </repositories>
     ```
     ``` xml linenums="1"
     <dependencies>
-        <!-- other dependencies -->
+        <!-- 其他依赖 -->
         <dependency>
             <groupId>org.purpurmc.purpur</groupId>
             <artifactId>purpur-api</artifactId>
             <version>{{ project.version }}-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-        <!-- other dependencies -->
+        <!-- 其他依赖 -->
     </dependencies>
     ```
 
@@ -85,21 +85,21 @@ You can find the Javadocs for Purpur at: {{ project.javadoc }}
 
     ``` kotlin linenums="1"
     repositories {
-        //... other repos ...//
+        //... 其他仓库 ...//
         
-        //Add this somewhere after mavenCentral()
+        //在 mavenCentral() 之后的某处添加以下内容
         maven("https://repo.purpurmc.org/snapshots")
         
-        //... other repos ...//
+        //... 其他仓库 ...//
     }
     ```
     ``` kotlin linenums="1"
     dependencies {
-        //... other dependencies ...//
+        //... 其他依赖 ...//
         
         compileOnly("org.purpurmc.purpur", "purpur-api", "{{ project.version }}-R0.1-SNAPSHOT")
         
-        //... other dependencies ...//
+        //... 其他依赖 ...//
     }
     ```
 
@@ -107,50 +107,46 @@ You can find the Javadocs for Purpur at: {{ project.javadoc }}
 
     ``` groovy linenums="1"
     repositories {
-        //... other repos ...//
+        //... 其他仓库 ...//
         
-        //Add this somewhere after mavenCentral()
+        //在 mavenCentral() 之后的某处添加以下内容
         maven {
             url "https://repo.purpurmc.org/snapshots"
         }
         
-        //... other repos ...//
+        //... 其他仓库 ...//
     }
     ```
     ``` groovy linenums="1"
     dependencies {
-        //... other dependencies ...//
+        //... 其他依赖 ...//
         
         compileOnly "org.purpurmc.purpur:purpur-api:{{ project.version }}-R0.1-SNAPSHOT"
         
-        //... other dependencies ...///
+        //... 其他依赖 ...///
     }
     ```
 
-Importing Purpur into your project also includes all APIs provided by Pufferfish, Paper, Spigot, and Bukkit.
+将 Purpur 导入到您的项目中还会包括 Pufferfish、Paper、Spigot 和 Bukkit 提供的所有 API。
 
-## Building and setting up
+## 构建和设置
 
-#### Initial setup
-Run the following command in the root of the project directory:
+#### 初始设置
+在项目目录的根目录中运行以下命令：
 
 ``` bash linenums="1"
 ./gradlew applyPatches
 ```
 
-#### Creating a patch
-Patches are effectively just commits in either `Purpur-API` or `Purpur-Server`. 
-To create one, just add a commit to either repo and run `./gradlew rebuildPatches`, and Gradle will 
-place a patch in the patches folder. Modifying commits will also modify their 
-corresponding patch file(s).
+#### 创建一个补丁
+补丁实际上只是 `Purpur-API` 或 `Purpur-Server` 中的提交。要创建一个补丁，只需向任一存储库添加一个提交，然后运行 `./gradlew rebuildPatches`，Gradle 将在补丁文件夹中放置一个补丁。修改提交也会修改其相应的补丁文件。
 
-See [CONTRIBUTING.md]({{ project.source }}/blob/HEAD/CONTRIBUTING.md) for more detailed information.
+有关更详细的信息，请参阅[CONTRIBUTING.md]({{ project.source }}/blob/HEAD/CONTRIBUTING.md)。
 
 
-#### Compiling
+#### 编译
 
-Use the command `./gradlew build` to build the api and server. Gradle will place compiled jars
- under `Purpur-API/build/libs` and `Purpur-Server/build/libs`.
+使用命令 `./gradlew build` 来构建 API 和服务器。Gradle 将在 `Purpur-API/build/libs` 和 `Purpur-Server/build/libs` 下放置编译的 jar 文件。
 
-To get a purpurclip jar, run `./gradlew paperclip`.
-To install the `purpur-api` and `purpur` dependencies to your local maven repo, run `./gradlew publishToMavenLocal`
+要获取 purpurclip jar，运行 `./gradlew paperclip`。
+要将 `purpur-api` 和 `purpur` 依赖项安装到您的本地 maven 仓库，请运行 `./gradlew publishToMavenLocal`

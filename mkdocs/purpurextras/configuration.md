@@ -1,179 +1,179 @@
-This page details the various configuration settings available in PurpurExtras configuration file.
+这个页面详细介绍了PurpurExtras配置文件中提供的各种配置设置。
 
 ## anvil-crushes-blocks
 
-If enabled, block list will be used. Key is the block material that will be converted from and value is block material that will be converted to. In default config if anvil falls on a cobblestone block, that cobblestone will be converted to sand.
+如果启用，将使用块列表。键是要转换的方块材料，值是要转换为的方块材料。在默认配置中，如果铁砧落在鹅卵石方块上，那么该鹅卵石将被转换为沙子。
 
 ## anvil-splits-boats
 
-If enabled, dropping an anvil from significant height onto chest boat in its item form, it will not destroy the item, but split the boat and the chest and drop them both.
+如果启用，从高处将铁砧掉落到装有船只的箱子船上，不会摧毁物品，而是分开船只和箱子并将它们同时掉落。
 
 ## anvil-splits-minecarts
 
-If enabled, dropping an anvil from significant height onto minecart with content (chest minecart, furnace minecart, etc.) in its item form, it will not destroy the item, but split the minecart and the content and drop them both.
+如果启用，从高处将铁砧掉落到带有内容（箱子矿车、熔炉矿车等）的矿车上，不会摧毁物品，而是分开矿车和内容并将它们同时掉落。
 
 ## block-building-above-nether
 
 ### enabled
 
-Enables the feature.
+启用该功能。
 
 ### height-limit
 
-Maximum height players without `purpurextras.netherbuildheightbypass` permission can build in nether worlds.
+玩家在地狱世界中可以建造的最大高度，没有 `purpurextras.netherbuildheightbypass` 权限的玩家无法建造。
 
 ### no-permission-message
 
-Message to display in action bar when trying to build above set limit in nether worlds.
+在尝试在地狱世界中建造超过设定限制时在操作栏中显示的消息。
 
 ## blocks
 
 ### chorus-flowers-always-drop
 
-Makes it so chorus flowers always drop, no matter if they were destroyed directly or not.
+使唱诗花总是掉落，无论它们是直接被摧毁还是其他方式。
 
 ### shift-right-click-for-invisible-item-frames
 
-Right click when sneaking on an item frame with item inside of it will make the item frame invisible. Requires `purpurextras.invisibleframes` permission.
+潜行右键点击带有物品的物品展示框将使物品展示框变为隐形。需要 `purpurextras.invisibleframes` 权限。
 
 ## chat
 
 ### escape-commands
 
-Allows players to send a message with a slash at the start by escaping it with backslash (`\/command` that will appear as `/command` in chat).
+允许玩家通过用反斜杠转义以斜杠开头的消息发送到聊天中（`\/command` 将显示为 `/command`）。
 
 ### send-sleep-percentage-message
 
-If enabled, sends messages in chat containing amount of players required to sleep based on playersSleepingPercentage gamerule.
+如果启用，将在聊天中发送包含基于 `playersSleepingPercentage` 游戏规则所需睡觉的玩家数量的消息。
 
 ## create-suspicious-blocks
 
-If enabled, players will be able to shift-right click on sand and gravel with items in their hands to create suspicious blocks and put held item inside. Held item will disappear from player's hand and will be added as loot inside the suspicious block. Only one item can be added per block.
+如果启用，玩家可以携带物品潜行右键点击沙子和砂砾来创建可疑方块并放入手持物品。手持物品将从玩家手中消失，并作为战利品放入可疑方块中。每个方块只能添加一个物品。
 
 ## creeper-squid
 
-Squids will act as Creepers - they will explode if within `agro-distance` after a fuse of `fuse-ticks` ticks, as well as moving towards you at a velocity of `velocity`. Explosion power / radius is also configurable through `explosion-radius`.
+乌贼将会像苦力怕一样行动 - 如果在`agro-distance`范围内，在`fuse-ticks` ticks的延迟后爆炸，同时以`velocity`的速度向你移动。爆炸威力/半径也可以通过`explosion-radius`进行配置。
 
-### enabled
+### 启用
 
-Enables the feature.
+启用该功能。
 
 ### fuse-ticks
 
-The amount of time it takes for the "fuse" to last.
+“引线”持续的时间。
 
 ### agro-distance
 
-The detection range (in blocks).
+探测范围（方块为单位）。
 
 ### explosion-radius
 
-The radius of the explosion.
+爆炸半径。
 
 ### velocity
 
-The speed at which it moves towards the player.
+它朝向玩家移动的速度。
 
 ## dispenser
 
 ### break-blocks
 
-If a tool category is enabled, that tool dispensed from dispenser will destroy the block in front of it. It will only destroy blocks that tool can destroy, and it will destroy them like that tool was used on it, so wooden pickaxe will destroy diamond ore, but will not drop any items.
+如果启用了工具类别，从发射器中发出的工具将摧毁其前方的方块。它只会摧毁工具可以摧毁的方块，并且会像使用该工具一样摧毁它们，因此木镐将摧毁钻石矿石，但不会掉落任何物品。
 
 ### interact-with-cauldron
 
-If enabled, will allow dispensers fill and empty cauldrons.
+如果启用，将允许发射器填充和清空炼药锅。
 
 ### puts-discs-in-jukebox
 
-If enabled, dispensers will be able to insert into or swap music discs in jukeboxes.
+如果启用，发射器将能够插入或交换音乐唱片到唱片机中。
 
 ### shears-shear-pumpkin
 
-If enabled, when shears are dispensed and there's a pumpkin in front of a dispenser, shears will be used, making carved pumpkin.
+如果启用，当剪刀被发射并且发射器前方有南瓜时，将使用剪刀，制作雕刻南瓜。
 
 ## dye-boss-bars
 
-If enabled, allows players to dye boss health bars by right-clicking the boss with a dye item.
+如果启用，玩家可以通过右键点击带着染料物品的boss来染色boss的生命条。
 
 ## furnace
 
 ### burn-time
 
-If enabled, multiplier field will be used to modify fuel burn time in furnaces.
+如果启用，乘数字段将用于修改熔炉中燃料燃烧时间。
 
 ## gameplay-settings
 
 ### cancel-damage-from-pet-owner
 
-If enabled, pet owners will not be able to harm their own pets.
+如果启用，宠物主人将无法伤害自己的宠物。
 
 ### fall-damage-when-jump-boost-applied
 
-Toggles if entities with jump boost effect will  take fall damage
+切换是否给予具有跳跃提升效果的实体摔落伤害。
 
 ### open-iron-doors-with-hand
 
-Allows opening iron doors with a hand, just like wooden doors. Can be controlled by `purpurextras.openirondoors` permission (defaults to true).
+允许使用手打开铁门，就像打开木门一样。可以通过`purpurextras.openirondoors`权限进行控制（默认为true）。
 
 ### open-iron-trapdoors-with-hand
 
-Allows opening iron trapdoors with a hand, just like wooden trapdoors. Can be controlled by `purpurextras.openirontrapdoors` permission (defaults to true).
+允许使用手打开铁活板门，就像打开木活板门一样。可以通过`purpurextras.openirontrapdoors`权限进行控制（默认为true）。
 
 ### respawn-anchor-needs-charges
 
-If false, will make it so respawn anchors will never run out of charges.
+如果为false，使重生锚永远不会用尽次数。
 
 ### run-faster-on-paths
 
-If `speed-multiplier` value is higher than 0, player will gain speed potion effect of the level of that value. This only accepts integer values. Which blocks count as paths can be configured by listing them in `path-blocks` list.
+如果`speed-multiplier`值大于0，玩家将获得该数值级别的速度药水效果。这只接受整数值。哪些方块被视为路径可以通过在`path-blocks`列表中列出它们来进行配置。
 
 ### spawner-placement-requires-specific-permission
 
-Players will need `purpurextras.spawnerplace.<mobtype>` permission to place spawners of that mob.
+玩家将需要`purpurextras.spawnerplace.<mobtype>`权限来放置该类型的刷怪笼。
 
 ## grindstone
 
 ### gives-enchants-back
 
-If enabled and player has books in their inventory while disenchanting item in a grindstone, books will be consumed to return the enchantments removed from the item to the player. No exp will drop when doing this.
+如果启用，并且玩家在磨石中解除附魔物品时背包中有书籍，书籍将被消耗，将从物品中移除的附魔返回给玩家。这样做时不会掉落经验。
 
 ## items
 
 ### beehive-lore
 
-If true, will add lore with amount of bees and honey to the picked up hives.
+如果为true，将向捡起的蜂巢添加有关蜜蜂数量和蜂蜜的描述。
 
 ## leash-snap
 
-If enabled, a sound will play when a leash snaps due to the distance being too great.
+如果启用，当牵引绳由于距离过大而断开时会播放声音。
 
 ### pitch
 
-The pitch at which the sound is played at. This is a float number between -1 and 1
+播放声音的音调。这是一个介于-1和1之间的浮点数。
 
 ### sound
 
-The sound that gets played when the leash snaps. A list of sounds can be found [here](https://minecraft.wiki/w/Sounds.json).
+牵引绳断开时播放的声音。可以在[这里](https://minecraft.wiki/w/Sounds.json)找到声音列表。
 
 ### volume
 
-The volume at which the sound will be played at. This is an integer number above 0.
+播放声音的音量。这是一个大于0的整数。
 
 ## loom
 
 ### max-layers
 
-Maximum amount of layers that can be added to a banner. By default, this is 6. The client might not display more than 6 layers at the time.
+可以添加到旗帜的最大层数。默认情况下为6。客户端可能一次不会显示超过6层。
 
 ## lightning-transforms-entities
 
-If enabled, entities with type on the left will be transformed into entity of type on the right. This overrides vanilla transformations. Vanilla mob ids are used to identify mobs. There are also special cases:
+如果启用，左侧具有类型的实体将被转换为右侧类型的实体。这将覆盖原版的转换。使用原版的mob id来识别怪物。也有特殊情况：
 
-- `killer_bunny` - a killer bunny
-- `jeb_sheep` - rainbow sheep
-- `johnny` - vindicator aggressive to most mobs
-- `toast` - special variant of rabbit
+- `killer_bunny` - 凶兔
+- `jeb_sheep` - 彩色羊
+- `johnny` - 对大多数怪物具有攻击性的报复者
+- `toast` - 兔子的特殊变种
 
 ## mobs
 
@@ -181,76 +181,76 @@ If enabled, entities with type on the left will be transformed into entity of ty
 
 #### jeb-shear-random-color
 
-Shearing a sheep named `jeb_` will drop wool blocks with a random colour
+剪羊毛时，名为`jeb_`的羊将掉落带有随机颜色的羊毛块。
 
 ### snow_golem
 
 #### drop-pumpkin-when-sheared
 
-If set to false prevents snow golems from dropping carved pumpkin when shearing them when they have it on their head.
+如果设置为false，阻止雪傀儡在被剪毛时当它们头上戴着南瓜时掉落雕刻南瓜。
 
 ## protect-blocks-with-loot
 
-Makes it so blocks with loot tables are protected from being destroyed. By default, they can be destroyed while holding sneak, but it's configurable. Can be bypassed with `purpurextras.lootblockprotectionbypass` permission. Message displayed can be configured. [Message type](#message-types) can be configured.
+使具有战利品表的方块免受破坏。默认情况下，它们可以在潜行时被破坏，但可进行配置。可以通过`purpurextras.lootblockprotectionbypass`权限绕过。可以配置显示的消息。可以配置[消息类型](#message-types)。
 
 ## raid-totem-drops
 
 ### enabled
 
-If enabled, drop rate of totems from evokers in raids can be configured.
+如果启用，可以配置围攻中唤魔者掉落图腾的掉落率。
 
 ### chance
 
-Chance of evoker in a raid dropping a totem. This is a float number between 0 and 1.
+围攻中唤魔者掉落图腾的几率。这是一个介于0和1之间的浮点数。
 
 ## rideables
 
 ### mob-needs-to-be-nametagged-to-ride
 
-If enabled, only name tagged mobs can be mounted/steered using Purpur's rideable option.
+如果启用，只有被命名标签的生物才能使用Purpur的可骑乘选项骑乘/操纵。
 
 ## shields
 
 ### cooldown
 
-Amount of ticks (1/20th of a second) of cooldown for a shield after hitting it with an axe crit. By default, this is 100 ticks (5 seconds).
+在用斧头爆击盾牌后的冷却时间（1/20秒）。默认情况下为100 ticks（5秒）。
 
 ### damage-reduction
 
-Value between 0 and 1. This is the percentage of damage reduction that defending with a shield will provide. By default, shield reduces 100% of the damage (1.0).
+0到1之间的值。这是使用盾牌进行防御提供的伤害减少的百分比。默认情况下，盾牌减少100%的伤害（1.0）。
 
 ## stonecutter-damage-filter
 
-If enabled, allows filtering which entity types don't get damaged by stonecutters if [stonecutter dealing damage](https://purpurmc.org/docs/Configuration/stonecutter_1) Purpur feature is enabled.
+如果启用，允许过滤哪些实体类型不会受到石切机对其造成伤害的影响，如果启用了[石切机造成伤害](https://purpurmc.org/docs/Configuration/stonecutter_1) Purpur功能。
 
 ## totem
 
 ### work-on-void-death
 
-If enabled, totem of undying will save players from death in the void and will teleport them to the last place their feet touched the ground. If for any reason that position is not found, they will be teleported to world spawn.
+如果启用，不死图腾将在虚空中拯救玩家免于死亡，并将其传送到最后一次接触地面的位置。如果找不到该位置，他们将被传送到世界生成点。
 
 ## twerk-to-reduce-burn-time
 
 ### amount
 
-The percentage to reduce the burn time by.
+减少燃烧时间的百分比。
 
 ### chance
 
-The chance for a twerk to succeed to reducing the burn time. This is a float number between 0 and 1.
+减少燃烧时间的twert成功几率。这是一个介于0和1之间的浮点数。
 
 ## unlock-all-recipes-on-join
 
-Unlocks all available recipes on join. Players can be exempt from this by denying them `purpurextras.unlockallrecipesonjoin` permission.
+解锁所有可用配方。玩家可以通过拒绝`purpurextras.unlockallrecipesonjoin`权限来豁免。
 
 ## use-notarget-permissions
 
-If enabled, players having `target.bypass.<mojang_mob_name>` permission won't be targetted by that type of mob.
+如果启用，拥有`target.bypass.<mojang_mob_name>`权限的玩家不会被该类型的怪物瞄准。
 
-## Message types
+## 消息类型
 
 ### CHAT
-Regular system chat message
+常规系统聊天消息
 
 ### ACTION_BAR
-Action bar message
+动作栏消息

@@ -1,35 +1,35 @@
-# Log4j security vulnerability
-Several researchers found a remote code execution (RCE) vulnerability within the logger library utilized in Minecraft and many other Java-based applications. This vulnerability allows anybody to execute commands and run code on your server with minimal effort, and grab your backend server’s public IP address.
+# Log4j安全漏洞
+几位研究人员发现了一个远程代码执行（RCE）漏洞，存在于Minecraft和许多其他基于Java的应用程序中使用的日志记录库中。这个漏洞允许任何人以极小的努力在您的服务器上执行命令并运行代码，并获取您的后端服务器的公共IP地址。
 
-It exists for all vanilla Minecraft versions newer than 1.7.10, and affects every application that utilizes the library. Notably the vanilla client, all vanilla-based servers such as Paper and Purpur, Velocity, and Waterfall. If you run any other Java-based applications, such as Jenkins or UniFi, ensure they are up-to-date as well.
+这个漏洞存在于所有比1.7.10更新的原版Minecraft版本中，并影响使用该库的每个应用程序。特别是原版客户端、所有基于原版的服务器，如Paper和Purpur、Velocity和Waterfall。如果您运行任何其他基于Java的应用程序，如Jenkins或UniFi，请确保它们也是最新的。
 
-Mojang has pushed a fix for all client versions 1.8 and newer. 1.7.10 and older are not vulnerable. Purpur has pushed a JAR containing a fix for 1.18.1, and published XML files for 1.18 and older. Plugins that shade or depend on older versions of the library will also require updates.
+Mojang已为所有1.8及更新版本的客户端推送了修复程序。1.7.10及更早版本不受影响。Purpur已为1.18.1推送了一个包含修复程序的JAR，并发布了1.18及更早版本的XML文件。那些使用旧版本库的插件也需要更新。
 
-## Updating Purpur
-Due to the way our tooling works, we cannot push fixed JARs for versions older than the latest Minecraft release. Now is a good time to get off unsupported versions and onto the latest and greatest versions of the game.
+## 更新Purpur
+由于我们的工具工作方式的原因，我们无法为早于最新Minecraft版本的版本推送修复的JAR。现在是摆脱不受支持版本，升级到最新版本的游戏的好时机。
 
-### 1.18.1 and newer
-1.18.1 Builds [`#1464`](https://api.purpurmc.org/v2/purpur/1.18.1/1464/download) and newer are patched. [Download the latest builds here]({{ project.downloads }}).
+### 1.18.1及更新版本
+1.18.1版本[`#1464`](https://api.purpurmc.org/v2/purpur/1.18.1/1464/download)及更新版本已修复。[在这里下载最新版本](项目下载)。
 
-### 1.18 to 1.17
-As stated above, Purpur does not provide a patched JAR. Instead, we provide an XML file that disables what causes the exploit. To install, <a download href="../../xml/purpur_log4j2_117.xml" >download this XML file</a>, place it in your server’s root directory (where the JAR files are), and add `-Dlog4j.configurationFile=purpur_log4j2_117.xml` after `java` in your launch arguments.
+### 1.18至1.17
+如上所述，Purpur不提供修复的JAR。相反，我们提供一个禁用漏洞原因的XML文件。要安装，请<a download href="../../xml/purpur_log4j2_117.xml">下载此XML文件</a>，将其放在服务器的根目录（JAR文件所在的位置），并在启动参数中的`java`后面添加`-Dlog4j.configurationFile=purpur_log4j2_117.xml`。
 
-???+ warning "Warning"
-    This method has not been fully tested on 1.18. Report any issues found on the documentation's [issue tracker](https://github.com/PurpurMC/PurpurDocs/issues).
+???+ warning "警告"
+这种方法在1.18版本上尚未经过完全测试。如果发现任何问题，请在文档的[问题跟踪器](https://github.com/PurpurMC/PurpurDocs/issues)上报告。
 
-### 1.16.5 and older
-The process is the same as the above, but with a different XML file. <a download href="../../xml/purpur_log4j2_1141-1165.xml" >Download this XML file</a> to your server’s root directory, and add `-Dlog4j.configurationFile=purpur_log4j2_1141-1165.xml` after `java` in your launch arguments.
+### 1.16.5及更早版本
+过程与上述相同，但使用不同的XML文件。将<a download href="../../xml/purpur_log4j2_1141-1165.xml">此XML文件下载</a>到服务器的根目录，并在启动参数中的`java`后面添加`-Dlog4j.configurationFile=purpur_log4j2_1141-1165.xml`。
 
-Beware of other plugins that claim to fix the exploit by redirecting the log to the system output stream, as Paper automatically redirects those calls back to Log4j. Filtering out the problematic string will not patch the exploit, as all filters can be bypassed in various ways.
+请注意其他声称通过将日志重定向到系统输出流来修复漏洞的插件，因为Paper会自动将这些调用重定向回Log4j。过滤掉有问题的字符串将不会修复漏洞，因为所有过滤器都可以以各种方式被绕过。
 
-## How it works
-To test if this exploit affects you, send `${jndi:ldap://127.0.0.1:1389/a}` in your server’s chat, and check your server’s log. If the console shows *any* response, then your server is vulnerable.
+## 工作原理
+要测试此漏洞是否影响您，请在服务器的聊天中发送`${jndi:ldap://127.0.0.1:1389/a}`，并检查服务器的日志。如果控制台显示*任何*响应，则您的服务器有漏洞。
 
-The flag, `-Dlog4j2.formatMsgNoLookups=true`, does not stop the exploit from functioning on versions older than 1.17. It only works on versions newer than 1.16.5, which already have better mitigations provided.
+标志`-Dlog4j2.formatMsgNoLookups=true`无法阻止早于1.17版本的漏洞发挥作用。它仅适用于1.16.5及更新版本，这些版本已经提供了更好的缓解措施。
 
-A basic explanation of how the exploit works can be found [here](https://gist.github.com/TheCurle/f15a6b63ceee3be58bff5e7a97c3a4e6#the-problem). Current knowledge indicates that all versions of Java can allow remote code execution, according to [Paper’s team](https://discord.com/channels/289587909051416579/289587909051416579/918964269415030855)[^1].
+关于漏洞工作原理的基本解释可以在[这里](https://gist.github.com/TheCurle/f15a6b63ceee3be58bff5e7a97c3a4e6#the-problem)找到。根据[Paper团队](https://discord.com/channels/289587909051416579/289587909051416579/918964269415030855)[^1]的当前知识，所有Java版本都可能允许远程代码执行。
 
-For more information, read [Mojang’s blog post about the vulnerability](https://www.minecraft.net/en-us/article/important-message--security-vulnerability-java-edition). It contains fixes for other platforms, such as third-party clients. Paper’s [information post](https://discord.com/channels/289587909051416579/289587909051416579/918964269415030855)[^1] and [announcement](https://discord.com/channels/289587909051416579/492517675680006144/918581596825718815)[^2] may help as well.
+有关更多信息，请阅读[Mojang关于漏洞的博文](https://www.minecraft.net/en-us/article/important-message--security-vulnerability-java-edition)。其中包含其他平台的修复措施，如第三方客户端。Paper的[信息帖子](https://discord.com/channels/289587909051416579/289587909051416579/918964269415030855)[^1]和[公告](https://discord.com/channels/289587909051416579/492517675680006144/918581596825718815)[^2]也可能有所帮助。
 
-[^1]: ![Paper's Log4j information pin](images/paper-log4j-pin.png)
-[^2]: ![Paper's Log4j information pin](images/paper-log4j-announcement.png)
+[^1]: ![Paper的Log4j信息帖子](images/paper-log4j-pin.png)
+[^2]: ![Paper的Log4j信息公告](images/paper-log4j-announcement.png)

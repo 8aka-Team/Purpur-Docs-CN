@@ -1,73 +1,72 @@
-## Where to download??!1?
+## 在哪里可以下载??!1?
 
-We have a downloads page on our website that's almost as majestic as my beard ![Billy's Majestic Beard](https://cdn.discordapp.com/emojis/768978823655063602.png?size=16). It is our user friendly front-end for our downloads API: {{ project.downloads }}
+我们在我们的网站上有一个下载页面，几乎和我的胡子一样雄伟 ![Billy's Majestic Beard](https://cdn.discordapp.com/emojis/768978823655063602.png?size=16)。这是我们友好的用户界面，用于访问我们的下载API：{{ project.downloads }}
 
-If you'd rather use the downloads API directly (for automation, scripts, or whatever) you can find the API endpoints listed on [the home page]({{ project.downloads }}).
+如果您更喜欢直接使用下载API（用于自动化、脚本或其他用途），您可以在[主页]({{ project.downloads }})上找到列出的API端点。
 
-## What are the best purpur options?
+## Purpur有哪些最佳选项?
 
-It's hard to summarize Purpur because then it wouldn't be fully representative of everything it can do.
+总结Purpur很困难，因为这样就无法完全代表它的所有功能。
 
-Take a look at the [most liked features](https://www.reddit.com/r/admincraft/comments/pbx5le/what_is_your_favorite_purpur_feature/) poll over on reddit.  
-But that list is hardly exhaustive, so do make sure to check out all the available options, there's something for everyone \o/  
-{{ site_url }}Configuration
+在Reddit上查看 [最受欢迎的功能](https://www.reddit.com/r/admincraft/comments/pbx5le/what_is_your_favorite_purpur_feature/) 投票。  
+但这个列表并不全面，所以一定要查看所有可用选项，每个人都能找到适合自己的选项 \o/  
+{{ site_url }}配置
 
+## 我可以提出功能请求或报告错误吗?
 
-## Can I make a feature request or report a bug?
+当然可以！这正是让Purpur变得更好的原因 ^_^
 
-Of course you can! That's what makes Purpur better and better ^_^
+如果您需要报告错误，请告诉我们。请记住，我们无法修复我们不知道出了什么问题 :wink:
 
-If you need to report a bug, please let us know about it. Remember, we can't fix what we don't know is broke :wink:
+错误报告：{{ project.source }}/issues/new
 
-Bug Reports: {{ project.source }}/issues/new
+如果您有功能请求或建议，请记住我们尽量避免使用可能只对1或2个服务器有帮助的特定功能。这类功能最适合于插件或数据包。如果不确定，仍然可以提交一个工单，我们会告诉您 \o/
 
-If you have a feature request or suggestion, please keep in mind that we try to stay away from niche features that may only help 1 or 2 servers. Things like that are best suited to plugins or datapacks. If you are unsure, open a ticket anyways and we'll let you know \o/
+功能请求：{{ project.source }}/discussions/new
 
-Feature Request: {{ project.source }}/discussions/new
+## Purpur有权限吗? :open_mouth:
 
-## Purpur has permissions? :open_mouth:
+有的。
 
-Yes.
+Purpur为一些添加的功能和命令添加了一些权限。某些特定功能的权限除非您在purpur.yml中启用了该功能，否则将无法正常工作，所以请留意这一点 :wink:
 
-Purpur adds a few permissions for a few features and commands that it has added. Some permissions for specific features will not work unless you enable that feature in purpur.yml, too, so keep an eye out for those :wink:
+{{ site_url }}权限
 
-{{ site_url }}Permissions
+## *&lt;插入随机配置选项>* 是用来做什么的?
 
-## What does *&lt;insert random config option>* do?
+一些东西。
 
-Stuff.
+不是开玩笑，我们经常被问到这个问题。我们建立了这个维基来回答所有这些问题，这样我们就不必每天重复回答。
 
-No seriously, we get asked this quite a lot. We built this wiki to answer all these questions so we wouldn't have to repeat them daily.
+我保证，这个维基涵盖了purpur.yml中的每个选项 - 您不会找到任何遗漏的条目。（唯一的例外是当添加了新选项时，可能需要一两天才能更新维基）
 
-I promise, this wiki covers every single option in purpur.yml - you won't find any missing entries. (the only exception is when a new option gets added; it might take a day or two before the wiki updates)
+{{ site_url }}配置
 
-{{ site_url }}Configuration
+## Purpur有Discord吗?
 
-## Does Purpur have a Discord?
+有的！这是Purpur社区的所在地。不要害怕探头进去看看！{{ social[0].link }}
 
-Yes! It's where the Purpur community resides. Don't be afraid to poke your head in and take a peek! {{ social[0].link }}
+## Purpur与上游有什么添加/更改?
 
-## What does Purpur add/change from upstream?
+实际上有很多。但除非**您**在`purpur.yml`中启用它，否则这些更改都不会生效。我们将所有更改设置为默认行为。如果您不编辑`purpur.yml`中的任何内容，运行此JAR文件与运行Pufferfish没有任何区别。
 
-Quite a lot, actually. But none of it goes into effect unless **you** enable it in `purpur.yml`. We set everything we change to the default behaviors. If you don't edit anything in `purpur.yml`, running this JAR is no different than running Pufferfish.
+对于好奇的人，您可以在GitHub上查看所有代码更改：{{ project.source }}/tree/master/patches
 
-For the curious, you can view all the code changes on GitHub here: {{ project.source }}/tree/master/patches
+如果您无法阅读代码，不要担心。大多数人都不会。我们有这个很好的维基，涵盖了`purpur.yml`中的每个选项以及为一些新功能/命令添加的所有新权限节点。
 
-Don't worry if you can't read code. Most people can't. We have this nice wiki that covers every single option in `purpur.yml` and all the new permission nodes added for some new features/commands.
+## Purpur是否具有来自Paper的*X*功能?
 
-## Does Purpur have feature *X* from Paper?
+是的，这就是分支的工作原理。所有上游功能都是继承的
 
-Yes, that's how forks work. All features from upstream are inherited by design
+`原版 -> CraftBukkit -> Spigot -> Paper -> Pufferfish -> Purpur`
 
-`Vanilla -> CraftBukkit -> Spigot -> Paper -> Pufferfish -> Purpur`
+我们都有 ^_^
 
-We have it all ^_^
+## CraftBukkit/Spigot/Paper/Pufferfish的插件能在Purpur上运行吗?
 
-## Do CraftBukkit/Spigot/Paper/Pufferfish plugins work on Purpur?
+可以。唯一不兼容的情况是因为作者将支持硬编码为CraftBukkit/Spigot，忽略了Paper及其分支的存在。如果您遇到任何因为Purpur而导致的错误，请[创建一个工单]({{ project.source }}/issues/new)和/或[加入我们的Discord服务器]({{ social[0].link }})以便我们查看。
 
-Yes. The only time there's incompatibility is due to authors hard-coding support for CraftBukkit/Spigot, ignoring the existence of Paper and its forks. If you run into any bugs that you know are because of Purpur, [create a ticket]({{ project.source }}/issues/new) and/or [join our Discord server]({{ social[0].link }}) so we can take a look.
-
-## Is there a Purpur for MC _`insert random version here`_?
-Maybe. Check the downloads page.
+## 是否有适用于MC _`插入随机版本`_的Purpur版本?
+也许。请查看下载页面。
 
 {{ project.downloads }}

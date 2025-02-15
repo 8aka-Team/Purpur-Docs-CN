@@ -1,37 +1,37 @@
 [![Purpur Image](https://user-images.githubusercontent.com/74448585/150906023-101cd383-da82-4a3c-9603-a3b5741c3994.png)]({{ project.website }})
 
-# Installation instructions for Bukkit/Spigot/Paper and so on:
-* Find your default world folder
-* Place the datapack into the default world folder, in the 'datapacks' directory
-* Restart the server
+# Bukkit/Spigot/Paper等服务器的安装说明：
+* 找到您的默认世界文件夹
+* 将数据包放入默认世界文件夹中的“datapacks”目录中
+* 重启服务器
 
-> Note: Datapacks cannot currently be separated per-world in Bukkit and forks. 
+> 注意：在Bukkit及其衍生版本中，目前无法按世界单独分离数据包。
 
-# Installation instructions for Vanilla minecraft:
-* Open your save file
-* Add the datapack to the datapack directory
-* Restart the server
+# Vanilla Minecraft的安装说明：
+* 打开您的存档文件
+* 将数据包添加到数据包目录中
+* 重启服务器
 
-# Installation for modded minecraft:
-There are mod versions available of these datapacks, which are functionally identical to the datapacks themselves.
-The mod versions of the datapack will apply to any new world that is created while the mod is enabled. 
-This makes it more useful for some cases, but not really for others. Datapacks can still be used in modded environments.
+# Modded Minecraft的安装说明：
+这些数据包也有相应的模组版本，与数据包本身在功能上完全相同。
+启用模组时，模组版本的数据包将应用于任何新创建的世界。
+这在某些情况下更有用，但在其他情况下可能不太适用。数据包仍可在模组环境中使用。
 
-> Note: The mod version cannot be used on Bukkit, Spigot, Paper, Pufferfish, or Purpur servers
+> 注意：模组版本无法在Bukkit、Spigot、Paper、Pufferfish或Purpur服务器上使用。
 
-# Installation instructions for Fabric (Mod)
-* Download the mod version of the datapack from modrinth. 
-* Download Fabric API
-* Add both mods to your mods folder
-* Restart your client
+# Fabric（模组）的安装说明：
+* 从modrinth下载数据包的模组版本。
+* 下载Fabric API
+* 将两个模组都添加到您的模组文件夹中
+* 重启您的客户端
 
-# Installation instructions for Quilt (Mod)
-* Download the mod version of the datapack from modrinth.
-* Download Quilted Fabric API
-* Add both mods to your mods folder
-* Restart your client
+# Quilt（模组）的安装说明：
+* 从modrinth下载数据包的模组版本。
+* 下载Quilted Fabric API
+* 将两个模组都添加到您的模组文件夹中
+* 重启您的客户端
 
-# Installation instructions for Forge (Mod)
-* Download the mod version of the datapack from modrinth
-* Add the mod to your mods folder
-* Restart your client
+# Forge（模组）的安装说明：
+* 从modrinth下载数据包的模组版本
+* 将模组添加到您的模组文件夹中
+* 重启您的客户端

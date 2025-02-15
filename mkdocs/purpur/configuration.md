@@ -1,210 +1,205 @@
-This page details the various configuration settings exposed by Purpur in the purpur.yml file.
+这个页面详细介绍了Purpur在purpur.yml文件中公开的各种配置设置。如果您想了解paper.yml、spigot.yml、bukkit.yml和server.properties中的设置信息，您应该查看它们各自的文档页面。
 
-If you want information on settings in paper.yml, spigot.yml, bukkit.yml and server.properties you should see their respective documentation pages.
+* [服务器配置（server.properties）](https://minecraft.wiki/w/Server.properties)
 
-* [Server Configuration (server.properties)](https://minecraft.wiki/w/Server.properties)
+* [Bukkit配置（bukkit.yml）](https://bukkit.fandom.com/wiki/Bukkit.yml)
 
-* [Bukkit Configuration (bukkit.yml)](https://bukkit.fandom.com/wiki/Bukkit.yml)
+* [Spigot配置（spigot.yml）](https://www.spigotmc.org/wiki/spigot-configuration/)
 
-* [Spigot Configuration (spigot.yml)](https://www.spigotmc.org/wiki/spigot-configuration/)
+* [Paper配置（paper.yml）](https://docs.papermc.io/paper/reference/paper-global-configuration)
 
-* [Paper Configuration (paper.yml)](https://docs.papermc.io/paper/reference/paper-global-configuration)
+* [Pufferfish配置（pufferfish.yml）](https://docs.pufferfish.host/setup/pufferfish-fork-configuration/)
 
-* [Pufferfish Configuration (pufferfish.yml)](https://docs.pufferfish.host/setup/pufferfish-fork-configuration/)
+???+ warning "警告"
+配置值有时会经常更改。这里的信息可能是不完整的。如果您找不到您需要的信息，或者认为有错误，请通过我们的[Discord]({{ social[0].link }})服务器联系我们。
 
-???+ warning "Warning"
-    Configuration values change frequently at times. It is possible for the information here to be incomplete. If you cannot find what you’re looking for or think something may be wrong, Contact us through our [Discord]({{ social[0].link }}) server.
+## 全局设置
 
-## Global Settings
-
-Global settings affect all worlds on the server as well as the core server functionality itself.
+全局设置会影响服务器上所有世界以及核心服务器功能本身。
 
 ### verbose
 
-- **default**: false
-- **description**: Sets whether the server should dump all configuration values to the server log on startup
+- **默认值**：false
+- **描述**：设置服务器是否在启动时将所有配置值转储到服务器日志中
 
 ### config-version
 
-* **Do not change this for any reason!** Purpur uses this internally to help automatically update your config
+* **无论出于何种原因，请勿更改此项！** Purpur在内部使用它来帮助自动更新您的配置
 
 ### command
 
 * #### uptime
     * ##### format
-        - **default**: "&lt;days>&lt;hours>&lt;minutes>&lt;seconds>"
-        - **description**: The format the `<uptime>` placeholder uses for [`uptime-command-output`](#uptime-command-output)
+        - **默认值**："&lt;days>&lt;hours>&lt;minutes>&lt;seconds>"
+        - **描述**：`<uptime>`占位符在[`uptime-command-output`](#uptime-command-output)中使用的格式
     * ##### day
-        - **default**: "%02d day, "
-        - **description**: Output of `<day>` placeholder in [command.uptime.format](#format) option
+        - **默认值**："％02d 天，"
+        - **描述**：[command.uptime.format](#format)选项中`<day>`占位符的输出
     * ##### days
-        - **default**: "%02d days, "
-        - **description**: Output of `<days>` placeholder in [command.uptime.format](#format) option
+        - **默认值**："％02d 天，"
+        - **描述**：[command.uptime.format](#format)选项中`<days>`占位符的输出
     * ##### hour
-        - **default**: "%02d hour, "
-        - **description**: Output of `<hour>` placeholder in [command.uptime.format](#format) option
+        - **默认值**："％02d 小时，"
+        - **描述**：[command.uptime.format](#format)选项中`<hour>`占位符的输出
     * ##### hours
-        - **default**: "%02d hours, "
-        - **description**: Output of `<hours>` placeholder in [command.uptime.format](#format) option
+        - **默认值**："％02d 小时，"
+        - **描述**：[command.uptime.format](#format)选项中`<hours>`占位符的输出
     * ##### minute
-        - **default**: "%02d minute, and "
-        - **description**: Output of `<minute>` placeholder in [command.uptime.format](#format) option
+        - **默认值**："％02d 分钟，和"
+        - **描述**：[command.uptime.format](#format)选项中`<minute>`占位符的输出
     * ##### minutes
-        - **default**: "%02d minutes, and "
-        - **description**: Output of `<minutes>` placeholder in [command.uptime.format](#format) option
+        - **默认值**："％02d 分钟，和"
+        - **描述**：[command.uptime.format](#format)选项中`<minutes>`占位符的输出
     * ##### second
-        - **default**: "%02d second"
-        - **description**: Output of `<second>` placeholder in [command.uptime.format](#format) option
+        - **默认值**："％02d 秒"
+        - **描述**：[command.uptime.format](#format)选项中`<second>`占位符的输出
     * ##### seconds
-        - **default**: "%02d seconds"
-        - **description**: Output of `<seconds>` placeholder in [command.uptime.format](#format) option
+        - **默认值**："％02d 秒"
+        - **描述**：[command.uptime.format](#format)选项中`<seconds>`占位符的输出
 * #### gamemode
     * ##### requires-specific-permission
-        - Requires [`minecraft.command.gamemode.<gamemode>`](permissions#minecraftcommandgamemodegamemode) permission
-        - **default**: false
-        - **description**: Set to true for each gamemode to require its own permission
+        - 需要[`minecraft.command.gamemode.<gamemode>`](permissions#minecraftcommandgamemodegamemode)权限
+        - **默认值**：false
+        - **描述**：对于每种游戏模式，设置为true以要求其拥有自己的权限
 * #### tpsbar
     * ##### title
-        `<tps>` - The current TPS
+      `<tps>` - 当前的TPS
 
-        `<mspt>` - The current MSPT
+      `<mspt>` - 当前的MSPT
 
-        `<ping>` - The current ping
+      `<ping>` - 当前的ping
 
-        - **default**: &lt;gray>TPS&lt;yellow>:&lt;/yellow> &lt;tps> MSPT&lt;yellow>:&lt;/yellow>
-      &lt;mspt> Ping&lt;yellow>:&lt;/yellow> &lt;ping>ms
-        - **description**: The format of the bossbar when the server runs the `/tpsbar` command
+        - **默认值**：&lt;gray>TPS&lt;yellow>:&lt;/yellow> &lt;tps> MSPT&lt;yellow>:&lt;/yellow>
+          &lt;mspt> Ping&lt;yellow>:&lt;/yellow> &lt;ping>ms
+        - **描述**：服务器运行`/tpsbar`命令时的bossbar格式
 
     * ##### overlay
-        - **default**: NOTCHED_20
-        - **description**:
-            Sets the overlay type of the Bossbar  
-            Available options: `PROGRESS`, `NOTCHED_6`, `NOTCHED_10`, `NOTCHED_12`, `NOTCHED_20`
+        - **默认值**：NOTCHED_20
+        - **描述**：设置Bossbar的叠加类型
+          可用选项：`PROGRESS`，`NOTCHED_6`，`NOTCHED_10`，`NOTCHED_12`，`NOTCHED_20`
     * ##### fill-mode
-        - **default**: MSPT
-        - **description**:
-            What the BossBar bar should show
-            Available options: `TPS`, `MSPT`, `PING` 
+        - **默认值**：MSPT
+        - **描述**：BossBar应显示什么
+          可用选项：`TPS`，`MSPT`，`PING`
     * ##### progress-color
-        Available options: `PINK`, `BLUE`, `RED`, `GREEN`, `YELLOW`, `PURPLE`, `WHITE`
+      可用选项：`PINK`，`BLUE`，`RED`，`GREEN`，`YELLOW`，`PURPLE`，`WHITE`
         * ###### good
-            - **default**: GREEN
-            - **description**: What color should show when `fill-mode` is "good"
+            - **默认值**：GREEN
+            - **描述**：当`fill-mode`为"good"时应显示的颜色
         * ###### medium
-            - **default**: YELLOW
-            - **description**: What color should show when `fill-mode` is "medium"
+            - **默认值**：YELLOW
+            - **描述**：当`fill-mode`为"medium"时应显示的颜色
         * ###### low
-            - **default**: RED
-            - **description**: What color should show when `fill-mode` is "low"
+            - **默认值**：RED
+            - **描述**：当`fill-mode`为"low"时应显示的颜色
     * ##### text-color
-        `<text>` - The format from [`settings.command.tpsbar.title`](#title)
+      `<text>` - 来自[`settings.command.tpsbar.title`](#title)的格式
         * ###### good
-            - **default**: &lt;gradient:#55ff55:#00aa00>&lt;text>&lt;/gradient>
-            - **description**: The gradient of `<text>` when `fill-mode` is "good"
+            - **默认值**：&lt;gradient:#55ff55:#00aa00>&lt;text>&lt;/gradient>
+            - **描述**：当`fill-mode`为"good"时的`<text>`渐变
         * ###### medium
-            - **default**: &lt;gradient:#ffff55:#ffaa00>&lt;text>&lt;/gradient>
-            - **description**: The gradient of `<text>` when `fill-mode` is "medium"
+            - **默认值**：&lt;gradient:#ffff55:#ffaa00>&lt;text>&lt;/gradient>
+            - **描述**：当`fill-mode`为"medium"时的`<text>`渐变
         * ###### low
-            - **default**: &lt;gradient:#ff5555:#aa0000>&lt;text>&lt;/gradient>
-            - **description**: The gradient of `<text>` when `fill-mode` is "low"
+            - **默认值**：&lt;gradient:#ff5555:#aa0000>&lt;text>&lt;/gradient>
+            - **描述**：当`fill-mode`为"low"时的`<text>`渐变
     * ##### tick-interval
-        - **default**: 20
-        - **description**: How often the bossbar should update
+        - **默认值**：20
+        - **描述**：bossbar更新频率
 * #### rambar
     * ##### title
-        `<used>` - The current amount of ram used.
+      `<used>` - 当前使用的内存量。
 
-        `<xmx>` - The max set Xmx.
+      `<xmx>` - 设置的最大Xmx。
 
-        `<percent>` - The percentage of ram used.
+      `<percent>` - 使用的内存百分比。
 
-      - **default**: '"&lt;gray>Ram&lt;yellow>:&lt;/yellow> &lt;used>/&lt;xmx> (&lt;percent>)"'
-      - **description**: The format of the bossbar when the server runs the `/rambar` command
+        - **默认值**：'"&lt;gray>Ram&lt;yellow>:&lt;/yellow> &lt;used>/&lt;xmx> (&lt;percent>)"'
+        - **描述**：服务器运行`/rambar`命令时的bossbar格式
 
     * ##### overlay
-        - **default**: NOTCHED_20
-        - **description**:
-          Sets the overlay type of the Bossbar  
-          Available options: `PROGRESS`, `NOTCHED_6`, `NOTCHED_10`, `NOTCHED_12`, `NOTCHED_20`
+        - **默认值**：NOTCHED_20
+        - **描述**：设置Bossbar的叠加类型
+          可用选项：`PROGRESS`，`NOTCHED_6`，`NOTCHED_10`，`NOTCHED_12`，`NOTCHED_20`
     * ##### progress-color
-      Available options: `PINK`, `BLUE`, `RED`, `GREEN`, `YELLOW`, `PURPLE`, `WHITE`
+      可用选项：`PINK`，`BLUE`，`RED`，`GREEN`，`YELLOW`，`PURPLE`，`WHITE`
         * ###### good
-            - **default**: GREEN
-            - **description**: What color should show when the ram used "good"
+            - **默认值**：GREEN
+            - **描述**：当使用的内存量为"good"时应显示的颜色
         * ###### medium
-            - **default**: YELLOW
-            - **description**: What color should show when the ram used is "medium"
+            - **默认值**：YELLOW
+            - **描述**：当使用的内存量为"medium"时应显示的颜色
         * ###### low
-            - **default**: RED
-            - **description**: What color should show when the ram used is "low"
+            - **默认值**：RED
+            - **描述**：当使用的内存量为"low"时应显示的颜色
     * ##### text-color
-      `<text>` - The format from [`settings.command.tpsbar.title`](#title)
+      `<text>` - 来自[`settings.command.tpsbar.title`](#title)的格式
         * ###### good
-            - **default**: &lt;gradient:#55ff55:#00aa00>&lt;text>&lt;/gradient>
-            - **description**: The gradient of `<text>` when the ram used is "good"
+            - **默认值**：&lt;gradient:#55ff55:#00aa00>&lt;text>&lt;/gradient>
+            - **描述**：当使用的内存量为"good"时的`<text>`渐变
         * ###### medium
-            - **default**: &lt;gradient:#ffff55:#ffaa00>&lt;text>&lt;/gradient>
-            - **description**: The gradient of `<text>` when the ram used is "medium"
+            - **默认值**：&lt;gradient:#ffff55:#ffaa00>&lt;text>&lt;/gradient>
+            - **描述**：当使用的内存量为"medium"时的`<text>`渐变
         * ###### low
-            - **default**: &lt;gradient:#ff5555:#aa0000>&lt;text>&lt;/gradient>
-            - **description**: The gradient of `<text>` when the ram used is "low"
+            - **默认值**：&lt;gradient:#ff5555:#aa0000>&lt;text>&lt;/gradient>
+            - **描述**：当使用的内存量为"low"时的`<text>`渐变
     * ##### tick-interval
-        - **default**: 20
-        - **description**: How often the bossbar should update
+      - **默认值**: 20
+      - **描述**: Bossbar 应该更新的频率
 * #### compass
     * ##### title
-        - **default**: "S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈  ·  ◈  ·  ◈  ·  NW  ·  ◈  ·  ◈  ·  ◈  ·  N  ·  ◈  ·  ◈  ·  ◈  ·  NE  ·  ◈  ·  ◈  ·  ◈  ·  E  ·  ◈  ·  ◈  ·  ◈  ·  SE  ·  ◈  ·  ◈  ·  ◈  ·  
-S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈  ·  ◈  ·  ◈  ·  NW  ·  ◈  ·  ◈  ·  ◈  ·  N  ·  ◈  ·  ◈  ·  ◈  ·  NE  ·  ◈  ·  ◈  ·  ◈  ·  E  ·  ◈  ·  ◈  ·  ◈  ·  SE  ·  ◈  ·  ◈  ·  ◈  ·  "
-        - **description**: The format of the bossbar when the server runs the [`/compass`](commands#compass) command
+        - **默认值**: "S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈  ·  ◈  ·  ◈  ·  NW  ·  ◈  ·  ◈  ·  ◈  ·  N  ·  ◈  ·  ◈  ·  ◈  ·  NE  ·  ◈  ·  ◈  ·  ◈  ·  E  ·  ◈  ·  ◈  ·  ◈  ·  SE  ·  ◈  ·  ◈  ·  ◈  ·  
+          S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈  ·  ◈  ·  ◈  ·  NW  ·  ◈  ·  ◈  ·  ◈  ·  N  ·  ◈  ·  ◈  ·  ◈  ·  NE  ·  ◈  ·  ◈  ·  ◈  ·  E  ·  ◈  ·  ◈  ·  ◈  ·  SE  ·  ◈  ·  ◈  ·  ◈  ·  "
+        - **描述**: 当服务器运行[`/compass`](commands#compass)命令时，bossbar 的格式
 
     * ##### overlay
-        - **default**: PROGRESS
-        - **description**:
-            Sets the overlay type of the Bossbar  
-            Available options: `PROGRESS`, `NOTCHED_6`, `NOTCHED_10`, `NOTCHED_12`, `NOTCHED_20`
+        - **默认值**: PROGRESS
+        - **描述**:
+          设置 Bossbar 的叠加类型
+          可用选项: `PROGRESS`, `NOTCHED_6`, `NOTCHED_10`, `NOTCHED_12`, `NOTCHED_20`
     * ##### progress-color
-        Available options: `PINK`, `BLUE`, `RED`, `GREEN`, `YELLOW`, `PURPLE`, `WHITE`
-        - **default**: GREEN
-        - **description**: The color of the bossbar
+      可用选项: `PINK`, `BLUE`, `RED`, `GREEN`, `YELLOW`, `PURPLE`, `WHITE`
+        - **默认值**: GREEN
+        - **描述**: Bossbar 的颜色
     * ##### percent
-        - **default**: 1.0
-        - **description**: How filled the bossbar is ranging from 0.0 to 1.0
+        - **默认值**: 1.0
+        - **描述**: Bossbar 的填充程度，范围从 0.0 到 1.0
     * ##### tick-interval
-        - **default**: 5
-        - **description**: How often the bossbar should update
+        - **默认值**: 5
+        - **描述**: Bossbar 应该更新的频率
 * #### hide-hidden-players-from-entity-selector
-    - **default**: false
-    - **description**: Set to true to hide players from the entity selector if they're hidden
+    - **默认值**: false
+    - **描述**: 设置为 true 以在实体选择器中隐藏玩家
 
 ### allow-water-placement-in-the-end
 
-- **default**: true
-- **description**: Allows the placement of water in the end.
+- **默认值**: true
+- **描述**: 允许在末地放置水
 
 ### use-alternate-keepalive
 
-- **default**: false
-- **description**: Uses a different approach to keepalive ping timeouts. Enabling this sends a keepalive packet once per second to a player, and only kicks for timeout if none of them were responded to in 30 seconds. Responding to any of them in any order will keep the player connected. AKA, it won't kick your players because one packet gets dropped somewhere along the lines
+- **默认值**: false
+- **描述**: 使用不同的保持连接 ping 超时方法。启用此功能会每秒向玩家发送一个保持连接数据包，只有在 30 秒内没有响应任何数据包时才会踢掉玩家。以任何顺序响应其中任何一个数据包都会保持玩家连接。也就是说，它不会因为在传输过程中某个数据包丢失而踢掉玩家
 
 ### tps-catchup
 
-- **default**: true
-- **description**: Control tps catch-up
+- **默认值**: true
+- **描述**: 控制 TPS 追赶
 
-???+ note "Note"
-    TPS catchup makes your server tick faster than 20 TPS after any period of time that is below 20. This is an attempt at keeping the average TPS as close to 20 as possible, but does come with its own set of side effects, an example being when players get insta-killed by mobs during a lag spike
+???+ note "注意"
+TPS 追赶在任何低于 20 的时间段之后使服务器的 tick 比 20 TPS 快。这是为了尽可能保持平均 TPS 接近 20，但也会带来一系列副作用，例如在卡顿时玩家被怪物瞬间击杀
 
 ### server-mod-name
-- **default**: Purpur
-- **description**: This modifies the server name that shows up when a client is outdated or when someone opens the debug screen [F3]
+- **默认值**: Purpur
+- **描述**: 修改客户端过时或某人打开调试界面 [F3] 时显示的服务器名称
 
 ### fix-projectile-looting-transfer
-- **default**: false
-- **description**: Addresses MC-3304 by preventing looting from being applied to deaths caused by a projectile, unless if a plugin changed the looting modifier.
+- **默认值**: false
+- **描述**: 通过防止战利品应用于由抛射物造成的死亡，解决了 MC-3304。除非插件更改了战利品修饰符，否则不会将战利品应用于死亡
 
 ### blast-resistance-overrides
-- **default**: {}
-- **description:** Modify to change the blast resistance of blocks. Example:
+- **默认值**: {}
+- **描述**: 修改以更改方块的爆炸抗性。示例:
 ``` yaml
   blast-resistance-overrides:
     minecraft:oak_leaves: 55
@@ -212,571 +207,571 @@ S  ·  ◈  ·  ◈  ·  ◈  ·  SW  ·  ◈  ·  ◈  ·  ◈  ·  W  ·  ◈ 
 ```
 
 ### clamp-attributes
-- **default**: true
-- **description**: Controls if attributes should have their values clamped.
+- **默认值**: true
+- **描述**: 控制属性是否应该被限制在其值范围内。
 
 ### limit-armor
-- **default**: true
-- **description**: Controls if armor should limit how much damage they can reduce.
+- **默认值**: true
+- **描述**: 控制盔甲是否应该限制其减少伤害的能力。
 
 ### username-valid-characters
-- **default**: ^[a-zA-Z0-9_.]*$
-- **description**: Characters that can be used in usernames. Configurable with regex.
+- **默认值**: ^[a-zA-Z0-9_.]*$
+- **描述**: 可以在用户名中使用的字符。可通过正则表达式进行配置。
 
 ### lagging-threshold
-- **default**: 19.0
-- **description**: Purpur keeps track of when it is lagging in order to have the ability to change behaviors accordingly. This value is that threshold when you want to consider the server to be lagging. ~~Right now this is only used for mob.villager.brain-ticks setting~~
+- **默认值**: 19.0
+- **描述**: Purpur会跟踪服务器何时出现卡顿，以便根据情况改变行为。当您希望考虑服务器出现卡顿时的阈值。~~目前仅用于mob.villager.brain-ticks设置~~
 
 ### fix-network-serialized-items-in-creative
-- **default**: false
-- **description**: Set to true to fix items modified by NetworkItemSerializeEvent that persist even though they're client-sided due to the creative client using creative inventory actions
+- **默认值**: false
+- **描述**: 设置为true以修复由NetworkItemSerializeEvent修改的物品，尽管它们是客户端的，但由于创造性客户端使用创造性库存操作而持久存在。
 
 ### disable-give-dropping
-- **default**: false
-- **description**: Set to true to disable the /give command from dropping items on the floor when a player's inventory is full
+- **默认值**: false
+- **描述**: 设置为true以禁用/give命令在玩家库存已满时将物品掉落到地面。
 
 ### player-deaths-always-show-item
-- **default**: false
-- **description**: Set to true to always show the item used to kill the player in player death messages.
-
+- **默认值**: false
+- **描述**: 设置为true以始终显示用于杀死玩家的物品在玩家死亡消息中。
 
 ### register-minecraft-debug-commands
-- **default**: false
-- **description**: Set to true to register unused/hidden minecraft commands. The following commands become available (along with their `minecraft.command.<command_name>` permission counterpart): `debugconfig`, `serverpack`, `spawn_armor_trims`, `warden_spawn_tracker`, `debugmobspawning`, `debugpath`, and `raid`. This list may or may not be incomplete depending on if they get removed or new ones get added in newer minecraft versions.
+- **默认值**: false
+- **描述**: 设置为true以注册未使用/隐藏的Minecraft命令。以下命令变得可用（以及它们的`minecraft.command.<command_name>`权限对应项）：`debugconfig`、`serverpack`、`spawn_armor_trims`、`warden_spawn_tracker`、`debugmobspawning`、`debugpath`和`raid`。这个列表可能会根据它们是否在更新的Minecraft版本中被移除或添加而不完整。
 
 ### startup-commands
-Set the `Purpur.IReallyDontWantStartupCommands` system property to `true` to disable this feature.
+将`Purpur.IReallyDontWantStartupCommands`系统属性设置为`true`以禁用此功能。
 
-- **default**: []
-- **description**: Allows you to set a list of console commands that will run when the server starts up. Useful for server owners that don't have access to their console. Inspired by [Vintagestory's "StartupCommands" config option](https://wiki.vintagestory.at/index.php/Setting_up_a_Multiplayer_Server#Acquiring_server_admin_rights).
+- **默认值**: []
+- **描述**: 允许您设置一个在服务器启动时运行的控制台命令列表。对于没有访问控制台的服务器所有者来说非常有用。灵感来自[Vintagestory的"StartupCommands"配置选项](https://wiki.vintagestory.at/index.php/Setting_up_a_Multiplayer_Server#Acquiring_server_admin_rights)。
 
 ### bee-count-payload
-- **default**: false
-- **description**: Set to true to allow clients to request the bee count of beehives using custom payload packets. (Primarily used by the [PurpurClient](https://modrinth.com/mod/PurpurClient) mod)
+- **默认值**: false
+- **描述**: 设置为true以允许客户端使用自定义负载数据包请求蜂箱的蜜蜂数量。（主要由[PurpurClient](https://modrinth.com/mod/PurpurClient)模组使用）
 
 ### messages
 
 #### afk-broadcast-away
-Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
+需要[`kick-if-idle`](#kick-if-idle)设置为`false`
 
-- **default**: &lt;yellow>&lt;italic>%s is now AFK
-- **description**: This is the message that gets broadcasted when a user goes AFK (must have `player-idle-timeout` set greater than 0 & [kick-if-idle](#kick-if-idle) set as false)
+- **默认值**: &lt;yellow>&lt;italic>%s is now AFK
+- **描述**: 当用户进入AFK状态时广播的消息（必须将`player-idle-timeout`设置为大于0且[kick-if-idle](#kick-if-idle)设置为false）
 
 #### afk-broadcast-back
-Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
+需要[`kick-if-idle`](#kick-if-idle)设置为`false`
 
-- **default**: &lt;yellow>&lt;italic>%s is no longer AFK
-- **description**: This is the message that gets broadcasted when a user is no longer AFK (must have `player-idle-timeout` set greater than 0 & [kick-if-idle](#kick-if-idle) set as false)
+- **默认值**: &lt;yellow>&lt;italic>%s is no longer AFK
+- **描述**: 当用户不再处于AFK状态时广播的消息（必须将`player-idle-timeout`设置为大于0且[kick-if-idle](#kick-if-idle)设置为false）
 
 ### afk-broadcast-use-display-name
-Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
-Requires [`afk-broadcast-away`](#afk-broadcast-away) or [`afk-broadcast-back`](#afk-broadcast-back) to have a non-null value
+需要[`kick-if-idle`](#kick-if-idle)设置为`false`
+需要[`afk-broadcast-away`](#afk-broadcast-away)或[`afk-broadcast-back`](#afk-broadcast-back)具有非空值
 
-- **default**: false
-- **description**: Uses a plain-text version of the player's display name in the AFK broadcast, instead of their username.
-- **NOTE**: This option does NOT set a player's TAB name
+- **默认值**: false
+- **描述**: 在AFK广播中使用玩家的显示名称的纯文本版本，而不是他们的用户名。
+- **注意**: 此选项不会设置玩家的TAB名称
 
 #### afk-tab-list-prefix
-Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
+需要[`kick-if-idle`](#kick-if-idle)设置为`false`
 
-- **default**: "[AFK] "
-- **description**: The prefix that shows up on the playerlist before someone's name when they're AFK
+- **默认值**: "[AFK] "
+- **描述**: 当玩家处于AFK状态时在玩家列表中显示在其名称之前的前缀
 
 #### afk-tab-list-suffix
-Requires the [`kick-if-idle`](#kick-if-idle) setting to be `false`
+需要[`kick-if-idle`](#kick-if-idle)设置为`false`
 
-- **default**: ""
-- **description**: The suffix that shows up on the playerlist after someone's name when they're AFK
+- **默认值**: ""
+- **描述**: 当玩家处于AFK状态时在玩家列表中显示在其名称之后的后缀
 
 #### cannot-ride-mob
-Requires the [`allow.ride.<mob_id>`](permissions#allowridemob_id) permission
+需要[`allow.ride.<mob_id>`](permissions#allowridemob_id)权限
 
-- **default**: &lt;red>You cannot mount that mob
-- **description**: Message that shows when someone tries to mount a mob they're not allowed to.
+- **默认值**: &lt;red>You cannot mount that mob
+- **描述**: 当有人试图骑乘他们无权骑乘的生物时显示的消息。
 
 #### dont-run-with-scissors
-Requires the [`damage-if-sprinting`](#damage-if-sprinting) option to be enabled
+需要启用[`damage-if-sprinting`](#damage-if-sprinting)选项
 
-- **default**: &lt;red>&lt;italic>Don't run with scissors!
-- **description**: Actionbar message that shows when someone attempts to run with scissors
+- **默认值**: &lt;red>&lt;italic>Don't run with scissors!
+- **描述**: 当有人试图拿着剪刀跑时显示的动作栏消息
 
 #### ping-command-output
-Requires the [`bukkit.command.ping`](permissions#bukkitcommandping) permission
+需要[`bukkit.command.ping`](permissions#bukkitcommandping)权限
 
-- **default**: &lt;green>%s's ping is %sms
-- **description**: Output when `/ping <user>` is run.
+- **默认值**: &lt;green>%s's ping is %sms
+- **描述**: 运行`/ping <user>`时的输出。
 
 #### uptime-command-output
-Requires the [`bukkit.command.uptime`](permissions#bukkitcommanduptime) permission
-`<uptime>` - The format from [`<global>.command.uptime.format`](#format)
+需要[`bukkit.command.uptime`](permissions#bukkitcommanduptime)权限
+`<uptime>` - 来自[`<global>.command.uptime.format`](#format)的格式
 
-- **default**: &lt;green>Server uptime is &lt;uptime>
-- **description**: Message that shows when the `/uptime` command is ran.
+- **默认值**: &lt;green>Server uptime is &lt;uptime>
+- **描述**: 运行`/uptime`命令时显示的消息。
 
 #### demo-command-output
-Requires the [`bukkit.command.demo`](permissions#bukkitcommanddemo) permission
+需要[`bukkit.command.demo`](permissions#bukkitcommanddemo)权限
 
-- **default**: &lt;green>%s has been shown the demo screen
-- **description**: Message that shows when the demo screen is enabled for a user using the `/demo` command.
+- **默认值**: &lt;green>%s has been shown the demo screen
+- **描述**: 使用`/demo`命令为用户启用演示屏幕时显示的消息。
 
 #### credits-command-output
-Requires the [`bukkit.command.credits`](permissions#bukkitcommandcredits) permission
+需要[`bukkit.command.credits`](permissions#bukkitcommandcredits)权限
 
-- **default**: &lt;green>%s has been shown the end credits
-- **description**: Message that shows when the credits screen is enabled for a user using the `/credits` command.
+- **默认值**: &lt;green>%s has been shown the end credits
+- **描述**: 使用`/credits`命令为用户启用结束信用时显示的消息。
 
 #### tpsbar-command-output
-Requires the [`bukkit.command.tpsbar`](permissions#bukkitcommandtpsbar) permission
+需要[`bukkit.command.tpsbar`](permissions#bukkitcommandtpsbar)权限
 
-- **default**: &lt;green>Tpsbar toggled &lt;onoff> for &lt;target>
-- **description**: Message that shows when the tpsbar is enabled for a user using the `/tpsbar` command.
+- **默认值**: &lt;green>Tpsbar toggled &lt;onoff> for &lt;target>
+- **描述**: 使用`/tpsbar`命令为用户启用tpsbar时显示的消息。
 
 #### ram-command-output
 
-- **default**: '&lt;green>Ram Usage: &lt;used>/&lt;xmx> (&lt;percent>)'
-- **description**: A chat message that shows the ram usage when someone uses the `/ram` command.
+- **默认值**: '&lt;green>Ram Usage: &lt;used>/&lt;xmx> (&lt;percent>)'
+- **描述**: 当有人使用`/ram`命令时显示的内存使用消息。
 
 #### rambar-command-output
 
-- **default**: &lt;green>Rambar toggled &lt;onoff> for &lt;target>
-- **description**: Message that shows when the rambar is enabled for a user using the `/rambar` command.
+- **默认值**: &lt;green>Rambar toggled &lt;onoff> for &lt;target>
+- **描述**: 使用`/rambar`命令为用户启用rambar时显示的消息。
 
 #### unverified-username
-- **default**: default
-- **description**: Message that shows when a player is kicked for having an unverified username (user is in offline-mode). Setting as "default" displays the default message "Failed to verify username!"
+- **默认值**: default
+- **描述**: 当玩家因为具有未经验证的用户名（用户处于离线模式）而被踢出时显示的消息。设置为"default"将显示默认消息"Failed to verify username!"
 
 #### sleep-skipping-night
-- **default**: default
-- **description**: The actionbar message that appears when the night has been skipped. Set to "default" to let the client's use their own translatable components. Set to an empty string to disable it.
+- **默认值**: 默认
+- **描述**: 当跳过夜晚时出现的动作栏消息。设置为“default”以让客户端使用自己的可翻译组件。设置为空字符串以禁用它。
 
 #### sleeping-players-percent
-- **default**: default
-- **description**: The actionbar message that appears when a player is asleep. Set to "default" to let the clients use their own translatable components. Set to an empty string to disable it. Available placeholders: `<count>` - the current amount of players sleeping, `<total>` - the total amount of players needed to sleep
+- **默认值**: 默认
+- **描述**: 当玩家正在睡觉时出现的动作栏消息。设置为“default”以让客户端使用自己的可翻译组件。设置为空字符串以禁用它。可用的占位符: `<count>` - 当前正在睡觉的玩家数量, `<total>` - 需要睡觉的玩家总数
 
 #### sleep-not-possible
-- **default**: default
-- **description**: The actionbar message that appears when a player tries to sleep, but the `playersSleepingPercentage` gamerule is set to a value greater than 100. Set to "default" to let the clients use their own translatable components. Set to an empty string to disable it.
+- **默认值**: 默认
+- **描述**: 当玩家尝试睡觉，但`playersSleepingPercentage`游戏规则设置为大于100时出现的动作栏消息。设置为“default”以让客户端使用自己的可翻译组件。设置为空字符串以禁用它。
 
 #### death-message
 * ##### stonecutter
-    - **default**: &lt;player> has sawed themself in half
-    - **description**: The death message that appears when the player is killed because they were standing on a stonecutter
+    - **默认值**: &lt;player> has sawed themself in half
+    - **描述**: 当玩家因站在石切机上而被杀死时出现的死亡消息
 * ##### run-with-scissors
-    - **default**: &lt;player> slipped and fell on their shears
-    - **description**: The death message that appears when the player is killed because they were running with scissors
+    - **默认值**: &lt;player> slipped and fell on their shears
+    - **描述**: 当玩家因持剪刀奔跑而被杀死时出现的死亡消息
 
-### network
+### 网络
 #### kick-for-out-of-order-chat
-- **default**: true
-- **description**: Set to false to stop the server from kicking a player for their chat being out of order 
-####  upnp-port-forwarding
-- **default**: false
-- **description**: Attempt to automatically port forward using UPnP when the server starts up
-####  max-joins-per-second
-- **default**: false
-- **description**: Set to true to make the `max-joins-per-tick` setting in paper.yml be used per second instead of per tick
+- **默认值**: true
+- **描述**: 将其设置为false以阻止服务器因聊天顺序错误而踢出玩家
+#### upnp-port-forwarding
+- **默认值**: false
+- **描述**: 服务器启动时尝试使用UPnP自动进行端口转发
+#### max-joins-per-second
+- **默认值**: false
+- **描述**: 将其设置为true，使`paper.yml`中的`max-joins-per-tick`设置每秒使用而不是每刻使用
 
-### blocks
+### 方块
 
-####  barrel
+#### barrel
 * ##### rows
-    - **default**: 3
-    - **description**: The amount of rows a barrel should have. Min: 1, Max: 6
-####  beehive
+    - **默认值**: 3
+    - **描述**: 桶应该拥有的行数。最小值: 1，最大值: 6
+#### beehive
 * ##### max-bees-inside
-    - **default**: 3
-    - **description**: The maximum amount of bees allowed inside of a beehive/bee_nest
-####  grindstone
+    - **默认值**: 3
+    - **描述**: 允许在蜂巢/蜜蜂巢内的蜜蜂的最大数量
+#### grindstone
 * ##### ignored-enchants
-    - **default**:
+    - **默认值**:
         ``` yaml
         - minecraft:binding_curse
         - minecraft:vanishing_curse
         ```
-    - **description**: The enchantments that aren't removed from grindstones
+    - **描述**: 不会从磨石上移除的附魔
 * ##### remove-attributes
-    - **default**: false
-    - **description**: Set to true to allow the grindstone to remove the attributes from an item
+    - **默认值**: false
+    - **描述**: 将其设置为true以允许磨石从物品中移除属性
 * ##### remove-name-and-lore
-    - **default**: false
-    - **description**: Set to true to allow the grindstone to remove the name and lore from an item
-####  ender_chest
+    - **默认值**: false
+    - **描述**: 将其设置为true以允许磨石从物品中移除名称和描述
+#### ender_chest
 * ##### six-rows
-    - **default**: false
-    - **description**: When enabled, ender chests should have six rows of inventory space
+    - **默认值**: false
+    - **描述**: 启用时，末影箱应具有六行的库存空间
 * ##### use-permissions-for-rows
-    - Requires [`ender_chest.six-rows`](#six-rows) to be true
-    - Requires [`purpur.enderchest.rows.<number>`](permissions#purpurenderchestrowsnumber) permission
-    - **default**: false
-    - **description**: Use permission nodes to determine the number of rows. By default, with this setting enabled, all players have `six` rows unless otherwise specified using permissions.
+    - 需要[`ender_chest.six-rows`](#six-rows)为true
+    - 需要[`purpur.enderchest.rows.<number>`](permissions#purpurenderchestrowsnumber)权限
+    - **默认值**: false
+    - **描述**: 使用权限节点确定行数。启用此设置后，默认情况下，所有玩家都有`six`行，除非使用权限另行指定。
 
-####  crying_obsidian
+#### crying_obsidian
 * ##### valid-for-portal-frame
-    - **default**: false
-    - **description**: Set to true to make it so you can create portals out of crying obsidian
+    - **默认值**: false
+    - **描述**: 将其设置为true，以便您可以使用哭泣的黑曜石创建传送门
 #### twisting_vines
 * ##### max-growth-age
-    - **default**: 25
-    - **description**: The max growth age that the plant can grow
+    - **默认值**: 25
+    - **描述**: 植物可以生长的最大生长年龄
 #### weeping_vines
 * ##### max-growth-age
-    - **default**: 25
-    - **description**: The max growth age that the plant can grow
+    - **默认值**: 25
+    - **描述**: 植物可以生长的最大生长年龄
 #### cave_vines
 * ##### max-growth-age
-    - **default**: 25
-    - **description**: The max growth age that the plant can grow
+    - **默认值**: 25
+    - **描述**: 植物可以生长的最大生长年龄
 #### kelp
 * ##### max-growth-age
-    - **default**: 25
-    - **description**: The max growth age that the plant can grow
+    - **默认值**: 25
+    - **描述**: 植物可以生长的最大生长年龄
 #### anvil
 * ##### cumulative-cost
-    - **default**: true
-    - **description**: If the cumulative cost should apply when an item is used in an anvil
+    - **默认值**: true
+    - **描述**: 如果使用砧时应用累积成本
 #### lightning_rod
 * ##### range
-    - **default**: 128
-    - **description**: Change the range in which the lightning rod redirects lightning
+    - **默认值**: 128
+    - **描述**: 更改闪电棒重定向闪电的范围
 #### magma-block
 * ##### reverse-bubble-column-flow
-    - **default**: false
-    - **description**: Set to true to make upward bubble columns generate instead of downward bubble columns when magma blocks are placed/generated under water-source blocks.
+    - **默认值**: false
+    - **描述**: 将其设置为true，使岩浆块放置/生成在水源方块下时，会生成向上的气泡柱而不是向下的气泡柱。
 #### soul-sand
 * ##### reverse-bubble-column-flow
-    - **default**: false
-    - **description**: Set to true to make downward bubble columns generate instead of upward bubble columns when soul sand is placed/generated under water-source blocks.
+    - **默认值**: false
+    - **描述**: 将其设置为true，使灵魂沙放置/生成在水源方块下时，会生成向下的气泡柱而不是向上的气泡柱。
 
+### 广播
 
-
-### broadcasts
-
-#### advancement
+#### 进度
 
 ##### only-broadcast-to-affected-player
-- **default**: false
-- **description**: Broadcasts the advancment messages in chat only to the affected player
+- **默认值**: false
+- **描述**: 仅将进度消息广播到受影响的玩家
 
-#### death
+#### 死亡
 
 ##### only-broadcast-to-affected-player
-- **default**: false
-- **description**: Broadcasts the death messages in chat only to the affected player
+- **默认值**: false
+- **描述**: 仅将死亡消息广播到受影响的玩家
 
-### logger
+### 记录器
 
 #### suppress-init-legacy-material-errors
-- **default**: false
-- **description**: Suppress warnings about plugins initializing the legacy material api
+- **默认值**: false
+- **描述**: 抑制有关插件初始化传统材料API的警告
 #### suppress-ignored-advancement-warnings
-- **default**: false
-- **description**: Suppress warnings about unknown attributes in console and logs
+- **默认值**: false
+- **描述**: 抑制有关控制台和日志中未知属性的警告
 #### suppress-unrecognized-recipe-errors
-- **default**: false
-- **description**: Suppress warnings about attempts to load an unrecognized recipe
+- **默认值**: false
+- **描述**: 抑制有关尝试加载未识别配方的警告
 #### suppress-setblock-in-far-chunk-errors
-- **default**: false
-- **description**: Suppress errors where setBlock was detected in a far chunk
+- **默认值**: false
+- **描述**: 抑制检测到在远处区块中使用setBlock引发的错误
 #### suppress-library-loader
-- **default**: false
-- **description**: Suppress logs related to the library loader
+- **默认值**: false
+- **描述**: 抑制与库加载器相关的日志
 
-### food-properties
-- **default**: {}
-- **description:** Modify to change food properties. An example using all settings with explanations:
+### 食物属性
+- **默认值**: {}
+- **描述**: 修改以更改食物属性。以下是一个使用所有设置并附带解释的示例：
 ``` yaml
-spider_eye:                # The food to edit
-  nutrition: 2              # The amount of hunger points restored
-  saturation-modifier: 0.8  # The amount of saturation restored. Equation used is "nutrition * saturation-modifier * 2"
-  is-meat: false            # Marks a food as edible for wolfs
-  can-always-eat: false     # Marks if this food can be eaten even at full hunger
-  fast-food: false          # How long it takes to eat food (false: 32 ticks, true: 16 ticks)
-  effects:                  # List of all the effects to be applied when eaten (can have multiple effects)
-    poison:                 # Effect to apply
-      duration: 100         # Duration of effect (in ticks)
-      chance: 1.0           # Chance for effect to be applied (0.0 - 1.0)
-      visible: true         # Shows particles
-      amplifier: 1          # Amplification of effect
-      ambient: false        # Set to true to make particles less obtrusive on screen (like beacon effects)
-      show-icon: true       # Show effect icon on HUD
-```
+spider_eye:                # 要编辑的食物
+  nutrition: 2              # 恢复的饱食度点数
+  saturation-modifier: 0.8  # 恢复的饱和度。使用的方程式为“nutrition * saturation-modifier * 2”
+  is-meat: false            # 将食物标记为狼可食用
+  can-always-eat: false     # 标记此食物即使在饱食度已满时也可以食用
+  fast-food: false          # 吃食物所需时间（false：32个刻，true：16个刻）
+  effects:                  # 在食用时应用的所有效果列表（可以有多个效果）
+    poison:                 # 要应用的效果
+      duration: 100         # 效果持续时间（以刻为单位）
+      chance: 1.0           # 应用效果的概率（0.0 - 1.0）
+      visible: true         # 显示粒子
+      amplifier: 1          # 效果的放大
+      ambient: false        # 将其设置为true以使屏幕上的粒子不那么显眼（类似信标效果）
+      show-icon: true       # 在HUD上显示效果图标
+``````
 
-### entity
+### 实体
 
-#### enderman
-* ##### short-height
-    - **default**: false
-    - **description**: Allows endermen to fit into 2 block tall spaces if enabled. Since client hitbox remains the same, you can still hit them in the head
+#### 末影人（Enderman）
+* ##### 矮身高（short-height）
+    - **默认值**：false
+    - **描述**：如果启用，允许末影人适应两格高的空间。由于客户端的碰撞箱保持不变，你仍然可以打到它们的头部。
 
-### enchantment
+### 附魔
 
-* ##### allow-looting-on-shears
-    - **default**: false
-    - **description**: Allows the looting enchantment on shears
-* ##### allow-unsafe-enchant-command
-    - **default**: false
-    - **description**: Allows the ability to increase enchantments passed their max level through the command
-* ##### clamp-levels
-    - **default**: true
-    - **description**: Setting this to `false` allows levels to go up to `32767` by storing them as shorts instead of bytes.
+* ##### 允许在剪刀上使用抢夺附魔（allow-looting-on-shears）
+    - **默认值**：false
+    - **描述**：允许在剪刀上使用抢夺附魔
+* ##### 允许使用不安全的附魔命令（allow-unsafe-enchant-command）
+    - **默认值**：false
+    - **描述**：允许通过命令将附魔增加到超过最大等级
+* ##### 限制等级（clamp-levels）
+    - **默认值**：true
+    - **描述**：将此设置为`false`允许等级达到`32767`，通过将等级存储为shorts而不是bytes。
 
-???+ note "Note"
-    Clients will not display levels higher than `255`
+???+ note "注意"
+客户端不会显示高于`255`的等级
 
-####  anvil
-* ##### allow-inapplicable-enchants
-    - **default**: false
-    - **description**: Allows applying enchantments on tools or armour that are normally not applicable. For example, sharpness on a pickaxe.
-* ##### allow-incompatible-enchants
-    - **default**: false
-    - **description**: Allows applying enchantments together that are normally incompatible. For example, protection and fire protection or fortune and silk touch.
-* ##### allow-higher-enchants-levels
-    - **default**: false
-    - **description**: Allows the ability to increase enchantments passed their maximum level. For example, efficiency V + efficiency V = efficiency VI.
-* ##### replace-incompatible-enchants
-    - **default**: false
-    - **description**: When applying enchantments together that are incompatible, instead of using the enchantment in the base item, the enchantment will be replaced by the enchantment on the secondary item.
+#### 铁砧（Anvil）
+* ##### 允许应用不适用的附魔（allow-inapplicable-enchants）
+    - **默认值**：false
+    - **描述**：允许在通常不适用的工具或盔甲上应用附魔。例如，在镐上使用锋利附魔。
+* ##### 允许应用不兼容的附魔（allow-incompatible-enchants）
+    - **默认值**：false
+    - **描述**：允许同时应用通常不兼容的附魔。例如，保护和火焰保护或时运和精准采集。
+* ##### 允许更高等级的附魔（allow-higher-enchants-levels）
+    - **默认值**：false
+    - **描述**：允许增加附魔超过其最大等级。例如，效率V + 效率V = 效率VI。
+* ##### 替换不兼容的附魔（replace-incompatible-enchants）
+    - **默认值**：false
+    - **描述**：当应用通常不兼容的附魔时，不使用基础物品中的附魔，而是用次要物品中的附魔替换。
 
-## world-settings
+## 世界设置
 
-World settings are on a per-world basis. The child-node `default` is used for all worlds that do not have their own specific settings.
+世界设置是基于每个世界的。子节点`default`用于所有没有自己特定设置的世界。
 
-For a more clear explanation of the world settings section of the config, feel free to read through Paper's explanation here: https://docs.papermc.io/paper/per-world-configuration
+要更清楚地了解配置文件中世界设置部分的内容，请随时阅读Paper的解释：[https://docs.papermc.io/paper/per-world-configuration](https://docs.papermc.io/paper/per-world-configuration)
 
-### hunger
+### 饥饿
 
-#### starvation-damage
-- **default**: 1.0
-- **description**: The amount of damage starvation will do
+#### 饥饿伤害（starvation-damage）
+- **默认值**：1.0
+- **描述**：饥饿造成的伤害量
 
-### settings
+### 设置
 
-#### entity
-* #### shared-random
-- **default**: true
-- **description**: Setting this to false allows RNG manipulation. Paper patches RNG manipulation by using a shared (and locked) random source. This comes with a performance gain, but technical players may prefer to turn this off for the ability to manipulate RNG.
+#### 实体
+* #### 共享随机（shared-random）
+- **默认值**：true
+- **描述**：将此设置为false允许随机数操纵。Paper通过使用共享的（并锁定的）随机源来修补随机数操纵。这带来了性能增益，但技术玩家可能更喜欢关闭此功能以便操纵随机数。
 
-???+ warning "Warning"
-    The shared-random setting is not tested by the Purpur team and can be seen as unsafe. (The shared random is designed to be multithread safe. Undoing this patch *can* cause ConcurrentModificationExceptions to fire in some situations, with or without plugins. And increase memory usage.)
+???+ warning "警告"
+共享随机设置未经Purpur团队测试，可能存在安全风险。（共享随机设计为多线程安全。撤销此补丁*可能*导致在某些情况下触发ConcurrentModificationExceptions，无论是否使用插件。并增加内存使用。）
+
+### 方块
+
+#### 铁砧（Anvil）
+* ##### 使用迷你信息（use-mini-message）
+    - 需要[`purpur.anvil.minimessage`](permissions#purpuranvilminimessage)权限
+    - **默认值**：false
+    - **描述**：允许玩家在铁砧中使用迷你信息标签。
+* ##### 允许颜色（allow-colors）
+    - 需要[`purpur.anvil.color`](permissions#purpuranvilcolor)权限
+    - **默认值**：false
+    - **描述**：允许玩家在铁砧中使用颜色代码。
+* ##### 用于修复的铁锭数量（iron-ingots-used-for-repair）
+    - **默认值**：0
+    - **描述**：修复铁砧所需的铁锭数量
+* ##### 用于损坏的黑曜石数量（obsidian-used-for-damage）
+    - **默认值**：0
+    - **描述**：损坏铁砧所需的黑曜石数量
+#### 丛林山丁香（Azalea）
+* ##### 生长几率（growth-chance）
+    - **默认值**：0.0
+    - **描述**：丛林山丁香自然生长成树的几率
+#### 光束（Beacon）
+* ##### 允许在着色玻璃上产生效果（allow-effects-with-tinted-glass）
+    - **默认值**：false
+    - **描述**：是否允许光束效果在被着色玻璃覆盖时激活
+* ##### 效果范围（effect-range）
+    * ###### 等级1
+        - **默认值**：20
+        - **描述**：该等级的效果范围达到的方块数量
+    * ###### 等级2
+        - **默认值**：30
+        - **描述**：该等级的效果范围达到的方块数量
+    * ###### 等级3
+        - **默认值**：40
+        - **描述**：该等级的效果范围达到的方块数量
+    * ###### 等级4
+        - **默认值**：50
+        - **描述**：该等级的效果范围达到的方块数量
+#### 床（Bed）
+* ##### 爆炸（explode）
+    - **默认值**：true
+    - **描述**：床是否会爆炸。将其设置为false只会使床消失。
+* ##### 睡觉时爆炸（explode-on-villager-sleep）
+    - **默认值**：false
+    - **描述**：村民睡在床上时，床是否会爆炸。
+* ##### 爆炸威力（explosion-power）
+    - **默认值**：5.0
+    - **描述**：爆炸的爆炸半径。（作为比较，TNT为4.0，充能的苦力怕为6.0）
+* ##### 爆炸火焰（explosion-fire）
+    - **默认值**：true
+    - **描述**：爆炸是否会引起火灾
+* ##### 爆炸效果（explosion-effect）
+    - **默认值**：BLOCK
+    - **描述**：受爆炸影响的方块如何处理。
+
+      ???+ note "可用值"
+      所有值都会破坏方块
+
+            - `TNT` - 所有物品都会掉落，除非`tntExplosionDropDecay`游戏规则设置为`true`
+            - `MOB` - 一些物品会掉落，除非`mobExplosionDropDecay`游戏规则设置为`false`
+            - `BLOCK` - 一些物品会掉落，除非`blockExplosionDropDecay`游戏规则设置为`false`
+            - `NONE` - 所有物品都会掉落
+
+#### 蓝冰（Blue Ice）
+* ##### 允许生物生成（allow-mob-spawns）
+    - **默认值**：true
+    - **描述**：设置为false以阻止在蓝冰上生成生物
+* ##### 允许积雪形成（allow-snow-formation）
+    - **默认值**：true
+    - **描述**：设置为false以阻止蓝冰上的积雪形成
+#### 仙人掌（Cactus）
+* ##### 受邻接固体方块影响（breaks-from-solid-neighbors）
+    - **默认值**：true
+    - **描述**：仙人掌是否会因其旁边有固体方块而破坏
 
 
-### blocks
+* ##### 受骨粉影响（affected-by-bonemeal）
+    - **默认值**：false
+    - **描述**：将其设置为true以使仙人掌可以使用骨粉施肥
 
-#### anvil
-* ##### use-mini-message
-    - Requires [`purpur.anvil.minimessage`](permissions#purpuranvilminimessage) permission
-    - **default**: false
-    - **description**:  Allows players to use MiniMessage tags in an anvil.
-* ##### allow-colors
-    - Requires [`purpur.anvil.color`](permissions#purpuranvilcolor) permission
-    - **default**: false
-    - **description**: Allows players to use color codes in anvils
-* ##### iron-ingots-used-for-repair
-    - **default**: 0
-    - **description**: The amount of iron ingots required to repair an anvil
-* ##### obsidian-used-for-damage
-    - **default**: 0
-    - **description**: The amount of obsidian required to damage an anvil
-#### azalea
-* ##### growth-chance
-    - **default**: 0.0
-    - **description**: Chance for azalea to grow into trees naturally
-#### beacon
-* ##### allow-effects-with-tinted-glass
-    - **default**: false
-    - **description**: Whether to allow beacon effects to activate when it's covered by tinted glass
-* ##### effect-range
-    * ###### level-1
-        - **default**: 20
-        - **description**: Amount of blocks the effect range reaches for this level
-    * ###### level-2
-        - **default**: 30
-        - **description**: Amount of blocks the effect range reaches for this level
-    * ###### level-3
-        - **default**: 40
-        - **description**: Amount of blocks the effect range reaches for this level
-    * ###### level-4
-        - **default**: 50
-        - **description**: Amount of blocks the effect range reaches for this level
-#### bed
-* ##### explode
-    - **default**: true
-    - **description**: Whether beds explode. Setting this to false just makes the bed blip out of existence
-* ##### explode-on-villager-sleep
-    - **default**: false
-    - **description**: Whether beds explode when a villager sleeps in one.
-* ##### explosion-power
-    - **default**: 5.0
-    - **description**: The blast radius of the explosion. (For comparison, TNT is 4.0 and charged creepers are 6.0)
-* ##### explosion-fire
-    - **default**: true
-    - **description**: Whether the explosion can cause fire or not
-* ##### explosion-effect
-    - **default**: BLOCK
-    - **description**: What to do with the blocks that are effected by the explosion.
-
-        ???+ note "Available Values"
-            All values will break blocks
-
-            - `TNT` - all items will drop unless the `tntExplosionDropDecay` gamerule is set to `true`
-            - `MOB` - some items will drop unless the `mobExplosionDropDecay` gamerule is set to `false`
-            - `BLOCK` - some items will drop unless the `blockExplosionDropDecay` gamerule is set to `false`
-            - `NONE` - all items will drop
-
-#### blue_ice
-* ##### allow-mob-spawns
-    - **default**: true
-    - **description**: Set to false to disallow mob spawning on blue ice
-* ##### allow-snow-formation
-    - **default**: true
-    - **description**: Set to false to disallow snow formation on blue ice
-#### cactus
-* ##### breaks-from-solid-neighbors
-    - **default**: true
-    - **description**: Whether a cactus will break from a solid block next to it
-* ##### affected-by-bonemeal
-    - **default**: false
-    - **description**: Set to true to make it so cacti can be bonemealed
 #### campfire
-* ##### lit-when-placed
-    - **default**: true
-    - **description**: Set to false to stop the campfire from being lit when placed
+* ##### 放置时点燃（lit-when-placed）
+    - **默认值**：true
+    - **描述**：将其设置为false可阻止放置时点燃篝火
 #### cauldron
-* ##### fill-chances
-    * ###### rain
-        - **default**: 0.05
-        - **description**: The speed in which a cauldron fills with rain (depends on random tick)
-    * ###### powder-snow
-        - **default**: 0.1
-        - **description**: The speed in which a cauldron fills with powdered snow (depends on random tick)
-    * ###### dripstone-water
-        - **default**: 0.17578125
-        - **description**: The speed in which a cauldron below a down-facing pointed dripstone that has water placed a block above it fills with water (depends on random tick)
-    * ###### dripstone-lava
-        - **default**: 0.05859375
-        - **description**: The speed in which a cauldron below a down-facing pointed dripstone that has lava placed a block above it fills with lava (depends on random tick)
+* ##### 填充几率（fill-chances）
+    * ###### 雨水（rain）
+        - **默认值**：0.05
+        - **描述**：铁锅装满雨水的速度（取决于随机刻）
+    * ###### 粉雪（powder-snow）
+        - **默认值**：0.1
+        - **描述**：铁锅装满粉雪的速度（取决于随机刻）
+    * ###### 滴水石水（dripstone-water）
+        - **默认值**：0.17578125
+        - **描述**：位于下方尖锥滴水石下的铁锅，上方放置水后铁锅装满水的速度（取决于随机刻）
+    * ###### 滴水石岩浆（dripstone-lava）
+        - **默认值**：0.05859375
+        - **描述**：位于下方尖锥滴水石下的铁锅，上方放置岩浆后铁锅装满岩浆的速度（取决于随机刻）
 #### chest
-* ##### open-with-solid-block-on-top
-    - **default**: false
-    - **description**: Allows for chests to open even with a solid block on top
+* ##### 顶部有实体方块时可打开（open-with-solid-block-on-top）
+    - **默认值**：false
+    - **描述**：允许即使顶部有实体方块，也能打开箱子
 #### composter
-* ##### sneak-to-bulk-process
-    - **default**: false
-    - **description**: Set to true to allow bulk processing of food/plant items by sneak right-clicking with the item in hand
+* ##### 潜行批量处理（sneak-to-bulk-process）
+    - **默认值**：false
+    - **描述**：将其设置为true，可以通过手持物品潜行右键点击进行食物/植物物品的批量处理
 #### conduit
-* ##### valid-ring-blocks
-    - **default**:
+* ##### 有效环块（valid-ring-blocks）
+    - **默认值**：
         ``` yaml
         - minecraft:prismarine
         - minecraft:prismarine_bricks
         - minecraft:sea_lantern
         - minecraft:dark_prismarine
         ```
-    - **description**: Blocks that can be used to build a conduit
-* ##### effect-distance
-    - **default**: 16
-    - **description**: The effective radius of the conduit for every seven blocks in the frame
-* ##### mob-damage
-    * ###### distance
-        - **default**: 8
-        - **description**: The distance (in blocks) to damage hostile mobs
-    * ###### damage-amount
-        - **default**: 4
-        - **description**: The amount of damage to apply to hostile mobs every 2 seconds if they are in contact with water/rain
+    - **描述**：可用于建造导管的方块
+* ##### 效果范围（effect-distance）
+    - **默认值**：16
+    - **描述**：导管的有效半径，每七个框架方块增加一次范围
+* ##### 生物伤害（mob-damage）
+    * ###### 距离（distance）
+        - **默认值**：8
+        - **描述**：伤害敌对生物的距离（方块）
+    * ###### 伤害量（damage-amount）
+        - **默认值**：4
+        - **描述**：如果敌对生物与水/雨接触，每2秒造成的伤害量
 #### coral
-* ##### die-outside-water
-    - **default**: true
-    - **description**: Set to false to keep coral alive when placed on land
+* ##### 在非水中死亡（die-outside-water）
+    - **默认值**：true
+    - **描述**：将其设置为false可使珊瑚在陆地上放置时保持存活
 #### dispenser
-* ##### apply-cursed-to-armor-slots
-    - **default**: true
-    - **description**: Should dispensers apply armor to armor slots if enchanted with curse of binding
-* ##### place-anvils
-    - **default**: false
-    - **description**: Allows anvils to be placed by dispensers
+* ##### 附魔的装备槽中应用诅咒（apply-cursed-to-armor-slots）
+    - **默认值**：true
+    - **描述**：如果附魔了束缚诅咒，是否应用装备到装备槽中
+* ##### 放置铁砧（place-anvils）
+    - **默认值**：false
+    - **描述**：允许发射器放置铁砧
 #### door
-* ##### requires-redstone
-    - **default**: []
-    - **description**: Allows you to set the doors that require redstone to be operated (oak, spruce, etc)
+* ##### 需要红石（requires-redstone）
+    - **默认值**：[]
+    - **描述**：允许设置需要红石操作的门（橡木门、云杉门等）
 #### dragon_egg
-* ##### teleport
-    - **default**: true
-    - **description**: Control whether the dragon egg will teleport when hit
+* ##### 传送（teleport）
+    - **默认值**：true
+    - **描述**：控制龙蛋被击中时是否传送
 #### enchantment-table
-* ##### lapis-persists
-    - **default**: false
-    - **description**: Setting this to true makes it so lapis lazuli can stay in the enchanting table slot, so you can leave your lapis lazuli in the table
+* ##### lapis保留（lapis-persists）
+    - **默认值**：false
+    - **描述**：将其设置为true可使青金石留在附魔台槽中，这样你可以将青金石留在台里
 #### end-crystal
-* ##### cramming-amount
-    - **default**: 0
-    - **description**: Controls how many end crystals can occupy the same hitbox space. When set to a certain number, any additional crystals will cause an explosion.
-* ##### baseless
-    * ###### explode
-        - **default**: true
-        - **description**: Set to false to stop the crystal from exploding
-    * ###### explosion-power
-        - **default**: 6.0
-        - **description**: The power of the end crystal's explosion
-    * ###### explosion-fire
-        - **default**: false
-        - **description**: Set to true to place fire when the end-crystal explodes
-    * ###### explosion-effect
-        - **default**: BLOCK
-        - **description**: What to do with the blocks that are effected by the explosion.
+* ##### 压缩数量（cramming-amount）
+    - **默认值**：0
+    - **描述**：控制相同碰撞箱空间内可以占据的末影水晶数量。设置为特定数字后，任何额外的水晶都会引发爆炸。
 
-            ???+ note "Available Values"
-                All values will break blocks
+* ##### 无基座（baseless）
+    * ###### 爆炸（explode）
+        - **默认值**：true
+        - **描述**：将其设置为false可阻止水晶爆炸
+    * ###### 爆炸威力（explosion-power）
+        - **默认值**：6.0
+        - **描述**：末影水晶爆炸的威力
+    * ###### 爆炸火焰（explosion-fire）
+        - **默认值**：false
+        - **描述**：将其设置为true可在末影水晶爆炸时放置火焰
+    * ###### 爆炸效果（explosion-effect）
+        - **默认值**：BLOCK
+        - **描述**：受爆炸影响的方块的处理方式。
 
-                - `TNT` - all items will drop unless the `tntExplosionDropDecay` gamerule is set to `true`
-                - `MOB` - some items will drop unless the `mobExplosionDropDecay` gamerule is set to `false`
-                - `BLOCK` - some items will drop unless the `blockExplosionDropDecay` gamerule is set to `false`
-                - `NONE` - all items will drop
+          ???+ note "可用值"
+          所有值都会破坏方块
 
-* ##### base
-    * ###### explode
-        - **default**: true
-        - **description**: Set to false to stop the crystal from exploding
-    * ###### explosion-power
-        - **default**: 6.0
-        - **description**: The power of the end crystal's explosion
-    * ###### explosion-fire
-        - **default**: false
-        - **description**: Set to true to place fire when the end-crystal explodes
-    * ###### explosion-effect
-        - **default**: BLOCK
-        - **description**: What to do with the blocks that are effected by the explosion.
+                - `TNT` - 所有物品都会掉落，除非游戏规则`tntExplosionDropDecay`设置为`true`
+                - `MOB` - 一些物品会掉落，除非游戏规则`mobExplosionDropDecay`设置为`false`
+                - `BLOCK` - 一些物品会掉落，除非游戏规则`blockExplosionDropDecay`设置为`false`
+                - `NONE` - 所有物品都会掉落
 
-            ???+ note "Available Values"
-                All values will break blocks
+* ##### 基座（base）
+    * ###### 爆炸（explode）
+        - **默认值**：true
+        - **描述**：将其设置为false可阻止水晶爆炸
+    * ###### 爆炸威力（explosion-power）
+        - **默认值**：6.0
+        - **描述**：末影水晶爆炸的威力
+    * ###### 爆炸火焰（explosion-fire）
+        - **默认值**：false
+        - **描述**：将其设置为true可在末影水晶爆炸时放置火焰
+    * ###### 爆炸效果（explosion-effect）
+        - **默认值**：BLOCK
+        - **描述**：受爆炸影响的方块的处理方式。
 
-                - `TNT` - all items will drop unless the `tntExplosionDropDecay` gamerule is set to `true`
-                - `MOB` - some items will drop unless the `mobExplosionDropDecay` gamerule is set to `false`
-                - `BLOCK` - some items will drop unless the `blockExplosionDropDecay` gamerule is set to `false`
-                - `NONE` - all items will drop
+            ???+ note "可用值"
+                所有值都会破坏方块
 
-#### farmland
-* ##### gets-moist-from-below
-    - **default**: false
-    - **description**: Allow soil to moisten from water directly below it
-* ##### use-alpha-farmland
-    - **default**: false
-    - **description**: Stops the farmland from getting trampled if a fence or a cobble wall is placed directly underneath it
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for farmland to bypass the mob griefing gamerule
-* ##### only-players-trample
-    - **default**: false
-    - **description**: Set to true if only players may trample farmland.
-* ##### disable-trampling
-    - **default**: false
-    - **description**: Set to true to disable trampling completely.
-* ##### trample-height
-    - **default**: -1.0
-    - **description**: Set the height a player/entity needs to fall before it tramples farmland
+                - `TNT` - 所有物品都会掉落，除非游戏规则`tntExplosionDropDecay`设置为`true`
+                - `MOB` - 一些物品会掉落，除非游戏规则`mobExplosionDropDecay`设置为`false`
+                - `BLOCK` - 一些物品会掉落，除非游戏规则`blockExplosionDropDecay`设置为`false`
+                - `NONE` - 所有物品都会掉落
 
-???+ note "Note"
-        Trample height is in block height or an exact distance. During testing was found that the values for fallDistance are very inconsistent. The results of these tests can be found here:
-        Value set -> Actual fall distance needed to trample
+#### 耕地（farmland）
+* ##### 从下方变湿（gets-moist-from-below）
+    - **默认值**：false
+    - **描述**：允许土壤从正下方的水源变湿
+* ##### 使用阿尔法耕地（use-alpha-farmland）
+    - **默认值**：false
+    - **描述**：如果在耕地正下方放置栅栏或石墙，则阻止耕地被践踏
+* ##### 绕过生物破坏（bypass-mob-griefing）
+    - **默认值**：false
+    - **描述**：设置为true以使耕地绕过生物破坏游戏规则
+* ##### 只有玩家踩踏（only-players-trample）
+    - **默认值**：false
+    - **描述**：如果只有玩家可以踩踏耕地，则设置为true
+* ##### 禁用踩踏（disable-trampling）
+    - **默认值**：false
+    - **描述**：设置为true以完全禁用踩踏
+* ##### 踩踏高度（trample-height）
+    - **默认值**：-1.0
+    - **描述**：设置玩家/实体需要掉落的高度以踩踏耕地
+
+???+ note "注意"
+        踩踏高度以方块高度或确切距离为单位。在测试中发现，掉落距离的值非常不一致。测试结果如下：
+        设置值 -> 实际需要掉落的距离以踩踏
         1.0 -> 1.25
         1.5 -> 1.75
         2.0 -> 2.25
@@ -789,144 +784,147 @@ For a more clear explanation of the world settings section of the config, feel f
         5.5 -> 5.87
         6.0 -> 6.75
 
-* ##### feather-fall-distance-affects-trampling
-    - **default**: false
-    - **description**: Set to true to stop trampling if entities fall a distance equal to their feather falling level, plus the extra block necessary to trample in the first place. Feather Falling 1 requires you to fall over 3+ blocks to trample. FF 2 requires 4+, etc.
+* ##### 羽毛掉落距离影响踩踏（feather-fall-distance-affects-trampling）
+    - **默认值**：false
+    - **描述**：设置为true以阻止实体掉落距离等于其羽毛掉落等级加上第一次踩踏所需的额外方块的情况。羽毛掉落1需要掉落3个以上的方块才能踩踏。羽毛掉落2需要4个以上，依此类推。
 
-#### flowering_azalea
-* ##### growth-chance
-    - **default**: 0.0
-    - **description**: Chance for flowering azalea to grow into trees naturally
-#### furnace
-* ##### use-lava-from-underneath
-    - **default**: false
-    - **description**: Allows the furnace to be infinitely powered by lava placed underneath it
-#### lava
-* ##### infinite-required-sources
-    - **default**: 2
-    - **description**: The amount of sources required to have infinite lava
-* ##### speed
-    * ###### nether
-        - **default**: 10
-        - **description**: Delay in ticks between physics/flowing (lower is faster)
-    * ###### not-nether
-        - **default**: 30
-        - **description**: Delay in ticks between physics/flowing (lower is faster)
-#### magma-block
-* ##### damage-when-sneaking
-    - **default**: false
-    - **description**: Set to true to enable damage when sneaking
-* ##### damage-with-frost-walker
-    - **default**: false
-    - **description**: Set to true to enable damage when walking with boots enchanted with frost-walker
-#### nether_wart
-* ##### affected-by-bonemeal
-    - **default**: false
-    - **description**: Set to true to make it so netherwart can be bonemealed
-#### observer
-* ##### disable-clock
-    - **default**: false
-    - **description**: Set to true to disable observer clocks
-#### packed_ice
-* ##### allow-mob-spawns
-    - **default**: true
-    - **description**: Set to false to disallow mob spawning on packed ice
-#### piston
-* ##### block-push-limit
-    - **default**: 12
-    - **description**: The amount of blocks a piston can push
-#### powder_snow
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for powdered snow to bypass the mob griefing gamerule
-#### powered-rail
-* ##### activation-range
-    - **default**: 8
-    - **description**: The amount of powered rails that get activated by a single redstone source
-#### respawn_anchor
-* ##### explode
-    - **default**: true
-    - **description**: Whether respawn anchors explode. Setting this to false just makes the respawn anchors blip out of existence
-* ##### explosion-power
-    - **default**: 5.0
-    - **description**: The blast radius of the explosion. (For comparison, TNT is 4.0 and charged creepers are 6.0)
-* ##### explosion-fire
-    - **default**: true
-    - **description**: Whether the explosion can cause fire or not
-* ##### explosion-effect
-    - **default**: BLOCK
-    - **description**: What to do with the blocks that are effected by the explosion.
+#### 开花杜鹃（flowering_azalea）
+* ##### 生长概率（growth-chance）
+    - **默认值**：0.0
+    - **描述**：开花杜鹃自然生长成树的概率
+#### 熔炉（furnace）
+* ##### 使用下方的岩浆（use-lava-from-underneath）
+    - **默认值**：false
+    - **描述**：允许熔炉通过放置在其下方的岩浆获得无限能量
+#### 岩浆（lava）
+* ##### 无限所需源数（infinite-required-sources）
+    - **默认值**：2
+    - **描述**：获得无限岩浆所需的源数量
+* ##### 速度
+    * ###### 下界
+        - **默认值**：10
+        - **描述**：物理/流动之间的延迟时间（数值越低速度越快）
+    * ###### 非下界
+        - **默认值**：30
+        - **描述**：物理/流动之间的延迟时间（数值越低速度越快）
 
-        ???+ note "Available Values"
-            All values will break blocks
+#### 岩浆块（magma-block）
+* ##### 潜行时受伤（damage-when-sneaking）
+    - **默认值**：false
+    - **描述**：设置为true以潜行时受伤
+* ##### 霜行者时受伤（damage-with-frost-walker）
+    - **默认值**：false
+    - **描述**：穿着附魔霜行者的靴子行走时受伤
 
-            - `TNT` - all items will drop unless the `tntExplosionDropDecay` gamerule is set to `true`
-            - `MOB` - some items will drop unless the `mobExplosionDropDecay` gamerule is set to `false`
-            - `BLOCK` - some items will drop unless the `blockExplosionDropDecay` gamerule is set to `false`
-            - `NONE` - all items will drop
+#### 地狱疣（nether_wart）
+* ##### 受骨粉影响（affected-by-bonemeal）
+    - **默认值**：false
+    - **描述**：设置为true以使地狱疣受骨粉影响
+#### 观察者（observer）
+* ##### 禁用时钟（disable-clock）
+    - **默认值**：false
+    - **描述**：设置为true以禁用观察者时钟
+#### 压缩冰（packed_ice）
+* ##### 允许生物生成（allow-mob-spawns）
+    - **默认值**：true
+    - **描述**：设置为false以阻止生物在压缩冰上生成
+#### 活塞（piston）
+* ##### 方块推动限制（block-push-limit）
+    - **默认值**：12
+    - **描述**：活塞可以推动的方块数量
+#### 粉雪（powder_snow）
+* ##### 绕过生物破坏（bypass-mob-griefing）
+    - **默认值**：false
+    - **描述**：设置为true使粉雪绕过生物破坏规则
+#### 动力铁轨（powered-rail）
+* ##### 激活范围（activation-range）
+    - **默认值**：8
+    - **描述**：单个红石源激活的动力铁轨数量
+#### 重生锚（respawn_anchor）
+* ##### 爆炸（explode）
+    - **默认值**：true
+    - **描述**：重生锚是否会爆炸。将其设置为false会使重生锚消失
+* ##### 爆炸威力（explosion-power）
+    - **默认值**：5.0
+    - **描述**：爆炸的爆炸半径。（作为参考，TNT为4.0，充能苦力怕为6.0）
+* ##### 爆炸火焰（explosion-fire）
+    - **默认值**：true
+    - **描述**：爆炸是否会引起火灾
+* ##### 爆炸效果（explosion-effect）
+    - **默认值**：BLOCK
+    - **描述**：受爆炸影响的方块应该如何处理
 
-#### sculk_shrieker
-* ##### can-summon-default
-    - **default**: false
-    - **description**: Set to true to set `can_summon` to `true` on placement
-#### shulker_box
-* ##### allow-oversized-stacks
-    - **default**: false
-    - **description**: Controls whether overstacked items are allowed in shulker boxes (default fixes chunk ban issue PaperMC/Paper#4748)
-#### sign
-* ##### allow-colors
-    - Requires [`purpur.sign.color`](permissions#purpursigncolor), [`purpur.sign.style`](permissions#purpursignstyle), and/or [`purpur.sign.magic`](permissions#purpursignmagic) permission
-    - **default**: false
-    - **description**: Allow players to use color codes on signs
-#### slab
-* ##### break-individual-slabs-when-sneaking
-    - **default**: false
-    - **description**: Set to true to allow breaking individual slabs in a double slab block while sneaking
-#### spawner
-* ##### deactivate-by-redstone
-    - **default**: false
-    - **description**: Allow spawners to be deactivated by redstone
-* ##### fix-mc-238526
-    - **default**: false
-    - **description**: Fix spawners not spawning water animals correctly; MC-238526
-#### sponge
-* ##### absorbs-lava
-    - **default**: false
-    - **description**: Set to true to allow sponges to absorb lava
-* ##### absorption
-    * ###### area
-        - **default**: 64
-        - **description**: Area of blocks that a sponge absorbs water
-    * ###### radius
-        - **default**: 6
-        - **description**: The radius of blocks that a sponge absorbs water
-#### stonecutter
-* ##### damage
-    - **default**: 0.0
-    - **description**: If a value is set, Mobs will also avoid walking over the stonecutter.
-#### sugar_cane
-* ##### affected-by-bonemeal
-    - **default**: false
-    - **description**: Set to true to make it so sugarcane can be bonemealed
-#### turtle_egg
-* ##### break-from-exp-orbs
-    - **default**: false
-    - **description**: Allow exp orbs to damage/break turtle eggs
-* ##### break-from-items
-    - **default**: false
-    - **description**: Allow dropped items to damage/break turtle eggs
-* ##### break-from-minecarts
-    - **default**: false
-    - **description**: Allow minecarts to damage/break turtle eggs
-* ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for turtle eggs to bypass the mob griefing gamerule
-* ##### random-tick-crack-chance
-    - **default**: 500
-    - **description**: The chance a turtle egg will crack
-* ##### feather-fall-distance-affects-trampling
-    - **default**: false
-    - **description**: Set to true to stop trampling if entities fall a distance equal to their feather falling level, plus the extra block necessary to trample in the first place. Feather Falling 1 requires you to fall over 3+ blocks to trample. FF 2 requires 4+, etc.
+      ???+ note "可用数值"
+      所有数值都会破坏方块
+
+            - `TNT` - 所有物品都会掉落，除非`tntExplosionDropDecay`规则设置为`true`
+            - `MOB` - 一些物品会掉落，除非`mobExplosionDropDecay`规则设置为`false`
+            - `BLOCK` - 一些物品会掉落，除非`blockExplosionDropDecay`规则设置为`false`
+            - `NONE` - 所有物品都会掉落
+
+#### 音叶尖叫者（sculk_shrieker）
+* ##### 默认可召唤（can-summon-default）
+    - **默认值**：false
+    - **描述**：设置为true在放置时将`can_summon`设置为`true`
+#### 虚空箱（shulker_box）
+* ##### 允许超量堆叠（allow-oversized-stacks）
+    - **默认值**：false
+    - **描述**：控制虚空箱中是否允许超量堆叠的物品（默认修复了超量堆叠的问题 PaperMC/Paper#4748）
+#### 看板（sign）
+* ##### 允许颜色（allow-colors）
+    - 需要[`purpur.sign.color`](permissions#purpursigncolor)、[`purpur.sign.style`](permissions#purpursignstyle)和/或[`purpur.sign.magic`](permissions#purpursignmagic)权限
+    - **默认值**：false
+    - **描述**：允许玩家在看板上使用颜色代码
+#### 台阶（slab）
+* ##### 潜行时独立破坏台阶（break-individual-slabs-when-sneaking）
+    - **默认值**：false
+    - **描述**：设置为true以允许在潜行时独立破坏双层台阶中的单个台阶
+#### 刷怪笼（spawner）
+* ##### 红石激活停用（deactivate-by-redstone）
+    - **默认值**：false
+    - **描述**：允许刷怪笼被红石停用
+* ##### 修复MC-238526（fix-mc-238526）
+    - **默认值**：false
+    - **描述**：修复刷怪笼未正确生成水生动物的问题；MC-238526
+#### 海绵（sponge）
+* ##### 吸收岩浆（absorbs-lava）
+    - **默认值**：false
+    - **描述**：设置为true以允许海绵吸收岩浆
+* ##### 吸收
+    * ###### 区域
+        - **默认值**：64
+        - **描述**：海绵吸收水的方块区域
+    * ###### 半径
+        - **默认值**：6
+        - **描述**：海绵吸收水的方块半径
+#### 石匠台（stonecutter）
+* ##### 伤害
+    - **默认值**：0.0
+    - **描述**：如果设置了数值，生物也会避免经过石匠台
+#### 甘蔗（sugar_cane）
+* ##### 受骨粉影响（affected-by-bonemeal）
+    - **默认值**：false
+    - **描述**：设置为true以使甘蔗受骨粉影响
+#### 海龟蛋（turtle_egg）
+* ##### 从经验球破坏（break-from-exp-orbs）
+    - **默认值**：false
+    - **描述**：允许经验球破坏/破坏海龟蛋
+* ##### 从物品破坏（break-from-items）
+    - **默认值**：false
+    - **描述**：允许掉落的物品破坏/破坏海龟蛋
+* ##### 从矿车破坏（break-from-minecarts）
+    - **默认值**：false
+    - **描述**：允许矿车破坏/破坏海龟蛋
+* ##### 绕过生物破坏（bypass-mob-griefing）
+    - **默认值**：false
+    - **描述**：设置为true使海龟蛋绕过生物破坏规则
+* ##### 随机滴落破裂几率（random-tick-crack-chance）
+    - **默认值**：500
+    - **描述**：海龟蛋破裂的几率
+* ##### 羽落距离影响践踏（feather-fall-distance-affects-trampling）
+    - **默认值**：false
+    - **描述**：设置为true以停止践踏，如果实体下落的距离等于其羽落等级，再加上第一次践踏所需的额外方块。羽落1需要下落3+个方块才会践踏。羽落2需要4+，以此类推。
+
 #### water
 * ##### infinite-required-sources
     - **default**: 2
