@@ -921,1504 +921,1504 @@ spider_eye:                # 要编辑的食物
 * ##### 随机滴落破裂几率（random-tick-crack-chance）
     - **默认值**：500
     - **描述**：海龟蛋破裂的几率
-* ##### 羽落距离影响践踏（feather-fall-distance-affects-trampling）
+* ##### 摔落缓冲破坏耕地（feather-fall-distance-affects-trampling）
     - **默认值**：false
     - **描述**：设置为true以停止践踏，如果实体下落的距离等于其羽落等级，再加上第一次践踏所需的额外方块。羽落1需要下落3+个方块才会践踏。羽落2需要4+，以此类推。
 
-#### water
-* ##### infinite-required-sources
-    - **default**: 2
-    - **description**: The amount of sources required to have infinite water
+#### 水
+* ##### 无限水需要的水源量（infinite-required-sources）
+    - **默认值**: 2
+    - **描述**: 多少桶水才能造出无限水
 
 
-### mobs
+### 生物
 
-#### allay
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it won't eject you)
+#### 悦灵
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: Makes this mob mountable in water (it won't eject you)
 * ##### respect-nbt
-    - **default**: []
-    - **description**: It ensures that Allays respect the NBT from the items they pick up. If you add stored enchantments to the list to respect, then if you give an Allay a sword with an enchantment, it will only pick up swords with the same enchantments.
+    - **默认值**: []
+    - **描述**: 它确保Allay（悦灵）会尊重其拾取物品的NBT数据。如果你将存储的附魔添加到需要匹配的列表中，那么当你给悦灵一把带有特定附魔的剑时，它将只会拾取带有相同附魔的剑。
 #### axolotl
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
+* ##### 属性
     * ###### max_health
-        - **default**: 14.0
-        - **description**: Max health attribute
+        - **默认值**: 14.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### bat
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### ridable-max-y
-    - **default**: 256
-    - **description**: Maximum height this mob can fly to while being ridden
-* ##### attributes
+    - **默认值**: 256
+    - **描述**: 被骑乘时能飞到的最大高度
+* ##### 属性
     * ###### follow_range
-        - **default**: 16.0
-        - **description**: Follow range attribute
+        - **默认值**: 16.0
+        - **描述**: 跟随距离
     * ###### knockback_resistance
-        - **default**: 0.0
-        - **description**: Knockback resistance attribute
+        - **默认值**: 0.0
+        - **描述**: 击退抗性
     * ###### movement_speed
-        - **default**: 0.6
-        - **description**: Movement speed attribute
+        - **默认值**: 0.6
+        - **描述**: 移动速度
     * ###### flying_speed
-        - **default**: 0.6
-        - **description**: Flying speed attribute
+        - **默认值**: 0.6
+        - **描述**: 飞行速度
     * ###### armor
-        - **default**: 0.0
-        - **description**: Armor attribute
+        - **默认值**: 0.0
+        - **描述**: 护甲值
     * ###### armor_toughness
-        - **default**: 0.0
-        - **description**: Armor toughness attribute
+        - **默认值**: 0.0
+        - **描述**: 护甲韧性
     * ###### attack_knockback
-        - **default**: 0.0
-        - **description**: Attack knockback attribute
+        - **默认值**: 0.0
+        - **描述**: 击退强度
     * ###### max_health
-        - **default**: 6.0
-        - **description**: Max health attribute
+        - **默认值**: 6.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### bee
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: true
-    - **description**: Set to false for this mob to stop taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: true
+    - **描述**: 设置为false来让该生物在碰到水时不再扣血
 * ##### ridable-max-y
-    - **default**: 256
-    - **description**: Maximum height this mob can fly to while being ridden
+    - **默认值**: 256
+    - **描述**: 被骑乘时能飞到的最大高度
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
 * ##### can-work-at-night
-    - **default**: false
-    - **description**: Controls whether bees can work during the night
+    - **默认值**: false
+    - **描述**: Controls whether bees can work during the night
 * ##### can-work-in-rain
-    - **default**: false
-    - **description**: Controls whether bees can work during rainy weather
+    - **默认值**: false
+    - **描述**: Controls whether bees can work during rainy weather
 * ##### can-instantly-start-drowning
-    - **default**: true
-    - **description**: If disabled, bees will stop instantly taking damage the moment they begin touching water. Bees will still be able to "drown" when they run out of air while underwater.
+    - **默认值**: true
+    - **描述**: If disabled, bees will stop instantly taking damage the moment they begin touching water. Bees will still be able to "drown" when they run out of air while underwater.
 * ##### dies-after-sting
-    - **default**: true
-    - **description**: Set whether a bee should die after stinging
-* ##### attributes
+    - **默认值**: true
+    - **描述**: Set whether a bee should die after stinging
+* ##### 属性
     * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
+        - **默认值**: 10.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### blaze
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
 * ##### ridable-max-y
-    - **default**: 256
-    - **description**: Maximum height this mob can fly to while being ridden
-* ##### takes-damage-from-water
-    - **default**: true
-    - **description**: Set to false for this mob to stop taking damage from water
-* ##### attributes
+    - **默认值**: 256
+    - **描述**: 被骑乘时能飞到的最大高度
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: true
+    - **描述**: 设置为false来让该生物在碰到水时不再扣血
+* ##### 属性
     * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
+        - **默认值**: 20.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### camel
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: false
+    - **描述**: 使该生物可以在水中骑乘
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
+* ##### 属性
     * ###### max_health
         * min
-            - **default**: 32.0
-            - **description**: Min health attribute
+            - **默认值**: 32.0
+            - **描述**: 最小生命值
         * max
-            - **default**: 32.0
-            - **description**: Max health attribute
+            - **默认值**: 32.0
+            - **描述**: 最大生命值属性
     * ###### jump_strength
         * min
-            - **default**: 0.42
-            - **description**: Min jump strength attribute
+            - **默认值**: 0.42
+            - **描述**: 最小跳跃强度
         * max
-            - **default**: 0.42
-            - **description**: Max jump strength attribute
+            - **默认值**: 0.42
+            - **描述**: 最大跳跃强度
     * ###### movement_speed
         * min
-            - **default**: 0.09
-            - **description**: Min movement speed attribute
+            - **默认值**: 0.09
+            - **描述**: 最小移动速度
         * max
-            - **default**: 0.09
-            - **description**: Max movement speed attribute
+            - **默认值**: 0.09
+            - **描述**: 最大移动速度
 #### cat
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### default-collar-color
-    - **default**: RED
-    - **description**: Set the default collar color when a cat is tamed. [Available Colors]({{ project.javadoc }}/org/bukkit/Color.html)
+    - **默认值**: RED
+    - **描述**: Set the default collar color when a cat is tamed. [Available Colors]({{ project.javadoc }}/org/bukkit/Color.html)
 * ##### spawn-delay
-    - **default**: 1200
-    - **description**: Number of ticks between attempting to naturally spawn a cat
+    - **默认值**: 1200
+    - **描述**: Number of ticks between attempting to naturally spawn a cat
 * ##### scan-range-for-other-cats
     * ###### swamp-hut
-        - **default**: 16
-        - **description**: Do not spawn a cat if another cat is found within this range. Set to 0 to disable
+        - **默认值**: 16
+        - **描述**: Do not spawn a cat if another cat is found within this range. Set to 0 to disable
     * ###### village
-        - **default**: 48
-        - **description**: Do not spawn a cat if another cat is found within this range. Set to 0 to disable
+        - **默认值**: 48
+        - **描述**: Do not spawn a cat if another cat is found within this range. Set to 0 to disable
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
+* ##### 属性
     * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
+        - **默认值**: 10.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### cave_spider
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
+* ##### 属性
     * ###### max_health
-        - **default**: 12.0
-        - **description**: Max health attribute
+        - **默认值**: 12.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### chicken
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: false
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### retaliate
-    - **default**: false
-    - **description**: If a chicken is hit, it will attack back
+    - **默认值**: false
+    - **描述**: If a chicken is hit, it will attack back
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
+* ##### 属性
     * ###### max_health
-        - **default**: 4.0
-        - **description**: Max health attribute
+        - **默认值**: 4.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### cod
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
+* ##### 属性
     * ###### max_health
-        - **default**: 3.0
-        - **description**: Max health attribute
+        - **默认值**: 3.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### cow
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### feed-mushrooms-for-mooshroom
-    - **default**: 0
-    - **description**: Number of mushrooms to feed a cow to make it transform into a mooshroom. Value of 0 disables feature
+    - **默认值**: 0
+    - **描述**: Number of mushrooms to feed a cow to make it transform into a mooshroom. Value of 0 disables feature
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
 * ##### naturally-aggressive-to-players
     * ###### chance
-        - **default**: 0.0
-        - **description**: Percent chance (0.0 - 1.0) this mob will spawn aggressive towards players
+        - **默认值**: 0.0
+        - **描述**: Percent chance (0.0 - 1.0) this mob will spawn aggressive towards players
     * ###### damage
-        - **default**: 2.0
-        - **description**: The amount of damage it will do to players
-* ##### attributes
+        - **默认值**: 2.0
+        - **描述**: The amount of damage it will do to players
+* ##### 属性
     * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
+        - **默认值**: 10.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### creaking
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### attributes
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 属性
     * ###### max_health
-        - **default**: 1.0
-        - **description**: Max health attribute
+        - **默认值**: 1.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 #### creeper
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### encircle-target
-    - **default**: false
-    - **description**: Set to true for this mob to circle around the player as it ignites
+    - **默认值**: false
+    - **描述**: Set to true for this mob to circle around the player as it ignites
 * ##### allow-griefing
-    - **default**: true
-    - **description**: Set to false to stop the creeper from griefing.
+    - **默认值**: true
+    - **描述**: Set to false to stop the creeper from griefing.
 * ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for creepers to bypass the mob griefing gamerule
+    - **默认值**: false
+    - **描述**: Set to true for creepers to bypass the mob griefing gamerule
 * ##### naturally-charged-chance
-    - **default**: 0.0
-    - **description**: Percent chance (0.0 - 1.0) creepers are charged (powered) when spawning
+    - **默认值**: 0.0
+    - **描述**: Percent chance (0.0 - 1.0) creepers are charged (powered) when spawning
 * ##### explode-when-killed
-    - **default**: false
-    - **description**: Makes the creeper explode when killed
+    - **默认值**: false
+    - **描述**: Makes the creeper explode when killed
 * ##### health-impacts-explosion
-    - **default**: false
-    - **description**: Makes the creeper's explosion be proportionate to the amount of health it has (lower health, weaker explosion)
-* ##### attributes
+    - **默认值**: false
+    - **描述**: Makes the creeper's explosion be proportionate to the amount of health it has (lower health, weaker explosion)
+* ##### 属性
     * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
+        - **默认值**: 10.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### head-visibility-percent
-    - **default**: 0.5
-    - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
+    - **默认值**: 0.5
+    - **描述**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### dolphin
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### naturally-aggressive-to-players-chance
-    - **default**: 0.0
-    - **description**: Percent chance (0.0 - 1.0) this mob will spawn aggressive towards players
+    - **默认值**: 0.0
+    - **描述**: Percent chance (0.0 - 1.0) this mob will spawn aggressive towards players
 * ##### disable-treasure-searching
-    - **default**: false
-    - **description**: Stops the dolphin from treasure hunting
+    - **默认值**: false
+    - **描述**: Stops the dolphin from treasure hunting
 * ##### spit
     * ###### cooldown
-        - **default**: 20
-        - **description**: The cooldown of the dolphin spit
+        - **默认值**: 20
+        - **描述**: The cooldown of the dolphin spit
     * ###### speed
-        - **default**: 1.0
-        - **description**: The speed of the dolphin spit
+        - **默认值**: 1.0
+        - **描述**: The speed of the dolphin spit
     * ###### damage
-        - **default**: 2.0
-        - **description**: The damage of the dolphin spit
-* ##### attributes
+        - **默认值**: 2.0
+        - **描述**: The damage of the dolphin spit
+* ##### 属性
     * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
+        - **默认值**: 10.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### donkey
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: false
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
+* ##### 属性
     * ###### max_health
         * min
-            - **default**: 15.0
-            - **description**: Min health attribute
+            - **默认值**: 15.0
+            - **描述**: 最小生命值
         * max
-            - **default**: 30.0
-            - **description**: Max health attribute
+            - **默认值**: 30.0
+            - **描述**: 最大生命值属性
     * ###### jump_strength
         * min
-            - **default**: 0.5
-            - **description**: Min jump strength attribute
+            - **默认值**: 0.5
+            - **描述**: 最小跳跃强度
         * max
-            - **default**: 0.5
-            - **description**: Max jump strength attribute
+            - **默认值**: 0.5
+            - **描述**: 最大跳跃强度
     * ###### movement_speed
         * min
-            - **default**: 0.175
-            - **description**: Min movement speed attribute
+            - **默认值**: 0.175
+            - **描述**: 最小移动速度
         * max
-            - **default**: 0.175
-            - **description**: Max movement speed attribute
+            - **默认值**: 0.175
+            - **描述**: 最大移动速度
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### drowned
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### can-break-doors
-    - **default**: false
-    - **description**: Set to true to allow drowned to break doors
+    - **默认值**: false
+    - **描述**: Set to true to allow drowned to break doors
 * ##### jockey
     * ###### only-babies
-        - **default**: true
-        - **description**: Only babies can ride chickens
+        - **默认值**: true
+        - **描述**: Only babies can ride chickens
     * ###### chance
-        - **default**: 0.05
-        - **description**: Percent chance (0.0 - 1.0) of riding a chicken when spawned
+        - **默认值**: 0.05
+        - **描述**: Percent chance (0.0 - 1.0) of riding a chicken when spawned
     * ###### try-existing-chickens
-        - **default**: true
-        - **description**: Scan for existing chickens to spawn on
-* ##### attributes
+        - **默认值**: true
+        - **描述**: Scan for existing chickens to spawn on
+* ##### 属性
     * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
+        - **默认值**: 20.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
     * ###### spawn_reinforcements
-        - **default**: 0.1
-        - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
+        - **默认值**: 0.1
+        - **描述**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### elder_guardian
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
+* ##### 属性
     * ###### max_health
-        - **default**: 80.0
-        - **description**: Max health attribute
+        - **默认值**: 80.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### ender_dragon
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
 * ##### ridable-max-y
-    - **default**: 256
-    - **description**: Maximum height this mob can fly to while being ridden
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+    - **默认值**: 256
+    - **描述**: 被骑乘时能飞到的最大高度
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### always-drop-full-exp
-    - **default**: false
-    - **description**: When true all valid ender dragon deaths will drop the full amount of experience orbs as if it were the first dragon death
+    - **默认值**: false
+    - **描述**: When true all valid ender dragon deaths will drop the full amount of experience orbs as if it were the first dragon death
 * ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for the ender dragon to bypass the mob griefing gamerule
+    - **默认值**: false
+    - **描述**: Set to true for the ender dragon to bypass the mob griefing gamerule
 * ##### can-ride-vehicles
-    - **default**: false
-    - **description**: Set to true for the ender dragon to gain the ability to ride vehicles
-* ##### attributes
+    - **默认值**: false
+    - **描述**: Set to true for the ender dragon to gain the ability to ride vehicles
+* ##### 属性
     * ###### max_health
-        - **default**: 200.0
-        - **description**: Max health attribute
+        - **默认值**: 200.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 #### enderman
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
 * ##### allow-griefing
-    - **default**: true
-    - **description**: Set to false to stop the enderman from griefing
+    - **默认值**: true
+    - **描述**: Set to false to stop the enderman from griefing
 * ##### can-despawn-with-held-block
-    - **default**: false
-    - **description**: Makes the enderman despawn even if it's holding a block
+    - **默认值**: false
+    - **描述**: Makes the enderman despawn even if it's holding a block
 * ##### ignore-projectiles
-    - **default**: false
-    - **description**: Stops the enderman from being immune to projectiles
+    - **默认值**: false
+    - **描述**: Stops the enderman from being immune to projectiles
 * ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for enderman to bypass the mob griefing gamerule
-* ##### takes-damage-from-water
-    - **default**: true
-    - **description**: Set to false for this mob to stop taking damage from water
+    - **默认值**: false
+    - **描述**: Set to true for enderman to bypass the mob griefing gamerule
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: true
+    - **描述**: 设置为false来让该生物在碰到水时不再扣血
 * ##### aggressive-towards-endermites
-    - **default**: true
-    - **description**: Set to false to stop enderman from being aggro towards *all* types of spawned endermites 
+    - **默认值**: true
+    - **描述**: Set to false to stop enderman from being aggro towards *all* types of spawned endermites 
 * ##### aggressive-towards-endermites-only-spawned-by-player-thrown-ender-pearls
-    - **default**: false
-    - **description**: Set to true to make enderman aggro towards endermites *only* if they've been spawned by a player thrown ender pearl. This option does nothing if `aggressive-towards-endermites` is false
+    - **默认值**: false
+    - **描述**: Set to true to make enderman aggro towards endermites *only* if they've been spawned by a player thrown ender pearl. This option does nothing if `aggressive-towards-endermites` is false
 * ##### ignore-players-wearing-dragon-head
-    - **default**: false
-    - **description**: Set to true to make enderman ignore players that wear the dragon head
+    - **默认值**: false
+    - **描述**: Set to true to make enderman ignore players that wear the dragon head
 * ##### disable-player-stare-aggression
-    - **default**: false
-    - **description**: Set to true to stop an enderman from going aggro by a player looking into the enderman's eyes
-* ##### attributes
+    - **默认值**: false
+    - **描述**: Set to true to stop an enderman from going aggro by a player looking into the enderman's eyes
+* ##### 属性
     * ###### max_health
-        - **default**: 40.0
-        - **description**: Max health attribute
+        - **默认值**: 40.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### endermite
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
+* ##### 属性
     * ###### max_health
-        - **default**: 8.0
-        - **description**: Max health attribute
+        - **默认值**: 8.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### evoker
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for evokers to bypass the mob griefing gamerule
-* ##### attributes
+    - **默认值**: false
+    - **描述**: Set to true for evokers to bypass the mob griefing gamerule
+* ##### 属性
     * ###### max_health
-        - **default**: 24.0
-        - **description**: Max health attribute
+        - **默认值**: 24.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### fox
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### tulips-change-type
-    - **default**: false
-    - **description**: Feeding a white/orange tulip changes type snow/regular
+    - **默认值**: false
+    - **描述**: Feeding a white/orange tulip changes type snow/regular
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
 * ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for foxes to bypass the mob griefing gamerule
-* ##### attributes
+    - **默认值**: false
+    - **描述**: Set to true for foxes to bypass the mob griefing gamerule
+* ##### 属性
     * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
+        - **默认值**: 10.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### frog
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
 * ##### ridable-jump-height
-    - **default**: 0.65
-    - **description**: The height this mob can jump when riding it (in blocks)
+    - **默认值**: 0.65
+    - **描述**: The height this mob can jump when riding it (in blocks)
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
 #### ghast
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### ridable-max-y
-    - **default**: 256
-    - **description**: Maximum height this mob can fly to while being ridden
-* ##### attributes
+    - **默认值**: 256
+    - **描述**: 被骑乘时能飞到的最大高度
+* ##### 属性
     * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
+        - **默认值**: 10.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### giant
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### step-height
-    - **default**: 2.0
-    - **description**: How many blocks giants can walk up without having to jump
+    - **默认值**: 2.0
+    - **描述**: How many blocks giants can walk up without having to jump
 * ##### jump-height
-    - **default**: 1.0
-    - **description**: Jump height modifier. Default value of 1.0 makes giants jump about as high as their waist
+    - **默认值**: 1.0
+    - **描述**: Jump height modifier. Default value of 1.0 makes giants jump about as high as their waist
 * ##### movement-speed
-    - **default**: 0.5
-    - **description**: Movement speed attribute
+    - **默认值**: 0.5
+    - **描述**: 移动速度
 * ##### attack-damage
-    - **default**: 50.0
-    - **description**: Attack damage (in half hearts)
+    - **默认值**: 50.0
+    - **描述**: Attack damage (in half hearts)
 * ##### have-ai
-    - **default**: false
-    - **description**: Control if giant zombies have AI instead of just standing there
+    - **默认值**: false
+    - **描述**: Control if giant zombies have AI instead of just standing there
 * ##### have-hostile-ai
-    - **default**: false
-    - **description**: Control if giant zombies have hostile AI also
-* ##### attributes
+    - **默认值**: false
+    - **描述**: Control if giant zombies have hostile AI also
+* ##### 属性
     * ###### max_health
-        - **default**: 100.0
-        - **description**: Max health attribute
+        - **默认值**: 100.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### glow_squid
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
 * ##### can-fly
-    - **default**: false
-    - **description**: Makes it so squids can fly, Oh my!
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
+    - **默认值**: false
+    - **描述**: Makes it so squids can fly, Oh my!
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
+* ##### 属性
     * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
+        - **默认值**: 10.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### goat
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
+* ##### 属性
     * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
+        - **默认值**: 10.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### guardian
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
+* ##### 属性
     * ###### max_health
-        - **default**: 30.0
-        - **description**: Max health attribute
+        - **默认值**: 30.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### hoglin
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
+* ##### 属性
     * ###### max_health
-        - **default**: 40.0
-        - **description**: Max health attribute
+        - **默认值**: 40.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### horse
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: false
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
+* ##### 属性
     * ###### max_health
         * min
-            - **default**: 15.0
-            - **description**: Min health attribute
+            - **默认值**: 15.0
+            - **描述**: 最小生命值
         * max
-            - **default**: 30.0
-            - **description**: Max health attribute
+            - **默认值**: 30.0
+            - **描述**: 最大生命值属性
     * ###### jump_strength
         * min
-            - **default**: 0.4
-            - **description**: Min jump strength attribute
+            - **默认值**: 0.4
+            - **描述**: 最小跳跃强度
         * max
-            - **default**: 1.0
-            - **description**: Max jump strength attribute
+            - **默认值**: 1.0
+            - **描述**: 最大跳跃强度
     * ###### movement_speed
         * min
-            - **default**: 0.1125
-            - **description**: Min movement speed attribute
+            - **默认值**: 0.1125
+            - **描述**: 最小移动速度
         * max
-            - **default**: 0.3375
-            - **description**: Max movement speed attribute
+            - **默认值**: 0.3375
+            - **描述**: 最大移动速度
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### husk
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### jockey
     * ###### only-babies
-        - **default**: true
-        - **description**: Only babies can ride chickens
+        - **默认值**: true
+        - **描述**: Only babies can ride chickens
     * ###### chance
-        - **default**: 0.05
-        - **description**: Percent chance (0.0 - 1.0) of riding a chicken when spawned
+        - **默认值**: 0.05
+        - **描述**: Percent chance (0.0 - 1.0) of riding a chicken when spawned
     * ###### try-existing-chickens
-        - **default**: true
-        - **description**: Scan for existing chickens to spawn on
-* ##### attributes
+        - **默认值**: true
+        - **描述**: Scan for existing chickens to spawn on
+* ##### 属性
     * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
+        - **默认值**: 20.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
     * ###### spawn_reinforcements
-        - **default**: 0.1
-        - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
+        - **默认值**: 0.1
+        - **描述**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### illusioner
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### naturally-spawn
-    - **default**: false
-    - **description**: Control if illusioners naturally spawn in the game
+    - **默认值**: false
+    - **描述**: Control if illusioners naturally spawn in the game
 * ##### movement-speed
-    - **default**: 0.5
-    - **description**: Movement speed attribute
+    - **默认值**: 0.5
+    - **描述**: 移动速度
 * ##### follow-range
-    - **default**: 18.0
-    - **description**: Follow range attribute
-* ##### attributes
+    - **默认值**: 18.0
+    - **描述**: 跟随距离
+* ##### 属性
     * ###### max_health
-        - **default**: 32.0
-        - **description**: Max health attribute
+        - **默认值**: 32.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### iron_golem
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
 * ##### healing-calms-anger
-    - **default**: false
-    - **description**: Calms the iron golem when it's healed if it's angry
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+    - **默认值**: false
+    - **描述**: Calms the iron golem when it's healed if it's angry
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### can-spawn-in-air
-    - **default**: false
-    - **description**: Set whether iron golems can spawn in the air, like in 1.12 and below
+    - **默认值**: false
+    - **描述**: Set whether iron golems can spawn in the air, like in 1.12 and below
 * ##### can-swim
-    - **default**: false
-    - **description**: Set whether iron golems can swim or not
+    - **默认值**: false
+    - **描述**: Set whether iron golems can swim or not
 * ##### poppy-calms-anger
-    - **default**: false
-    - **description**: Giving the iron golem a poppy calms it down when it's angry
-* ##### attributes
+    - **默认值**: false
+    - **描述**: Giving the iron golem a poppy calms it down when it's angry
+* ##### 属性
     * ###### max_health
-        - **default**: 100.0
-        - **description**: Max health attribute
+        - **默认值**: 100.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### llama
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable. Llama's must be tamed and saddled (with carpet) to be WASD controllable.
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: Makes this mob WASD controllable. Llama's must be tamed and saddled (with carpet) to be WASD controllable.
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: false
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
 * ##### join-caravans
-    - **default**: true
-    - **description**: Set to false to disable the [llama caravan feature](https://minecraft.wiki/w/Llama#Caravans)
-* ##### attributes
+    - **默认值**: true
+    - **描述**: Set to false to disable the [llama caravan feature](https://minecraft.wiki/w/Llama#Caravans)
+* ##### 属性
     * ###### max_health
         * min
-            - **default**: 15.0
-            - **description**: Min health attribute
+            - **默认值**: 15.0
+            - **描述**: 最小生命值
         * max
-            - **default**: 30.0
-            - **description**: Max health attribute
+            - **默认值**: 30.0
+            - **描述**: 最大生命值属性
     * ###### jump_strength
         * min
-            - **default**: 0.5
-            - **description**: Min jump strength attribute
+            - **默认值**: 0.5
+            - **描述**: 最小跳跃强度
         * max
-            - **default**: 0.5
-            - **description**: Max jump strength attribute
+            - **默认值**: 0.5
+            - **描述**: 最大跳跃强度
     * ###### movement_speed
         * min
-            - **default**: 0.175
-            - **description**: Min movement speed attribute
+            - **默认值**: 0.175
+            - **描述**: 最小移动速度
         * max
-            - **default**: 0.175
-            - **description**: Max movement speed attribute
+            - **默认值**: 0.175
+            - **描述**: 最大移动速度
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### magma_cube
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
+* ##### 属性
     * ###### max_health
-        - **default**: "size * size"
-        - **description**: The Max health equation used to calculate the max health
+        - **默认值**: "size * size"
+        - **描述**: The Max health equation used to calculate the max health
     * ###### attack_damage
-        - **default**: "size"
-        - **description**: The base value to set for the attack damage of the magma cube
+        - **默认值**: "size"
+        - **描述**: The base value to set for the attack damage of the magma cube
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### mooshroom
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
+* ##### 属性
     * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
+        - **默认值**: 10.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### mule
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: false
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
+* ##### 属性
     * ###### max_health
         * min
-            - **default**: 15.0
-            - **description**: Min health attribute
+            - **默认值**: 15.0
+            - **描述**: 最小生命值
         * max
-            - **default**: 30.0
-            - **description**: Max health attribute
+            - **默认值**: 30.0
+            - **描述**: 最大生命值属性
     * ###### jump_strength
         * min
-            - **default**: 0.5
-            - **description**: Min jump strength attribute
+            - **默认值**: 0.5
+            - **描述**: 最小跳跃强度
         * max
-            - **default**: 0.5
-            - **description**: Max jump strength attribute
+            - **默认值**: 0.5
+            - **描述**: 最大跳跃强度
     * ###### movement_speed
         * min
-            - **default**: 0.175
-            - **description**: Min movement speed attribute
+            - **默认值**: 0.175
+            - **描述**: 最小移动速度
         * max
-            - **default**: 0.175
-            - **description**: Max movement speed attribute
+            - **默认值**: 0.175
+            - **描述**: 最大移动速度
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### ocelot
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### spawn-below-sea-level
-    - **default**: false
-    - **description**: Set to true for this mob to spawn below the sea level
+    - **默认值**: false
+    - **描述**: Set to true for this mob to spawn below the sea level
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
+* ##### 属性
     * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
+        - **默认值**: 10.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### panda
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
+* ##### 属性
     * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
+        - **默认值**: 20.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### parrot
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### ridable-max-y
-    - **default**: 256
-    - **description**: Maximum height this mob can fly to while being ridden
+    - **默认值**: 256
+    - **描述**: 被骑乘时能飞到的最大高度
 * ##### can-breed
-    - **default**: false
-    - **description**: Gives parrots the ability to breed using any type of seeds (baby parrots don't exist D:, so "adult" parrots pop out)
-* ##### attributes
+    - **默认值**: false
+    - **描述**: Gives parrots the ability to breed using any type of seeds (baby parrots don't exist D:, so "adult" parrots pop out)
+* ##### 属性
     * ###### max_health
-        - **default**: 6.0
-        - **description**: Max health attribute
+        - **默认值**: 6.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### phantom
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### attacked-by-crystal-range
-    - **default**: 0.0
-    - **description**: Radius crystals scan for phantoms to attack. Value of 0 disables feature
+    - **默认值**: 0.0
+    - **描述**: Radius crystals scan for phantoms to attack. Value of 0 disables feature
 * ##### attacked-by-crystal-damage
-    - **default**: 1.0
-    - **description**: Amount of damage per second crystals deal to phantoms. Value of 1.0 is half a heart
+    - **默认值**: 1.0
+    - **描述**: Amount of damage per second crystals deal to phantoms. Value of 1.0 is half a heart
 * ##### orbit-crystal-radius
-    - **default**: 0.0
-    - **description**: Radius which phantoms scan for crystals to orbit. Value of 0 disables feature
+    - **默认值**: 0.0
+    - **描述**: Radius which phantoms scan for crystals to orbit. Value of 0 disables feature
 * ##### burn-in-light
-    - **default**: 0
-    - **description**: What light level the phantoms will burn at
+    - **默认值**: 0
+    - **描述**: What light level the phantoms will burn at
 * ##### burn-in-daylight
-    - **default**: true
-    - **description**: Whether phantoms burn in daylight or not
+    - **默认值**: true
+    - **描述**: Whether phantoms burn in daylight or not
 * ##### flames-on-swoop
-    - **default**: false
-    - **description**: Set to true for phantoms to shoot flames on swoop
+    - **默认值**: false
+    - **描述**: Set to true for phantoms to shoot flames on swoop
 * ##### ignore-players-with-torch
-    - **default**: false
-    - **description**: Whether phantoms avoid players with a torch in their hand
+    - **默认值**: false
+    - **描述**: Whether phantoms avoid players with a torch in their hand
 * ##### allow-griefing
-    - **default**: false
-    - **description**: Whether a phantom's flames can burn items
+    - **默认值**: false
+    - **描述**: Whether a phantom's flames can burn items
 * ###### size
     * min
-        - **default**: 0
-        - **description**: Minimum size to randomly choose from when spawning naturally
+        - **默认值**: 0
+        - **描述**: Minimum size to randomly choose from when spawning naturally
     * max
-        - **default**: 0
-        - **description**: Maximum size to randomly choose from when spawning naturally
+        - **默认值**: 0
+        - **描述**: Maximum size to randomly choose from when spawning naturally
 * ##### spawn
     * ###### min-sky-darkness
-        - **default**: 5
-        - **description**: The amount of darkness in the sky (5 is dark enough for thunderstorms, but not regular rain)
+        - **默认值**: 5
+        - **描述**: The amount of darkness in the sky (5 is dark enough for thunderstorms, but not regular rain)
     * ###### only-above-sea-level
-        - **default**: true
-        - **description**: Only spawn on players above sea level
+        - **默认值**: true
+        - **描述**: Only spawn on players above sea level
     * ###### only-with-visible-sky
-        - **default**: true
-        - **description**: Only spawn on players that have visible sky above them
+        - **默认值**: true
+        - **描述**: Only spawn on players that have visible sky above them
     * ###### local-difficulty-chance
-        - **default**: 3.0
-        - **description**: Local difficulty must be greater than a random value chosen between 0.0 and this value
+        - **默认值**: 3.0
+        - **描述**: Local difficulty must be greater than a random value chosen between 0.0 and this value
     * ###### per-attempt
         * min
-            - **default**: 1
-            - **description**: Minimum number of phantoms to spawn per attempt
+            - **默认值**: 1
+            - **描述**: Minimum number of phantoms to spawn per attempt
         * max
-            - **default**: -1
-            - **description**: Maximum number of phantoms to spawn per attempt (Use -1 to base this off of world difficulty)
-* ##### attributes
+            - **默认值**: -1
+            - **描述**: Maximum number of phantoms to spawn per attempt (Use -1 to base this off of world difficulty)
+* ##### 属性
     * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
+        - **默认值**: 20.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
     * ###### attack_damage
-        - **default**: "6 + size"
-        - **description**: The base value to set for the attack damage of the phantom
+        - **默认值**: "6 + size"
+        - **描述**: The base value to set for the attack damage of the phantom
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### pig
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: false
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### give-saddle-back
-    - **default**: false
-    - **description**: Sneak and right-click a pig with a saddle on it's back to remove it with this option enabled
+    - **默认值**: false
+    - **描述**: Sneak and right-click a pig with a saddle on it's back to remove it with this option enabled
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
+* ##### 属性
     * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
+        - **默认值**: 10.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### piglin
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for piglins to bypass the mob griefing gamerule
+    - **默认值**: false
+    - **描述**: Set to true for piglins to bypass the mob griefing gamerule
 * ##### portal-spawn-modifier
-    - **default**: 2000
-    - **description**: Allows changing the modifier for the piglin spawn chance from a portal block
+    - **默认值**: 2000
+    - **描述**: Allows changing the modifier for the piglin spawn chance from a portal block
 based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a557fc0eedececd63d44d43ce6431bc23bb/patches/server/0167-Piglin-portal-spawn-modifier.patch)
-* ##### attributes
+* ##### 属性
     * ###### max_health
-        - **default**: 16.0
-        - **description**: Max health attribute
+        - **默认值**: 16.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### head-visibility-percent
-    - **default**: 0.5
-    - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
+    - **默认值**: 0.5
+    - **描述**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### piglin_brute
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
+* ##### 属性
     * ###### max_health
-        - **default**: 50.0
-        - **description**: Max health attribute
+        - **默认值**: 50.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### pillager
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for pillagers to bypass the mob griefing gamerule
-* ##### attributes
+    - **默认值**: false
+    - **描述**: Set to true for pillagers to bypass the mob griefing gamerule
+* ##### 属性
     * ###### max_health
-        - **default**: 24.0
-        - **description**: Max health attribute
+        - **默认值**: 24.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### polar_bear
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### breedable-item
-    - **default**: ""
-    - **description**: Item to tempt/feed polar bears and make them breed
+    - **默认值**: ""
+    - **描述**: Item to tempt/feed polar bears and make them breed
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
+* ##### 属性
     * ###### max_health
-        - **default**: 30.0
-        - **description**: Max health attribute
+        - **默认值**: 30.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### pufferfish
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
+* ##### 属性
     * ###### max_health
-        - **default**: 3.0
-        - **description**: Max health attribute
+        - **默认值**: 3.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### rabbit
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### spawn-killer-rabbit-chance
-    - **default**: 0.0
-    - **description**: Percent chance (0.0-1.0) the killer rabbit naturally spawns
+    - **默认值**: 0.0
+    - **描述**: Percent chance (0.0-1.0) the killer rabbit naturally spawns
 * ##### spawn-toast-chance
-    - **default**: 0.0
-    - **description**: Percent chance (0.0-1.0) to naturally spawn a rabbit named Toast
+    - **默认值**: 0.0
+    - **描述**: Percent chance (0.0-1.0) to naturally spawn a rabbit named Toast
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
 * ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for rabbits to bypass the mob griefing gamerule
-* ##### attributes
+    - **默认值**: false
+    - **描述**: Set to true for rabbits to bypass the mob griefing gamerule
+* ##### 属性
     * ###### max_health
-        - **default**: 3.0
-        - **description**: Max health attribute
+        - **默认值**: 3.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### ravager
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: false
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for ravagers to bypass the mob griefing gamerule
+    - **默认值**: false
+    - **描述**: Set to true for ravagers to bypass the mob griefing gamerule
 * ##### griefable-blocks
-    - **default**:
+    - **默认值**:
         ``` yaml
         - minecraft:oak_leaves
         - minecraft:spruce_leaves
@@ -2431,258 +2431,258 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
         - minecraft:potatoes
         - minecraft:wheat
         ```
-    - **description**: Whitelist of blocks that can be broken by the ravager
-* ##### attributes
+    - **描述**: Whitelist of blocks that can be broken by the ravager
+* ##### 属性
     * ###### max_health
-        - **default**: 100.0
-        - **description**: Max health attribute
+        - **默认值**: 100.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 * ##### avoid-rabbits
-    - **default**: false
-    - **description**: Set to true if this mob should avoid rabbits, similar to how creepers avoid cats
+    - **默认值**: false
+    - **描述**: Set to true if this mob should avoid rabbits, similar to how creepers avoid cats
 #### salmon
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
+* ##### 属性
     * ###### max_health
-        - **default**: 3.0
-        - **description**: Max health attribute
+        - **默认值**: 3.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### sheep
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
 * ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for sheep to bypass the mob griefing gamerule
-* ##### attributes
+    - **默认值**: false
+    - **描述**: Set to true for sheep to bypass the mob griefing gamerule
+* ##### 属性
     * ###### max_health
-        - **default**: 8.0
-        - **description**: Max health attribute
+        - **默认值**: 8.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### shulker
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### change-color-with-dye
-    - **default**: false
-    - **description**: Lets you change the color of the shulker by right-clicking it with a dye
+    - **默认值**: false
+    - **描述**: Lets you change the color of the shulker by right-clicking it with a dye
 * ##### spawn-from-bullet:
     * ###### base-chance
-        - **default**: 1.0
-        - **description**: Base chance
+        - **默认值**: 1.0
+        - **描述**: Base chance
     * ###### require-open-lid
-        - **default**: true
-        - **description**: Require shulkers to have their lid open to spawn from bullet
+        - **默认值**: true
+        - **描述**: Require shulkers to have their lid open to spawn from bullet
     * ###### nearby-range
-        - **default**: 8.0
-        - **description**: The nearby range to check for shulkers
+        - **默认值**: 8.0
+        - **描述**: The nearby range to check for shulkers
     * ###### nearby-equation
-        - **default**: `(nearby - 1) / 5.0`
-        - **description**: The equation to use for calculating a shulker spawning from a bullet (`nearby` is the amount of shulker entities nearby) Make this blank to always spawn if there's a shulker nearby
+        - **默认值**: `(nearby - 1) / 5.0`
+        - **描述**: The equation to use for calculating a shulker spawning from a bullet (`nearby` is the amount of shulker entities nearby) Make this blank to always spawn if there's a shulker nearby
     * ###### random-color
-        - **default**: false
-        - **description**: Set the shulker to a random color when spawned from a bullet
-* ##### attributes
+        - **默认值**: false
+        - **描述**: Set the shulker to a random color when spawned from a bullet
+* ##### 属性
     * ###### max_health
-        - **default**: 30.0
-        - **description**: Max health attribute
+        - **默认值**: 30.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute. Cannot be higher than 3.0
+        - **默认值**: 1.0
+        - **描述**: 体型属性. Cannot be higher than 3.0
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### silverfish
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for silverfish to bypass the mob griefing gamerule
-* ##### attributes
+    - **默认值**: false
+    - **描述**: Set to true for silverfish to bypass the mob griefing gamerule
+* ##### 属性
     * ###### max_health
-        - **default**: 8.0
-        - **description**: Max health attribute
+        - **默认值**: 8.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
     * ###### movement_speed
-        - **default**: 0.25
-        - **description**: Movement speed attribute
+        - **默认值**: 0.25
+        - **描述**: 移动速度
     * ###### attack_damage
-        - **default**: 1.0
-        - **description**: Attack damage attribute
+        - **默认值**: 1.0
+        - **描述**: Attack damage attribute
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### skeleton
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
+* ##### 属性
     * ###### max_health
-        - **default**: 8.0
-        - **description**: Max health attribute
+        - **默认值**: 8.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### head-visibility-percent
-    - **default**: 0.5
-    - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
+    - **默认值**: 0.5
+    - **描述**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 * ##### feed-wither-roses
-    - **default**: 0
-    - **description**: Right-clicking a skeleton while holding a wither rose will convert the skeleton into a wither skeleton. With the value being how many wither roses you would need to convert the skeleton, and 0 meaning the feature is disabled.
+    - **默认值**: 0
+    - **描述**: Right-clicking a skeleton while holding a wither rose will convert the skeleton into a wither skeleton. With the value being how many wither roses you would need to convert the skeleton, and 0 meaning the feature is disabled.
 * ##### bow-accuracy
-    - **default**: 14 - difficulty * 4
-    - **description**: Change the accuracy with which Skeletons shoot. The outcome of the formula is the divergence (spread). The higher the value, the less accurate the shot is.
+    - **默认值**: 14 - difficulty * 4
+    - **描述**: Change the accuracy with which Skeletons shoot. The outcome of the formula is the divergence (spread). The higher the value, the less accurate the shot is.
       ``` yaml
       easy:   14 - 1 * 4 = 10
       normal: 14 - 2 * 4 = 6
       hard:   14 - 3 * 4 = 2
       ```
 #### skeleton_horse
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
 * ##### can-swim
-    - **default**: false
-    - **description**: Can skeleton horses swim in water. False makes them sink to the bottom (vanilla default)
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
+    - **默认值**: false
+    - **描述**: Can skeleton horses swim in water. False makes them sink to the bottom (vanilla default)
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
+* ##### 属性
     * ###### max_health
         * min
-            - **default**: 15.0
-            - **description**: Min health attribute
+            - **默认值**: 15.0
+            - **描述**: 最小生命值
         * max
-            - **default**: 15.0
-            - **description**: Max health attribute
+            - **默认值**: 15.0
+            - **描述**: 最大生命值属性
     * ###### jump_strength
         * min
-            - **default**: 0.4
-            - **description**: Min jump_strength attribute
+            - **默认值**: 0.4
+            - **描述**: Min jump_strength attribute
         * max
-            - **default**: 1.0
-            - **description**: Max jump_strength attribute
+            - **默认值**: 1.0
+            - **描述**: Max jump_strength attribute
     * ###### movement_speed
         * min
-            - **default**: 0.2
-            - **description**: Min movement_speed attribute
+            - **默认值**: 0.2
+            - **描述**: Min movement_speed attribute
         * max
-            - **default**: 0.2
-            - **description**: Max movement_speed attribute
+            - **默认值**: 0.2
+            - **描述**: Max movement_speed attribute
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### slime
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### attributes
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 属性
     * ###### max_health
-        - **default**: "size * size"
-        - **description**: The Max health equation used to calculate the max health
+        - **默认值**: "size * size"
+        - **描述**: The Max health equation used to calculate the max health
     * ###### attack_damage
-        - **default**: "size"
-        - **description**: The base value to set for the attack damage of the slime
+        - **默认值**: "size"
+        - **描述**: The base value to set for the attack damage of the slime
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### sniffer
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
+* ##### 属性
     * ###### max_health
-    - **default**: 14.0
-    - **description**: Max health attribute
+    - **默认值**: 14.0
+    - **描述**: 最大生命值属性
 #### snow_golem
 ???+ info "The formula used to determine the amount of ticks between shots"
     ``` sh
@@ -2690,947 +2690,947 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     ```
     If `min-shoot-interval-ticks` and `max-shoot-interval-ticks` are both set to 0, snow golems won't shoot any snowballs.
 
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
 * ##### leave-trail-when-ridden
-    - **default**: false
-    - **description**: Leaves a trail where a snowman walks when being ridden
+    - **默认值**: false
+    - **描述**: Leaves a trail where a snowman walks when being ridden
 * ##### pumpkin-can-be-added-back
-    - **default**: false
-    - **description**: Control if pumpkins can be placed back onto snowmen
+    - **默认值**: false
+    - **描述**: Control if pumpkins can be placed back onto snowmen
 * ##### min-shoot-interval-ticks
-    - **default**: 20
-    - **description**: Min amount of interval ticks that get shot
+    - **默认值**: 20
+    - **描述**: Min amount of interval ticks that get shot
 * ##### max-shoot-interval-ticks
-    - **default**: 20
-    - **description**: Max amount of interval ticks that get shot
+    - **默认值**: 20
+    - **描述**: Max amount of interval ticks that get shot
 * ##### snow-ball-modifier
-    - **default**: 10.0
-    - **description**: The modifier value of snow-ball projectiles
+    - **默认值**: 10.0
+    - **描述**: The modifier value of snow-ball projectiles
 * ##### attack-distance
-    - **default**: 1.25
-    - **description**: The distance at which the snow golem will attack
+    - **默认值**: 1.25
+    - **描述**: The distance at which the snow golem will attack
 * ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for snow golems to bypass the mob griefing gamerule
-* ##### takes-damage-from-water
-    - **default**: true
-    - **description**: Set to false for this mob to stop taking damage from water
-* ##### attributes
+    - **默认值**: false
+    - **描述**: Set to true for snow golems to bypass the mob griefing gamerule
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: true
+    - **描述**: 设置为false来让该生物在碰到水时不再扣血
+* ##### 属性
     * ###### max_health
-        - **default**: 4.0
-        - **description**: Max health attribute
+        - **默认值**: 4.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### spider
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: false
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
+* ##### 属性
     * ###### max_health
-        - **default**: 16.0
-        - **description**: Max health attribute
+        - **默认值**: 16.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### squid
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### immune-to-EAR
-    - **default**: true
-    - **description**: Makes this mob immune to EAR (Entity Activation Range - See spigot.yml)
+    - **默认值**: true
+    - **描述**: Makes this mob immune to EAR (Entity Activation Range - See spigot.yml)
 * ##### water-offset-check
-    - **default**: 0.0
-    - **description**: Stops squids from floating on top of water
+    - **默认值**: 0.0
+    - **描述**: Stops squids from floating on top of water
 * ##### can-fly
-    - **default**: false
-    - **description**: Makes it so squids can fly, Oh my!
-* ##### attributes
+    - **默认值**: false
+    - **描述**: Makes it so squids can fly, Oh my!
+* ##### 属性
     * ###### max_health
-        - **default**: 10.0
-        - **description**: Max health attribute
+        - **默认值**: 10.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### stray
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
+* ##### 属性
     * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
+        - **默认值**: 20.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### strider
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: false
+    - **描述**: 使该生物可以在水中骑乘
 * ##### give-saddle-back
-    - **default**: false
-    - **description**: Sneak and right-click a strider with a saddle on it's back to remove it with this option enabled
+    - **默认值**: false
+    - **描述**: Sneak and right-click a strider with a saddle on it's back to remove it with this option enabled
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### takes-damage-from-water
-    - **default**: true
-    - **description**: Set to false for this mob to stop taking damage from water
-* ##### attributes
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: true
+    - **描述**: 设置为false来让该生物在碰到水时不再扣血
+* ##### 属性
     * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
+        - **默认值**: 20.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### tadpole
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
 #### trader_llama
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable.
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable. Trader llama's must be tamed to be WASD controllable. Being saddled (carpet) is not a requirement since it technically always has a carpet.
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: Makes this mob mountable.
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: Makes this mob WASD controllable. Trader llama's must be tamed to be WASD controllable. Being saddled (carpet) is not a requirement since it technically always has a carpet.
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: false
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
+* ##### 属性
     * ###### max_health
         * min
-            - **default**: 15.0
-            - **description**: Min health attribute
+            - **默认值**: 15.0
+            - **描述**: 最小生命值
         * max
-            - **default**: 30.0
-            - **description**: Max health attribute
+            - **默认值**: 30.0
+            - **描述**: 最大生命值属性
     * ###### jump_strength
         * min
-            - **default**: 0.5
-            - **description**: Min jump strength attribute
+            - **默认值**: 0.5
+            - **描述**: 最小跳跃强度
         * max
-            - **default**: 0.5
-            - **description**: Max jump strength attribute
+            - **默认值**: 0.5
+            - **描述**: 最大跳跃强度
     * ###### movement_speed
         * min
-            - **default**: 0.175
-            - **description**: Min movement speed attribute
+            - **默认值**: 0.175
+            - **描述**: 最小移动速度
         * max
-            - **default**: 0.175
-            - **description**: Max movement speed attribute
+            - **默认值**: 0.175
+            - **描述**: 最大移动速度
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### tropical_fish
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
+* ##### 属性
     * ###### max_health
-        - **default**: 3.0
-        - **description**: Max health attribute
+        - **默认值**: 3.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### turtle
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
+* ##### 属性
     * ###### max_health
-        - **default**: 30.0
-        - **description**: Max health attribute
+        - **默认值**: 30.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### vex
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### ridable-max-y
-    - **default**: 256
-    - **description**: Maximum height this mob can fly to while being ridden
-* ##### attributes
+    - **默认值**: 256
+    - **描述**: 被骑乘时能飞到的最大高度
+* ##### 属性
     * ###### max_health
-        - **default**: 14.0
-        - **description**: Max health attribute
+        - **默认值**: 14.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### villager
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Ignores the `mobGriefing` gamerule and allows the villagers to drop items, allowing them to breed
+    - **默认值**: false
+    - **描述**: Ignores the `mobGriefing` gamerule and allows the villagers to drop items, allowing them to breed
 * ##### can-be-leashed
-    - **default**: false
-    - **description**: Allow players to use leads on villagers (trader not included)
+    - **默认值**: false
+    - **描述**: Allow players to use leads on villagers (trader not included)
 * ##### follow-emerald-blocks
-    - **default**: false
-    - **description**: Villagers will be tempted by emerald blocks and follow players holding them
+    - **默认值**: false
+    - **描述**: Villagers will be tempted by emerald blocks and follow players holding them
 * ##### allow-trading
-    - **default**: true
-    - **description**: Set to false to disable trading with villagers
+    - **默认值**: true
+    - **描述**: Set to false to disable trading with villagers
 * ##### display-trade-item
-    - **default**: true
-    - **description**: Set to false to stop the villager from displaying the trade item
+    - **默认值**: true
+    - **描述**: Set to false to stop the villager from displaying the trade item
 * ##### lobotomize
     * ###### enabled
-        - **default**: false
-        - **description**: Lobotomizes the villager if it cannot move (Does not disable trading)
+        - **默认值**: false
+        - **描述**: Lobotomizes the villager if it cannot move (Does not disable trading)
     * ###### check-interval
-        - **default**: 100
-        - **description**: The interval in ticks to check if a villager is lobotomized 
+        - **默认值**: 100
+        - **描述**: The interval in ticks to check if a villager is lobotomized 
     * ###### wait-until-trade-locked
-        - **default**: false
-        - **description**: Wait until a villager has been traded with before lobotomizing
+        - **默认值**: false
+        - **描述**: Wait until a villager has been traded with before lobotomizing
 * ##### minimum-demand
-    - **default**: 0
-    - **description**: Addresses MC-163962 where villager demand decreases indefinitely. Paper adds a patch to fix this by preventing demand from going below zero. This option allows the minimum demand to be configurable.
+    - **默认值**: 0
+    - **描述**: Addresses MC-163962 where villager demand decreases indefinitely. Paper adds a patch to fix this by preventing demand from going below zero. This option allows the minimum demand to be configurable.
 * ##### can-breed
-    - **default**: true
-    - **description**: Whether villagers can breed or not
+    - **默认值**: true
+    - **描述**: Whether villagers can breed or not
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
 * ##### clerics-farm-warts
-    - **default**: false
-    - **description**: Set to true for clerics to farm nether wart
+    - **默认值**: false
+    - **描述**: Set to true for clerics to farm nether wart
 * ##### cleric-wart-farmers-throw-warts-at-villagers
-    - **default**: true
-    - **description**: Set to false for clerics to not throw nether wart at other villagers
+    - **默认值**: true
+    - **描述**: Set to false for clerics to not throw nether wart at other villagers
 * ##### spawn-iron-golem
     * ###### radius
-        - **default**: 0
-        - **description**: Radius villagers search for existing iron golems before spawning more. Value of 0 disables features
+        - **默认值**: 0
+        - **描述**: Radius villagers search for existing iron golems before spawning more. Value of 0 disables features
     * ###### limit
-        - **default**: 0
-        - **description**: Maximum amount of iron golems villagers can spawn in configured radius
+        - **默认值**: 0
+        - **描述**: Maximum amount of iron golems villagers can spawn in configured radius
 * ##### search-radius
     * ###### acquire-poi
-        - **default**: 48
-        - **description**: Radius within which villagers search to acquire POI.
+        - **默认值**: 48
+        - **描述**: Radius within which villagers search to acquire POI.
     * ###### nearest-bed-sensor
-        - **default**: 48
-        - **description**: Radius within which villagers search to detect the nearest bed.
-* ##### attributes
+        - **默认值**: 48
+        - **描述**: Radius within which villagers search to detect the nearest bed.
+* ##### 属性
     * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
+        - **默认值**: 20.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
     * ###### tempt_range
-        - **default**: 10.0
-        - **description**: Tempt range attribute. Only works when `follow-emerald-blocks` is enabled.
+        - **默认值**: 10.0
+        - **描述**: Tempt range attribute. Only works when `follow-emerald-blocks` is enabled.
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### vindicator
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### johnny
     * ###### spawn-chance
-        - **default**: 0.0
-        - **description**: Percent chance (0.0 - 1.0) a vindicator named "Johnny" will spawn instead of a vindicator
-* ##### attributes
+        - **默认值**: 0.0
+        - **描述**: Percent chance (0.0 - 1.0) a vindicator named "Johnny" will spawn instead of a vindicator
+* ##### 属性
     * ###### max_health
-        - **default**: 24.0
-        - **description**: Max health attribute
+        - **默认值**: 24.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### wandering_trader
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### can-be-leashed
-    - **default**: false
-    - **description**: Allow players to use leads on villagers (trader not included)
+    - **默认值**: false
+    - **描述**: Allow players to use leads on villagers (trader not included)
 * ##### allow-trading
-    - **default**: true
-    - **description**: Set to false to disable trading with wandering traders
+    - **默认值**: true
+    - **描述**: Set to false to disable trading with wandering traders
 * ##### follow-emerald-blocks
-    - **default**: false
-    - **description**: Villagers will be tempted by emerald blocks and follow players holding them
-* ##### attributes
+    - **默认值**: false
+    - **描述**: Villagers will be tempted by emerald blocks and follow players holding them
+* ##### 属性
     * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
+        - **默认值**: 20.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
     * ###### tempt_range
-        - **default**: 10.0
-        - **description**: Tempt range attribute. Only works when `follow-emerald-blocks` is enabled.
+        - **默认值**: 10.0
+        - **描述**: Tempt range attribute. Only works when `follow-emerald-blocks` is enabled.
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### warden
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
 #### witch
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
+* ##### 属性
     * ###### max_health
-        - **default**: 26.0
-        - **description**: Max health attribute
+        - **默认值**: 26.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### wither
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
 * ##### ridable-max-y
-    - **default**: 256
-    - **description**: Maximum height this mob can fly to while being ridden
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+    - **默认值**: 256
+    - **描述**: 被骑乘时能飞到的最大高度
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### can-ride-vehicles
-    - **default**: false
-    - **description**: Set to true for the wither to gain the ability to ride vehicles
+    - **默认值**: false
+    - **描述**: Set to true for the wither to gain the ability to ride vehicles
 * ##### play-spawn-sound
-    - **default**: true
-    - **description**: Play the wither's spawn sound globally when it is spawned
+    - **默认值**: true
+    - **描述**: Play the wither's spawn sound globally when it is spawned
 * ##### explosion-radius
-    - **default**: 1.0
-    - **description**: The explosion radius of a wither's projectile attack
+    - **默认值**: 1.0
+    - **描述**: The explosion radius of a wither's projectile attack
 * ##### health-regen-amount
-    - **default**: 1.0
-    - **description**: The regen amount of the wither
+    - **默认值**: 1.0
+    - **描述**: The regen amount of the wither
 * ##### health-regen-delay
-    - **default**: 20
-    - **description**: How long to delay the health regen
+    - **默认值**: 20
+    - **描述**: How long to delay the health regen
 * ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for withers to bypass the mob griefing gamerule
-* ##### attributes
+    - **默认值**: false
+    - **描述**: Set to true for withers to bypass the mob griefing gamerule
+* ##### 属性
     * ###### max_health
-        - **default**: 300.0
-        - **description**: Max health attribute
+        - **默认值**: 300.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### wither_skeleton
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
+* ##### 属性
     * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
+        - **默认值**: 20.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### wolf
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### milk-cures-rabid-wolves
-    - **default**: true
-    - **description**: Set to false for rabid wolves to not be cured by milk
+    - **默认值**: true
+    - **描述**: Set to false for rabid wolves to not be cured by milk
 * ##### spawn-rabid-chance
-    - **default**: 0.0
-    - **description**: Percent chance (0.0 - 1.0) that a wolf will spawn as rabid
+    - **默认值**: 0.0
+    - **描述**: Percent chance (0.0 - 1.0) that a wolf will spawn as rabid
 * ##### default-collar-color
-    - **default**: RED
-    - **description**: Set the default collar color when a wolf is tamed. [Available Colors]({{ project.javadoc }}/org/bukkit/Color.html)
+    - **默认值**: RED
+    - **描述**: Set the default collar color when a wolf is tamed. [Available Colors]({{ project.javadoc }}/org/bukkit/Color.html)
 * ##### breeding-delay-ticks
-    - **default**: 6000
-    - **description**: The amount of ticks to wait before being able to breed again
-* ##### attributes
+    - **默认值**: 6000
+    - **描述**: 间隔多少刻才能再次繁殖
+* ##### 属性
     * ###### max_health
-        - **default**: 8.0
-        - **description**: Max health attribute
+        - **默认值**: 8.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### zoglin
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
-* ##### attributes
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
+* ##### 属性
     * ###### max_health
-        - **default**: 40.0
-        - **description**: Max health attribute
+        - **默认值**: 40.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### zombie
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### jockey
     * ###### only-babies
-        - **default**: true
-        - **description**: Only babies can ride chickens
+        - **默认值**: true
+        - **描述**: Only babies can ride chickens
     * ###### chance
-        - **default**: 0.05
-        - **description**: Percent chance (0.0 - 1.0) of riding a chicken when spawned
+        - **默认值**: 0.05
+        - **描述**: Percent chance (0.0 - 1.0) of riding a chicken when spawned
     * ###### try-existing-chickens
-        - **default**: true
-        - **description**: Scan for existing chickens to spawn on
+        - **默认值**: true
+        - **描述**: Scan for existing chickens to spawn on
 * ##### aggressive-towards-villager-when-lagging
-    - **default**: true
-    - **description**: Set to false to stop zombie aggressiveness towards villagers when lagging
+    - **默认值**: true
+    - **描述**: Set to false to stop zombie aggressiveness towards villagers when lagging
 * ##### bypass-mob-griefing
-    - **default**: false
-    - **description**: Set to true for zombies to bypass the mob griefing gamerule
-* ##### attributes
+    - **默认值**: false
+    - **描述**: Set to true for zombies to bypass the mob griefing gamerule
+* ##### 属性
     * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
+        - **默认值**: 20.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
     * ###### spawn_reinforcements
-        - **default**: 0.1
-        - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
+        - **默认值**: 0.1
+        - **描述**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
 * ##### head-visibility-percent
-    - **default**: 0.5
-    - **description**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
+    - **默认值**: 0.5
+    - **描述**: Increase or decrease the percentage to make the detection range of the mob smaller or larger when a player is wearing the mobs corresponding head
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### zombie_horse
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: false
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### spawn-chance
-    - **default**: 0.0
-    - **description**: Percent chance (0.0 - 1.0) a zombie horse will spawn instead of a skeleton horse (natural spawns during thunderstorms)
-* ##### attributes
+    - **默认值**: 0.0
+    - **描述**: Percent chance (0.0 - 1.0) a zombie horse will spawn instead of a skeleton horse (natural spawns during thunderstorms)
+* ##### 属性
     * ###### max_health
         * min
-            - **default**: 15.0
-            - **description**: Min health attribute
+            - **默认值**: 15.0
+            - **描述**: 最小生命值
         * max
-            - **default**: 15.0
-            - **description**: Max health attribute
+            - **默认值**: 15.0
+            - **描述**: 最大生命值属性
     * ###### jump_strength
         * min
-            - **default**: 0.4
-            - **description**: Min jump_strength attribute
+            - **默认值**: 0.4
+            - **描述**: Min jump_strength attribute
         * max
-            - **default**: 1.0
-            - **description**: Max jump_strength attribute
+            - **默认值**: 1.0
+            - **描述**: Max jump_strength attribute
     * ###### movement_speed
         * min
-            - **default**: 0.2
-            - **description**: Min movement_speed attribute
+            - **默认值**: 0.2
+            - **描述**: Min movement_speed attribute
         * max
-            - **default**: 0.2
-            - **description**: Max movement_speed attribute
+            - **默认值**: 0.2
+            - **描述**: Max movement_speed attribute
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### zombie_villager
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### cure
     * ###### enabled
-        - **default**: true
-        - **description**: Set to false to stop zombie villagers from being curable 
+        - **默认值**: true
+        - **描述**: Set to false to stop zombie villagers from being curable 
 * ##### curing_time
     * ###### min
-        - **default**: 3600
-        - **description**: The minimum amount of ticks to randomly choose from when curing
+        - **默认值**: 3600
+        - **描述**: The minimum amount of ticks to randomly choose from when curing
     * ###### max
-        - **default**: 6000
-        - **description**: The maximum amount of ticks to randomly choose from when curing
+        - **默认值**: 6000
+        - **描述**: The maximum amount of ticks to randomly choose from when curing
 * ##### jockey
     * ###### only-babies
-        - **default**: true
-        - **description**: Only babies can ride chickens
+        - **默认值**: true
+        - **描述**: Only babies can ride chickens
     * ###### chance
-        - **default**: 0.05
-        - **description**: Percent chance (0.0 - 1.0) of riding a chicken when spawned
+        - **默认值**: 0.05
+        - **描述**: Percent chance (0.0 - 1.0) of riding a chicken when spawned
     * ###### try-existing-chickens
-        - **default**: true
-        - **description**: Scan for existing chickens to spawn on
-* ##### attributes
+        - **默认值**: true
+        - **描述**: Scan for existing chickens to spawn on
+* ##### 属性
     * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
+        - **默认值**: 20.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
     * ###### spawn_reinforcements
-        - **default**: 0.1
-        - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
+        - **默认值**: 0.1
+        - **描述**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 #### zombified_piglin
-* ##### ridable
-    - **default**: false
-    - **description**: Makes this mob mountable
-* ##### controllable
-    - **default**: true
-    - **description**: Makes this mob WASD controllable
-* ##### ridable-in-water
-    - **default**: true
-    - **description**: Makes this mob mountable in water (it wont eject you)
-* ##### takes-damage-from-water
-    - **default**: false
-    - **description**: Set to true for this mob to start taking damage from water
+* ##### 是否可骑乘（ridable）
+    - **默认值**: false
+    - **描述**: 使该生物可被骑乘
+* ##### 是否可控制（controllable）
+    - **默认值**: true
+    - **描述**: 使该生物可被通过WASD控制移动
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: true
+    - **描述**: 使该生物可以在水中骑乘
+* ##### 是否在水中受到伤害（takes-damage-from-water）
+    - **默认值**: false
+    - **描述**: 设置为true来使该生物在水中时掉血（就像末影人一样）
 * ##### count-as-player-kill-when-angry
-    - **default**: true
-    - **description**: Set to false to stop zombified piglins from dropping XP if they were angered (but not killed) by a player
+    - **默认值**: true
+    - **描述**: Set to false to stop zombified piglins from dropping XP if they were angered (but not killed) by a player
 * ##### jockey
     * ###### only-babies
-        - **default**: true
-        - **description**: Only babies can ride chickens
+        - **默认值**: true
+        - **描述**: Only babies can ride chickens
     * ###### chance
-        - **default**: 0.05
-        - **description**: Percent chance (0.0 - 1.0) of riding a chicken when spawned
+        - **默认值**: 0.05
+        - **描述**: Percent chance (0.0 - 1.0) of riding a chicken when spawned
     * ###### try-existing-chickens
-        - **default**: true
-        - **description**: Scan for existing chickens to spawn on
-* ##### attributes
+        - **默认值**: true
+        - **描述**: Scan for existing chickens to spawn on
+* ##### 属性
     * ###### max_health
-        - **default**: 20.0
-        - **description**: Max health attribute
+        - **默认值**: 20.0
+        - **描述**: 最大生命值属性
     * ###### scale
-        - **default**: 1.0
-        - **description**: Scale attribute
+        - **默认值**: 1.0
+        - **描述**: 体型属性
     * ###### spawn_reinforcements
-        - **default**: 0.0
-        - **description**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
+        - **默认值**: 0.0
+        - **描述**: Percent chance (0.0 - 1.0) this mob will spawn reinforcements
 * ##### always-drop-exp
-    - **default**: false
-    - **description**: Set to true if this mob should always drop experience
+    - **默认值**: false
+    - **描述**: 设为true来让该生物一直掉落经验（无论死因和成长状态）
 
 ### gameplay-mechanics
 
 #### always-tame-in-creative
-- **default**: false
-- **description**: Set to true to have 100% chance of taming a mob
+- **默认值**: false
+- **描述**: Set to true to have 100% chance of taming a mob
 #### animal-breeding-cooldown-seconds
-- **default**: 0
-- **description**: Adds a cooldown to breeding animals per animal type
+- **默认值**: 0
+- **描述**: Adds a cooldown to breeding animals per animal type
 #### armorstand
 * ##### step-height
-    - **default**: 0.0
-    - **description**: Set the default step height of armorstands. Useful for plugins that utilize armorstands as vehicles to be able to drive over blocks without jumping, etc
+    - **默认值**: 0.0
+    - **描述**: Set the default step height of armorstands. Useful for plugins that utilize armorstands as vehicles to be able to drive over blocks without jumping, etc
 * ##### set-name-visible-when-placing-with-custom-name
-    - **default**: false
-    - **description**: Makes the name visible when placing with a custom name
+    - **默认值**: false
+    - **描述**: Makes the name visible when placing with a custom name
 * ##### fix-nametags
-    - **default**: false
-    - **description**: Makes the name visible when using a Name Tag on an Armor Stand
+    - **默认值**: false
+    - **描述**: Makes the name visible when using a Name Tag on an Armor Stand
 * ##### place-with-arms-visible
-    - **default**: false
-    - **description**: Makes the arms visible when placed
+    - **默认值**: false
+    - **描述**: Makes the arms visible when placed
 * ##### can-movement-tick
-    - **default**: true
-    - **description**: Set to false to disallow armorstands from moving
+    - **默认值**: true
+    - **描述**: Set to false to disallow armorstands from moving
 * ##### can-move-in-water
-    - **default**: true
-    - **description**: Set to false to disallow armorstands from moving in water
+    - **默认值**: true
+    - **描述**: Set to false to disallow armorstands from moving in water
 * ##### can-move-in-water-over-fence
-    - **default**: true
-    - **description**: Set to false to disallow armorstands from moving in water over a fence
+    - **默认值**: true
+    - **描述**: Set to false to disallow armorstands from moving in water over a fence
 #### arrow
 * ##### movement-resets-despawn-counter
-    - **default**: true
-    - **description**: Setting this to false prevents keeping arrows alive indefinitely (such as when the block the arrow is stuck in gets removed, like a piston head going up/down).
+    - **默认值**: true
+    - **描述**: Setting this to false prevents keeping arrows alive indefinitely (such as when the block the arrow is stuck in gets removed, like a piston head going up/down).
 #### boat
 * ##### eject-players-on-land
-    - **default**: false
-    - **description**: Set to true for boats to eject players when on land
+    - **默认值**: false
+    - **描述**: Set to true for boats to eject players when on land
 * ##### do-fall-damage
-    - **default**: false
-    - **description**: Set to false for boats to not do fall damage to players
+    - **默认值**: false
+    - **描述**: Set to false for boats to not do fall damage to players
 #### clamp-explosion-radius
-- **default**: true
-- **description**: Set to false to allow setting a negative `ExplosionRadius` value on explosions
+- **默认值**: true
+- **描述**: Set to false to allow setting a negative `ExplosionRadius` value on explosions
 #### daylight-cycle-ticks
 * ##### daytime
-    - **default**: 12000
-    - **description**: Set how long the daylight cycle is ticked
+    - **默认值**: 12000
+    - **描述**: Set how long the daylight cycle is ticked
 * ##### nighttime
-    - **default**: 12000
-    - **description**: Set how long the nighttime cycle is ticked
+    - **默认值**: 12000
+    - **描述**: Set how long the nighttime cycle is ticked
 #### disable-drops-on-cramming-death
-- **default**: false
-- **description**: Stops entities from dropping loot on death, if killed by cramming gamerule
+- **默认值**: false
+- **描述**: Stops entities from dropping loot on death, if killed by cramming gamerule
 #### disable-oxidation-proximity-penalty
-- **default**: false
-- **description**: Set to true to remove the slowdown of oxidation caused by nearby unoxidized copper blocks
+- **默认值**: false
+- **描述**: Set to true to remove the slowdown of oxidation caused by nearby unoxidized copper blocks
 #### drowning
 * ##### air-ticks
-    - **default**: 300
-    - **description**: How long you can breathe underwater before you start drowning
+    - **默认值**: 300
+    - **描述**: How long you can breathe underwater before you start drowning
 * ##### ticks-per-damage
-    - **default**: 20
-    - **description**: Amount of ticks between the drowning damage
+    - **默认值**: 20
+    - **描述**: Amount of ticks between the drowning damage
 * ##### damage-from-drowning
-    - **default**: 2.0
-    - **description**: Amount of damage done while drowning
+    - **默认值**: 2.0
+    - **描述**: Amount of damage done while drowning
 #### elytra
 * ##### damage-per-second
-    - **default**: 1
-    - **description**: How much damage an elytra's durability takes during flight each second
+    - **默认值**: 1
+    - **描述**: How much damage an elytra's durability takes during flight each second
 * ##### damage-multiplied-by-speed
-    - **default**: 0.0
-    - **description**: Damage is multiplied by speed if flight is faster than set speed. Value of 0 disables this multiplier
+    - **默认值**: 0.0
+    - **描述**: Damage is multiplied by speed if flight is faster than set speed. Value of 0 disables this multiplier
 * ##### kinetic-damage
-    - **default**: true
-    - **description**: Should players take damage when flying into a wall
+    - **默认值**: true
+    - **描述**: Should players take damage when flying into a wall
 * ##### ignore-unbreaking
-    - **default**: false
-    - **description**: Should elytras ignore the unbreaking enchantment
+    - **默认值**: false
+    - **描述**: Should elytras ignore the unbreaking enchantment
 * ##### damage-per-boost
     * ###### firework
-        - **default**: 0
-        - **description**: How much damage to deal to the elytra when firework boost activates
+        - **默认值**: 0
+        - **描述**: How much damage to deal to the elytra when firework boost activates
     * ###### trident
-        - **default**: 0
-        - **description**: How much damage to deal to the elytra when trident riptide boost activates
+        - **默认值**: 0
+        - **描述**: How much damage to deal to the elytra when trident riptide boost activates
 #### entities-can-use-portals
-- **default**: true
-- **description**: Set to false to stop entities from being able to use portals
+- **默认值**: true
+- **描述**: Set to false to stop entities from being able to use portals
 #### entities-pick-up-loot-bypass-mob-griefing
-- **default**: false
-- **description**: Mobs that can pick up loot will continue to pick up loot even if the `mobGriefing` gamerule is disabled
+- **默认值**: false
+- **描述**: Mobs that can pick up loot will continue to pick up loot even if the `mobGriefing` gamerule is disabled
 #### entity-blindness-multiplier
-- **default**: 1
-- **description**: How blind a mob is when affected with the blindness potion effect
+- **默认值**: 1
+- **描述**: How blind a mob is when affected with the blindness potion effect
 #### entity-left-handed-chance
-- **default**: 0.05
-- **description**: Percent chance (0.0 - 1.0) an entity will spawn left-handed
+- **默认值**: 0.05
+- **描述**: Percent chance (0.0 - 1.0) an entity will spawn left-handed
 #### entity-lifespan
-- **default**: 0
-- **description**: Disabled by default (0), Amount of ticks an entity will live before disappearing. Interacting with a player resets the timer
+- **默认值**: 0
+- **描述**: Disabled by default (0), Amount of ticks an entity will live before disappearing. Interacting with a player resets the timer
 #### fireballs-bypass-mob-griefing
-- **default**: false
-- **description**: Set to true for fireballs to bypass the mob griefing gamerule
+- **默认值**: false
+- **描述**: Set to true for fireballs to bypass the mob griefing gamerule
 #### halloween
 * ##### force
-    - **default**: false
-    - **description**: Set to true to force the world into halloween
+    - **默认值**: false
+    - **描述**: Set to true to force the world into halloween
 * ##### head-chance
-    - **default**: 0.25
-    - **description**: Percent chance (0.0 - 1.0) a zombie or skeleton will spawn with a jack o' lantern/carved pumpkin on it's head
+    - **默认值**: 0.25
+    - **描述**: Percent chance (0.0 - 1.0) a zombie or skeleton will spawn with a jack o' lantern/carved pumpkin on it's head
 #### impose-teleport-restrictions-on-end-portals
-- **default**: false
-- **description**: Set to true to impose teleport restrictions on end portals. This broadcasts the `EntityTeleportHinderedEvent` event which gives the ability to retry teleports if they fail due to having passengers/being vehicles
+- **默认值**: false
+- **描述**: Set to true to impose teleport restrictions on end portals. This broadcasts the `EntityTeleportHinderedEvent` event which gives the ability to retry teleports if they fail due to having passengers/being vehicles
 #### impose-teleport-restrictions-on-gateways
-- **default**: false
-- **description**: Set to true to impose teleport restrictions on gateways. This broadcasts the `EntityTeleportHinderedEvent` event which gives the ability to retry teleports if they fail due to having passengers/being vehicles
+- **默认值**: false
+- **描述**: Set to true to impose teleport restrictions on gateways. This broadcasts the `EntityTeleportHinderedEvent` event which gives the ability to retry teleports if they fail due to having passengers/being vehicles
 #### impose-teleport-restrictions-on-nether-portals
-- **default**: false
-- **description**: Set to true to impose teleport restrictions on nether portals. This broadcasts the `EntityTeleportHinderedEvent` event which gives the ability to retry teleports if they fail due to having passengers/being vehicles
+- **默认值**: false
+- **描述**: Set to true to impose teleport restrictions on nether portals. This broadcasts the `EntityTeleportHinderedEvent` event which gives the ability to retry teleports if they fail due to having passengers/being vehicles
 #### infinity-bow
 * ##### works-without-arrows
-    - **default**: false
-    - **description**: Set to true for the infinity bow to work without arrows
+    - **默认值**: false
+    - **描述**: Set to true for the infinity bow to work without arrows
 #### item
 * ##### end-crystal
     * ###### place-anywhere
-        - **default**: false
-        - **description**: Allows you to place an end crystal on any block, not just obsidian and bedrock
+        - **默认值**: false
+        - **描述**: Allows you to place an end crystal on any block, not just obsidian and bedrock
 * ##### shears
     * ###### damage-if-sprinting
-        - **default**: false
-        - **description**: Holding shears while sprinting will randomly damage the player (Don't run with scissors!) Will not activate for shears that have an `item_model` component or `custom_model_data` component
+        - **默认值**: false
+        - **描述**: Holding shears while sprinting will randomly damage the player (Don't run with scissors!) Will not activate for shears that have an `item_model` component or `custom_model_data` component
     * ###### damage-if-sprinting-item-model
-        - **default**: "purpurmc:scissors"
-        - **description**: The resource location of the [`item_model`](https://minecraft.wiki/w/Data_component_format#item_model) to use for shears alongside the `damage-if-sprinting` option.
+        - **默认值**: "purpurmc:scissors"
+        - **描述**: The resource location of the [`item_model`](https://minecraft.wiki/w/Data_component_format#item_model) to use for shears alongside the `damage-if-sprinting` option.
     * ###### ignore-in-water
-        - **default**: false
-        - **description**: Should damage be ignored while in water if `damage-if-sprinting` is enabled
+        - **默认值**: false
+        - **描述**: Should damage be ignored while in water if `damage-if-sprinting` is enabled
     * ###### ignore-in-lava
-        - **default**: false
-        - **description**: Should damage be ignored while in lava if `damage-if-sprinting` is enabled
+        - **默认值**: false
+        - **描述**: Should damage be ignored while in lava if `damage-if-sprinting` is enabled
     * ###### sprinting-damage
-        - **default**: 1
-        - **description**: The amount of damage to give if `damage-if-sprinting` is enabled
+        - **默认值**: 1
+        - **描述**: The amount of damage to give if `damage-if-sprinting` is enabled
     * ###### defuse-tnt-chance
-        - **default**: 0.0
-        - **description**: Percent chance (0.0 - 1.0) that right-clicking primed TNT will defuse it
+        - **默认值**: 0.0
+        - **描述**: Percent chance (0.0 - 1.0) that right-clicking primed TNT will defuse it
 * ##### snowball
     * ###### extinguish
         * ###### fire
-            - **default**: false
-            - **description**: Whether snowballs, when thrown, should extinguish fires
+            - **默认值**: false
+            - **描述**: Whether snowballs, when thrown, should extinguish fires
         * ###### candles
-            - **default**: false
-            - **description**: Whether snowballs, when thrown, should extinguish candles
+            - **默认值**: false
+            - **描述**: Whether snowballs, when thrown, should extinguish candles
         * ###### campfires
-            - **default**: false
-            - **description**: Whether snowballs, when thrown, should extinguish campfires
+            - **默认值**: false
+            - **描述**: Whether snowballs, when thrown, should extinguish campfires
 * ##### shulker_box
     * ###### drop-contents-when-destroyed
-        - **default**: true
-        - **description**: Whether the shulker box should drop it's contents when it's been destroyed
+        - **默认值**: true
+        - **描述**: Whether the shulker box should drop it's contents when it's been destroyed
 * ##### compass
     * ###### holding-shows-bossbar
-        - **default**: false
-        - **description**: If the bossbar from the [`/compass`](commands#compass) command should show when holding a compass
+        - **默认值**: false
+        - **描述**: If the bossbar from the [`/compass`](commands#compass) command should show when holding a compass
 * ##### glow_berries
     * ###### eat-glow-duration
-        - **default**: 0
-        - **description**: Amount of ticks the player will glow after eating a glow berry. Set to 0 to disable
+        - **默认值**: 0
+        - **描述**: Amount of ticks the player will glow after eating a glow berry. Set to 0 to disable
 * ##### ender-pearl
     * ###### damage
-        - **default**: 5
-        - **description**: The amount of damage to take after teleporting using an ender pearl
+        - **默认值**: 5
+        - **描述**: The amount of damage to take after teleporting using an ender pearl
     * ###### cooldown
-        - **default**: 20
-        - **description**: The cooldown after using an ender pearl (in ticks)
+        - **默认值**: 20
+        - **描述**: The cooldown after using an ender pearl (in ticks)
     * ###### creative-cooldown
-        - **default**: 20
-        - **description**: The cooldown after using an ender pearl while in creative (in ticks)
+        - **默认值**: 20
+        - **描述**: The cooldown after using an ender pearl while in creative (in ticks)
     * ###### endermite-spawn-chance
-        - **default**: 0.05
-        - **description**: Percent chance (0.0 - 1.0) an endermite will spawn after teleporting using an ender pearl
+        - **默认值**: 0.05
+        - **描述**: Percent chance (0.0 - 1.0) an endermite will spawn after teleporting using an ender pearl
 * ##### immune
     * ###### explosion
-        - **default**: []
-        - **description**: List of items that are immune to explosions
+        - **默认值**: []
+        - **描述**: List of items that are immune to explosions
     * ###### fire
-        - **default**: []
-        - **description**: List of items that are immune to fire
+        - **默认值**: []
+        - **描述**: List of items that are immune to fire
     * ###### lightning
-        - **default**: []
-        - **description**: List of items that are immune to lightning
+        - **默认值**: []
+        - **描述**: List of items that are immune to lightning
     * ###### cactus
-        - **default**: []
-        - **description**: List of items that are immune to cactus
+        - **默认值**: []
+        - **描述**: List of items that are immune to cactus
     ???+ note "Example of item immune list:"
         ``` yaml
         explosion:
@@ -3643,233 +3643,233 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     These item immune lists can cause client desync issues, such as invisible items on the ground! There is nothing that can be done about that from the server-side code.
 
 #### mending-multiplier
-- **default**: 1.0
-- **description**: How effective mending is at repairing items, higher values mean less xp is used to repair items. (1.0 = 100%)
+- **默认值**: 1.0
+- **描述**: How effective mending is at repairing items, higher values mean less xp is used to repair items. (1.0 = 100%)
 #### milk-clears-beneficial-effects
-- **default**: true
-- **description**: Set to false to have milk clear only negative status effects
+- **默认值**: true
+- **描述**: Set to false to have milk clear only negative status effects
 #### milk-cures-bad-omen
-- **default**: true
-- **description**: Allow players to drink milk to cure bad omen status effect
+- **默认值**: true
+- **描述**: Allow players to drink milk to cure bad omen status effect
 #### minecart
 * ##### max-speed
-    - **default**: 0.4
-    - **description**: Max speed of a minecart when controlled
+    - **默认值**: 0.4
+    - **描述**: Max speed of a minecart when controlled
 * ##### place-anywhere
-    - **default**: false
-    - **description**: Whether minecarts can be placed anywhere, not just on rails
+    - **默认值**: false
+    - **描述**: Whether minecarts can be placed anywhere, not just on rails
 * ##### powered-rail
     * ###### boost-modifier
-        - **default**: 0.06
-        - **description**: the speed boost that minecarts gain from hitting a powered rail (Doesn't affect furnace minecarts)
-* ##### controllable
+        - **默认值**: 0.06
+        - **描述**: the speed boost that minecarts gain from hitting a powered rail (Doesn't affect furnace minecarts)
+* ##### 是否可控制（controllable）
     * ###### enabled
-        - **default**: false
-        - **description**: Whether minecarts can be controlled when not on rails
+        - **默认值**: false
+        - **描述**: Whether minecarts can be controlled when not on rails
     * ###### fall-damage
-        - **default**: true
-        - **description**: Set to true to give fall damage to the player while in a minecart
+        - **默认值**: true
+        - **描述**: Set to true to give fall damage to the player while in a minecart
     * ###### step-height
-        - **default**: 1.0
-        - **description**: The step height in which a minecarts can go up to the next block without jumping
+        - **默认值**: 1.0
+        - **描述**: The step height in which a minecarts can go up to the next block without jumping
     * ###### hop-boost
-        - **default**: 0.5
-        - **description**: Jump power when pressing spacebar on a controllable minecart
+        - **默认值**: 0.5
+        - **描述**: Jump power when pressing spacebar on a controllable minecart
     * ###### base-speed
-        - **default**: 0.1
-        - **description**: Base speed of minecart when controlled
+        - **默认值**: 0.1
+        - **描述**: Base speed of minecart when controlled
     * ###### block-speed
-        - **default**:
+        - **默认值**:
             ``` yaml
             grass_block: 0.3
             stone: 0.5
             ```
-        - **description**: List of speed overrides per block type
+        - **描述**: List of speed overrides per block type
 #### mob-effects
 * ##### health-regen-amount
-    - **default**: 1.0
-    - **description**: The amount at which this effect affects entities
+    - **默认值**: 1.0
+    - **描述**: The amount at which this effect affects entities
 * ##### minimal-health-poison-amount
-    - **default**: 1.0
-    - **description**: The amount at which this effect affects entities
+    - **默认值**: 1.0
+    - **描述**: The amount at which this effect affects entities
 * ##### poison-degeneration-amount
-    - **default**: 1.0
-    - **description**: The amount at which this effect affects entities
+    - **默认值**: 1.0
+    - **描述**: The amount at which this effect affects entities
 * ##### wither-degeneration-amount
-    - **default**: 1.0
-    - **description**: The amount at which this effect affects entities
+    - **默认值**: 1.0
+    - **描述**: The amount at which this effect affects entities
 * ##### hunger-exhaustion-amount
-    - **default**: 0.005
-    - **description**: The amount at which this effect affects entities
+    - **默认值**: 0.005
+    - **描述**: The amount at which this effect affects entities
 * ##### saturation-regen-amount
-    - **default**: 1.0
-    - **description**: The amount at which this effect affects entities
+    - **默认值**: 1.0
+    - **描述**: The amount at which this effect affects entities
 #### mob-last-hurt-by-player-time
-- **default**: 100
-- **description**: Allows you to change the amount of ticks required for a mob's death to count as a player kill after being hurt by the player (projectile or directly)
+- **默认值**: 100
+- **描述**: Allows you to change the amount of ticks required for a mob's death to count as a player kill after being hurt by the player (projectile or directly)
 #### mob-spawning
 * ##### village-cats
-    - **default**: default
-    - **description**: Set to true to spawn in the world that this option is a part of
+    - **默认值**: default
+    - **描述**: Set to true to spawn in the world that this option is a part of
 * ##### raid-patrols
-    - **default**: default
-    - **description**: Set to true to spawn in the world that this option is a part of
+    - **默认值**: default
+    - **描述**: Set to true to spawn in the world that this option is a part of
 * ##### phantoms
-    - **default**: default
-    - **description**: Set to true to spawn in the world that this option is a part of
+    - **默认值**: default
+    - **描述**: Set to true to spawn in the world that this option is a part of
 * ##### wandering-traders
-    - **default**: default
-    - **description**: Set to true to spawn in the world that this option is a part of
+    - **默认值**: default
+    - **描述**: Set to true to spawn in the world that this option is a part of
 * ##### village-sieges
-    - **default**: default
-    - **description**: Set to true to spawn in the world that this option is a part of
+    - **默认值**: default
+    - **描述**: Set to true to spawn in the world that this option is a part of
 * ##### ignore-creative-players
-    - **default**: false
-    - **description**: Option to choose whether or not to ignore creative players when spawning mobs.
+    - **默认值**: false
+    - **描述**: Option to choose whether or not to ignore creative players when spawning mobs.
 #### mobs-ignore-rails
-- **default**: false
-- **description**: Set to true to allow mobs to walk over rails
+- **默认值**: false
+- **描述**: Set to true to allow mobs to walk over rails
 #### note-block-ignore-above
-- **default**: false
-- **description**: Set to true for note blocks to continue making sound even if there is a block above it
+- **默认值**: false
+- **描述**: Set to true for note blocks to continue making sound even if there is a block above it
 #### persistent-droppable-entity-display-names
-- **default**: true
-- **description**: Set to true to make entity's display names and lores persist after breaking (ex. named armor stands retain their name)
+- **默认值**: true
+- **描述**: Set to true to make entity's display names and lores persist after breaking (ex. named armor stands retain their name)
 #### persistent-tileentity-display-name
-- **default**: true
-- **description**: Set to false to disable TE's display names being persistant after breaking (ex. named custom player heads stop retaining their name)
+- **默认值**: true
+- **描述**: Set to false to disable TE's display names being persistant after breaking (ex. named custom player heads stop retaining their name)
 #### persistent-tileentity-lore
-- **default**: false
-- **description**: Set to true to make TE's lores persist after breaking (ex. custom player heads with lore will retain their lore)
+- **默认值**: false
+- **描述**: Set to true to make TE's lores persist after breaking (ex. custom player heads with lore will retain their lore)
 #### player
 * ##### exp-pickup-delay-ticks
-    - **default**: 2
-    - **description**: The delay a player can pick up experience after it is dropped
+    - **默认值**: 2
+    - **描述**: The delay a player can pick up experience after it is dropped
 * ##### shift-right-click-repairs-mending-points
-    - **default**: 0
-    - **description**: The amount of experience points to use from the player's bar for repairing items enchanted with mending in the player's inventory
+    - **默认值**: 0
+    - **描述**: The amount of experience points to use from the player's bar for repairing items enchanted with mending in the player's inventory
 * ##### spawn-invulnerable-ticks
-    - **default**: 60
-    - **description**: Gives you the ability to control how long a player is invulnerable when they first spawn in.
+    - **默认值**: 60
+    - **描述**: Gives you the ability to control how long a player is invulnerable when they first spawn in.
 * ##### invulnerable-while-accepting-resource-pack
-    - **default**: false
-    - **description**: Sets the player as invulnerable while they download the resource pack.
+    - **默认值**: false
+    - **描述**: Sets the player as invulnerable while they download the resource pack.
 * ##### teleport-if-outside-border
-    - **default**: false
-    - **description**: Teleports you to spawn if you somehow get outside the world border
+    - **默认值**: false
+    - **描述**: Teleports you to spawn if you somehow get outside the world border
 * ##### teleport-on-nether-ceiling-damage
-    - **default**: false
-    - **description**: Teleports you to spawn if you take damage while on top of the nether ceiling
+    - **默认值**: false
+    - **描述**: Teleports you to spawn if you take damage while on top of the nether ceiling
 * ##### allow-void-trading
-    - **default**: false
-    - **description**: Allows the ability to continuously trade with a villager through an End Gateway exploit.
+    - **默认值**: false
+    - **描述**: Allows the ability to continuously trade with a villager through an End Gateway exploit.
 * ##### totem-of-undying-works-in-inventory
-    - **default**: false
-    - **description**: Allows the totem of undying to work anywhere in your inventory, not just your offhand
-* ##### ridable-in-water
-    - **default**: false
-    - **description**: Lets mobs/players ride on players if the player is in the water
+    - **默认值**: false
+    - **描述**: Allows the totem of undying to work anywhere in your inventory, not just your offhand
+* ##### 是否可在水中骑乘（ridable-in-water）
+    - **默认值**: false
+    - **描述**: Lets mobs/players ride on players if the player is in the water
 * ##### fix-stuck-in-portal
-    - **default**: false
-    - **description**: If the player is stuck inside a portal with no way of getting out, walking to another block will reset the portal cooldown, allowing them to teleport back through the portal
+    - **默认值**: false
+    - **描述**: If the player is stuck inside a portal with no way of getting out, walking to another block will reset the portal cooldown, allowing them to teleport back through the portal
 * ##### one-punch-in-creative
-    - **default**: false
-    - **description**: If the player is in creative and hits an entity with an empty hand, the entity instantly dies
+    - **默认值**: false
+    - **描述**: If the player is in creative and hits an entity with an empty hand, the entity instantly dies
 * ##### sleep-ignore-nearby-mobs
-    - **default**: false
-    - **description**: Set to true to allow sleep even if there are mobs nearby
+    - **默认值**: false
+    - **描述**: Set to true to allow sleep even if there are mobs nearby
 * ##### can-skip-night
-    - **default**: true
-    - **description**: Set to false to disable the players' ability to skip the night by sleeping
+    - **默认值**: true
+    - **描述**: Set to false to disable the players' ability to skip the night by sleeping
 * ##### critical-damage-multiplier
-    - **default**: 1.5
-    - **description**: The percentage of damage a critical attack adds to the base damage
+    - **默认值**: 1.5
+    - **描述**: The percentage of damage a critical attack adds to the base damage
 * ##### burp-when-full
-    - **default**: false
-    - **description**: Plays a burp sound after a player fills the hunger bar completely by eating
+    - **默认值**: false
+    - **描述**: Plays a burp sound after a player fills the hunger bar completely by eating
 * ##### burp-delay
-    - **default**: 10
-    - **description**: Amount of ticks to delay sound; `burp-when-full` option must be enabled
+    - **默认值**: 10
+    - **描述**: Amount of ticks to delay sound; `burp-when-full` option must be enabled
 * ##### curse-of-binding
     * ###### remove-with-weakness
-        - **default**: false
-        - **description**: Allows the player to remove curse of binding armor when they have a weakness effect applied to them
+        - **默认值**: false
+        - **描述**: Allows the player to remove curse of binding armor when they have a weakness effect applied to them
 * ##### idle-timeout
     * ###### kick-if-idle
-        - **default**: true
-        - **description**: Kick players if they become idle (see server.properties for player-idle-timeout time)
+        - **默认值**: true
+        - **描述**: Kick players if they become idle (see server.properties for player-idle-timeout time)
     * ###### tick-nearby-entities
-        - **default**: true
-        - **description**: Should entities tick normally when nearby players are AFK. False will require at least 1 non-AFK player in order to tick
+        - **默认值**: true
+        - **描述**: Should entities tick normally when nearby players are AFK. False will require at least 1 non-AFK player in order to tick
     * ###### mobs-target
-        - **default**: true
-        - **description**: Should mobs target nearby AFK players
+        - **默认值**: true
+        - **描述**: Should mobs target nearby AFK players
     * ###### count-as-sleeping
-        - **default**: false
-        - **description**: Should AFK players count as sleeping? (allows active players to skip night by sleeping, even if AFK players are not in bed)
+        - **默认值**: false
+        - **描述**: Should AFK players count as sleeping? (allows active players to skip night by sleeping, even if AFK players are not in bed)
     * ###### update-tab-list
-        - **default**: false
-        - **description**: Should AFK players have their name updated in the tab list (puts `[AFK]` in front of their name)
+        - **默认值**: false
+        - **描述**: Should AFK players have their name updated in the tab list (puts `[AFK]` in front of their name)
 * ##### exp-dropped-on-death
     * ###### equation
-        - **default**: expLevel * 7
-        - **description**: How much exp to drop on death. Available NMS variables are `expLevel`, `expTotal`, and `exp`
+        - **默认值**: expLevel * 7
+        - **描述**: How much exp to drop on death. Available NMS variables are `expLevel`, `expTotal`, and `exp`
     * ###### maximum
-        - **default**: 100
-        - **description**: Maximum amount of exp value to drop on death
+        - **默认值**: 100
+        - **描述**: Maximum amount of exp value to drop on death
 * ##### netherite-fire-resistance
     * ###### duration
-        - **default**: 0
-        - **description**: Set how long the fire resistance lasts. Set to 0 to disable
+        - **默认值**: 0
+        - **描述**: Set how long the fire resistance lasts. Set to 0 to disable
     * ###### amplifier
-        - **default**: 0
-        - **description**: Set the amplifier for the fire resistance effect
+        - **默认值**: 0
+        - **描述**: Set the amplifier for the fire resistance effect
     * ###### ambient
-        - **default**: false
-        - **description**: Set to true for the particle effects to be less intrusive on the screen
+        - **默认值**: false
+        - **描述**: Set to true for the particle effects to be less intrusive on the screen
     * ###### show-particles
-        - **default**: false
-        - **description**: Set to true for the fire resistance potion effect to show particles
+        - **默认值**: false
+        - **描述**: Set to true for the fire resistance potion effect to show particles
     * ###### show-icon
-        - **default**: true
-        - **description**: Set to false for the fire resistance effect to not display it's icon
+        - **默认值**: true
+        - **描述**: Set to false for the fire resistance effect to not display it's icon
 #### projectile-damage
 * ##### snowball
-    - **default**: -1
-    - **description**: Set how much damage a snowball does (-1 will make damage be 3 for blazes & 0 for all other entities which is default)
+    - **默认值**: -1
+    - **描述**: Set how much damage a snowball does (-1 will make damage be 3 for blazes & 0 for all other entities which is default)
 #### projectile-offset
 * ##### bow
-    - **default**: 1.0
-    - **description**: The projectile offset of a bow
+    - **默认值**: 1.0
+    - **描述**: The projectile offset of a bow
 * ##### crossbow
-    - **default**: 1.0
-    - **description**: The projectile offset of a crossbow
+    - **默认值**: 1.0
+    - **描述**: The projectile offset of a crossbow
 * ##### egg
-    - **default**: 1.0
-    - **description**: The projectile offset of an egg
+    - **默认值**: 1.0
+    - **描述**: The projectile offset of an egg
 * ##### ender-pearl
-    - **default**: 1.0
-    - **description**: The projectile offset of an ender-pearl
+    - **默认值**: 1.0
+    - **描述**: The projectile offset of an ender-pearl
 * ##### throwable-potion
-    - **default**: 1.0
-    - **description**: The projectile offset of a throwable-potion
+    - **默认值**: 1.0
+    - **描述**: The projectile offset of a throwable-potion
 * ##### trident
-    - **default**: 1.0
-    - **description**: The projectile offset of a trident
+    - **默认值**: 1.0
+    - **描述**: The projectile offset of a trident
 * ##### snowball
-    - **default**: 1.0
-    - **description**: The projectile offset of a snowball
+    - **默认值**: 1.0
+    - **描述**: The projectile offset of a snowball
 #### projectiles-bypass-mob-griefing
-* **default**: false
-* **description**: Set to true for projectiles to bypass the mob griefing gamerule
+* **默认值**: false
+* **描述**: Set to true for projectiles to bypass the mob griefing gamerule
 #### raid-cooldown-seconds
-- **default**: 0
-- **description**: How long you should wait before another raid can be initiated
+- **默认值**: 0
+- **描述**: How long you should wait before another raid can be initiated
 #### rain-stops-after-sleep
-- **default**: true
-- **description**: Set to false to make rain continue even after a player sleeps
+- **默认值**: true
+- **描述**: Set to false to make rain continue even after a player sleeps
 #### shovel-turns-block-to-grass-path
-- **default**:
+- **默认值**:
     ``` yaml
     - minecraft:coarse_dirt
     - minecraft:dirt
@@ -3878,58 +3878,58 @@ based on the world difficulty. [Read more here]({{ project.source }}/blob/61fc0a
     - minecraft:podzol
     - minecraft:rooted_dirt
     ```
-- **description**: List of blocks that can be turned into a grass path when right-clicked with a shovel
+- **描述**: List of blocks that can be turned into a grass path when right-clicked with a shovel
 #### silk-touch
 Requires the [`purpur.drop.spawners`](permissions#purpurdropspawners) and [`purpur.place.spawners`](permissions#purpurplacespawners) permissions
 
 * ##### enabled
-    - **default**: false
-    - **description**: Makes it so you can mine spawners using a tool with silk touch
+    - **默认值**: false
+    - **描述**: Makes it so you can mine spawners using a tool with silk touch
 * ##### minimal-level
-    - **default**: 1
-    - **description**: The minimal level of the Silktouch enchantment required to pick up mined spawners
+    - **默认值**: 1
+    - **描述**: The minimal level of the Silktouch enchantment required to pick up mined spawners
 * ##### tools
-    - **default**:
+    - **默认值**:
     ``` yaml
     - minecraft:iron_pickaxe
     - minecraft:golden_pickaxe
     - minecraft:diamond_pickaxe
     - minecraft:netherite_pickaxe
     ```
-    - **description**: Whitelist of tools that can mine spawners with silk touch
+    - **描述**: Whitelist of tools that can mine spawners with silk touch
 * ##### spawner-name
-    - **default**: "&lt;reset>&lt;white>Monster Spawner"
-    - **description**: The name of the spawner
+    - **默认值**: "&lt;reset>&lt;white>Monster Spawner"
+    - **描述**: The name of the spawner
 * ##### spawner-lore
-    - **default**:
+    - **默认值**:
         ``` yaml
         - Spawns a <mob>
         ```
-    - **description**: The lore of the spawner
+    - **描述**: The lore of the spawner
 #### thunder-stops-after-sleep
-- **default**: true
-- **description**: Set to false to make thunder continue even after a player sleeps
+- **默认值**: true
+- **描述**: Set to false to make thunder continue even after a player sleeps
 #### tick-fluids
-- **default**: true
-- **description**: Set to false to stop fluids from ticking. [Screenshot of a simple plugin that uses this option](images/freezefluids-chat-screenshot.png)
+- **默认值**: true
+- **描述**: Set to false to stop fluids from ticking. [Screenshot of a simple plugin that uses this option](images/freezefluids-chat-screenshot.png)
 #### trident-loyalty-void-return-height
-- **default**: 0.0
-- **description**: The void height at which a trident with loyalty will return to it's thrower. A value of 0.0 or higher disables this feature.
+- **默认值**: 0.0
+- **描述**: The void height at which a trident with loyalty will return to it's thrower. A value of 0.0 or higher disables this feature.
 #### use-better-mending
-- **default**: false
-- **description**: Set to true for mending enchantment to always repair the most damaged equipment first
+- **默认值**: false
+- **描述**: Set to true for mending enchantment to always repair the most damaged equipment first
 
 ### ridable-settings
 
-#### babies-are-ridable
-- **default**: true
-- **description**: Set to false to stop babies from being ridable
-#### untamed-tamables-are-ridable
-- **default**: true
-- **description**: Set to false to stop untamed tamables from being ridable
+#### babies-are-是否可骑乘（ridable）
+- **默认值**: true
+- **描述**: Set to false to stop babies from being 是否可骑乘（ridable）
+#### untamed-tamables-are-是否可骑乘（ridable）
+- **默认值**: true
+- **描述**: Set to false to stop untamed tamables from being 是否可骑乘（ridable）
 #### use-dismounts-underwater-tag
-- **default**: true
-- **description**: Set to false to use `<mob>.ridable-in-water` options instead of the [`DISMOUNTS_UNDERWATER`](https://minecraft.wiki/w/Tag#Entity_types) tag
+- **默认值**: true
+- **描述**: Set to false to use `<mob>.ridable-in-water` options instead of the [`DISMOUNTS_UNDERWATER`](https://minecraft.wiki/w/Tag#Entity_types) tag
 #### use-night-vision
-- **default**: false
-- **description**: Set to true to give night vision to riders while on a ridable
+- **默认值**: false
+- **描述**: Set to true to give night vision to riders while on a 是否可骑乘（ridable）
