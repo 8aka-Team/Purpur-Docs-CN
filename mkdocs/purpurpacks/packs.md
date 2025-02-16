@@ -108,28 +108,28 @@
 
 #### [铜块可用作光柱基座](https://modrinth.com/datapack/purpurpacks-copper-block-beacon-base/versions)
 * 允许所有类型的整体铜块用作光柱基座
-* 允许使用铜锭作为光柱支付物品
+* 允许使用铜锭作为光柱启动物品
 
 #### [红石块可用作光柱基座](https://modrinth.com/datapack/purpurpacks-redstone-beacon-base/versions)
 * 允许红石块用作光柱基座
-* 允许使用红石粉作为光柱支付物品
+* 允许使用红石粉作为光柱启动物品
 
 #### [青金石块可用作光柱基座](https://modrinth.com/datapack/purpurpacks-lapis-beacon-base/versions)
 * 允许青金石块用作光柱基座
-* 允许使用青金石作为光柱支付物品
+* 允许使用青金石作为光柱启动物品
 
 #### [紫水晶块可用作光柱基座](https://modrinth.com/datapack/purpurpacks-amethyst-beacon-base/versions)
-* 允许使用阿玛斯蒂块和发芽阿玛斯蒂作为光柱基座
-* 允许使用阿玛斯蒂碎片作为光柱支付物品
+* 允许使用紫水晶块和紫水晶母岩作为光柱基座
+* 允许使用紫水晶碎片作为光柱启动物品
 
 #### [粗金块可用作光柱基座](https://modrinth.com/datapack/purpurpacks-raw-gold-beacon-base/versions)
 * 允许使用粗金块作为光柱基座
-* 允许使用粗金作为光柱支付物品
+* 允许使用粗金作为光柱启动物品
 
 #### [粗铁块可用作光柱基座](https://modrinth.com/datapack/purpurpacks-raw-iron-block-beacon-base/versions)
 * 允许使用粗铁块作为光柱基座
-* 允许使用粗铁作为光柱支付物品
+* 允许使用粗铁作为光柱启动物品
 
 #### [粗铜块可用作光柱基座](https://modrinth.com/datapack/purpurpacks-raw-copper-beacon-base/versions)
 * 允许使用粗铜块作为光柱基座
-* 允许使用粗铜作为光柱支付物品
+* 允许使用粗铜作为光柱启动物品
