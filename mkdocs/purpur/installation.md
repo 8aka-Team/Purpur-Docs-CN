@@ -1,1 +1,1 @@
-由于 Purpur 是 Paper 的即插即用替代品（无需更改），您可以按照他们的 [入门指南](https://paper.8aka.org/paper/getting-started) 安装 Purpur。
+由于 Purpur 是 Paper 的即插即用替代品（无需更改），你可以按照他们的 [入门指南](https://paper.8aka.org/paper/getting-started) 安装 Purpur。

@@ -1,4 +1,4 @@
-这个页面详细介绍了PurpurExtras配置文件中提供的各种配置设置。
+这个页面详细介绍了 PurpurExtras 配置文件中提供的各种配置设置。
 
 ## anvil-crushes-blocks
 
