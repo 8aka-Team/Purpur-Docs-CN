@@ -1,6 +1,6 @@
 # PurpurDocs
 
-这是用 [Mkdocs](https://github.com/mkdocs/mkdocs) 生成的静态站点文档，托管在 [Purpur](https://purpurmc.org/)的https://purpurmc.org/docs 上。其中包含一个 Python 脚本，用于比较两个提交哈希的差异，并将配置 / 权限的添加 / 移除输出到一个YAML文件中。
+这是用 [Mkdocs](https://github.com/mkdocs/mkdocs) 生成的静态站点文档，托管在 [Purpur](https://purpurmc.org/) 的 [网站](https://purpurmc.org/docs) 上。其中包含一个 Python 脚本，用于比较两个提交哈希的差异，并将配置 / 权限的添加 / 移除输出到一个 YAML 文件中。
 
 ## 构建
 
