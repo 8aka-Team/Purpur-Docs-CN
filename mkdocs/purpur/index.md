@@ -25,7 +25,7 @@ Purpur 是 [Paper](https://github.com/PaperMC/Paper) 服务器的一个可配置
 
 ## 下载
 
-您可以从[下载页面]({{ project.downloads }})或[下载 API](https://api.purpurmc.org/)下载 Purpur。
+你可以从[下载页面]({{ project.downloads }})或[下载 API](https://api.purpurmc.org/)下载 Purpur。
 
 下载 API 端点：
 
@@ -52,7 +52,7 @@ Purpur 是 [Paper](https://github.com/PaperMC/Paper) 服务器的一个可配置
 ## API
 
 ### Javadoc
-您可以在这里找到 Purpur 的 Javadoc：{{ project.javadoc }}
+你可以在这里找到 Purpur 的 Javadoc：{{ project.javadoc }}
 
 ### 依赖信息
 === "Maven"
@@ -127,7 +127,7 @@ Purpur 是 [Paper](https://github.com/PaperMC/Paper) 服务器的一个可配置
     }
     ```
 
-将 Purpur 导入到您的项目中还会包括 Pufferfish、Paper、Spigot 和 Bukkit 提供的所有 API。
+将 Purpur 导入到你的项目中还会包括 Pufferfish、Paper、Spigot 和 Bukkit 提供的所有 API。
 
 ## 构建和设置
 
@@ -149,4 +149,4 @@ Purpur 是 [Paper](https://github.com/PaperMC/Paper) 服务器的一个可配置
 使用命令 `./gradlew build` 来构建 API 和服务器。Gradle 将在 `Purpur-API/build/libs` 和 `Purpur-Server/build/libs` 下放置编译的 jar 文件。
 
 要获取 purpurclip jar，运行 `./gradlew paperclip`。
-要将 `purpur-api` 和 `purpur` 依赖项安装到您的本地 maven 仓库，请运行 `./gradlew publishToMavenLocal`
+要将 `purpur-api` 和 `purpur` 依赖项安装到你的本地 maven 仓库，请运行 `./gradlew publishToMavenLocal`

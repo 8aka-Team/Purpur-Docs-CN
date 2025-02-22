@@ -5,7 +5,7 @@ Purpur为其新增功能添加了一些新的权限节点。
 ## allow.ride.<mob_id&gt;
 需要在purpur.yml中启用[`<mob_id>.ridable`](configuration#mobs)
 
-- 此权限允许通过按住Shift右键来骑乘特定生物。一旦骑乘，您可以使用WASD键移动，空格键跳跃或飞行。只需用生物的实体ID替换"<mob_id&gt;"。
+- 此权限允许通过按住Shift右键来骑乘特定生物。一旦骑乘，你可以使用WASD键移动，空格键跳跃或飞行。只需用生物的实体ID替换"<mob_id&gt;"。
 
 - **示例**：
     - `allow.ride.cow`
@@ -139,7 +139,7 @@ Purpur为其新增功能添加了一些新的权限节点。
 ## purpur.anvil.minimessage
 需要在 purpur.yml 中启用 [`anvil.allow-minimessage`](configuration#use-mini-message)
 
-- 允许玩家在铁砧中使用 MiniMessage 标签。[`您可以在这里测试您的 MiniMessage 标签。`](https://webui.advntr.dev/)
+- 允许玩家在铁砧中使用 MiniMessage 标签。[`你可以在这里测试你的 MiniMessage 标签。`](https://webui.advntr.dev/)
 
 ## purpur.anvil.remove_italics
 需要在 purpur.yml 中启用 [`anvil.allow-colors`](configuration#anvil)

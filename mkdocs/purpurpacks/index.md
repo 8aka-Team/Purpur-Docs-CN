@@ -24,6 +24,6 @@ PurpurPacks 是一些被建议添加到[Purpur](https://purpurmc.org/)服务器�
 
 ## 下载
 
-您可以从它们各自的[Modrinth 页面](https://modrinth.com/user/PurpurMC/datapacks)下载 PurpurPacks。
+你可以从它们各自的[Modrinth 页面](https://modrinth.com/user/PurpurMC/datapacks)下载 PurpurPacks。
 
 ## 许可证 [![MIT 许可证](https://img.shields.io/github/license/PurpurMC/PurpurPacks?&logo=github)](https://github.com/PurpurMC/PurpurPacks?tab=MIT-1-ov-file)
