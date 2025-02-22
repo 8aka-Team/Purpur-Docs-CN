@@ -1,11 +1,11 @@
-Purpur为其新增功能添加了一些新的权限节点。
+Purpur 为其新增功能添加了一些新的权限节点。
 
-默认情况下，Purpur会禁用**所有**这些权限，无论用户是否具有OP权限。服务器需要一个像[LuckPerms](https://luckperms.net/)这样的权限插件来向用户授予权限。
+默认情况下，Purpur 会禁用**所有**这些权限，无论用户是否具有管理员权限。服务器需要一个像[LuckPerms](https://luckperms.net/)这样的权限插件来向用户授予权限。
 
 ## allow.ride.<mob_id&gt;
-需要在purpur.yml中启用[`<mob_id>.ridable`](configuration#mobs)
+需要在 purpur.yml 中启用[`<mob_id>.ridable`](configuration#mobs)
 
-- 此权限允许通过按住Shift右键来骑乘特定生物。一旦骑乘，你可以使用WASD键移动，空格键跳跃或飞行。只需用生物的实体ID替换"<mob_id&gt;"。
+- 此权限允许通过按住 Shift 右键来骑乘特定生物。一旦骑乘，你可以使用 WASD 键移动，空格键跳跃或飞行。只需用生物的实体 ID 替换"<mob_id&gt;"。
 
 - **示例**：
     - `allow.ride.cow`
@@ -28,7 +28,7 @@ Purpur为其新增功能添加了一些新的权限节点。
         - 鼠标点击时发射凋零头
 
 ## allow.powered.creeper
-需要在purpur.yml中启用[`creeper.ridable`](configuration#creeper)
+需要在 purpur.yml 中启用[`creeper.ridable`](configuration#creeper)
 
 - 此权限允许在骑乘时切换爆炸状态的充能爬行者。在不移动时按住空格键进行充能切换。充能状态将在爆炸时切换开或关。
 
@@ -171,4 +171,4 @@ Purpur为其新增功能添加了一些新的权限节点。
 ## purpur.tnt.defuse
 需要将 [`defuse-tnt-chance`](configuration#defuse-tnt-chance) 设置为大于0的概率
 
-- 允许玩家右键使用剪刀来拆除引爆的TNT
+- 允许玩家右键使用剪刀来拆除引爆的 TNT

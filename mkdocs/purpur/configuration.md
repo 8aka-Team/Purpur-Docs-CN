@@ -33,7 +33,7 @@
 * #### uptime
     * ##### format
         - **默认值**: "&lt;days>&lt;hours>&lt;minutes>&lt;seconds>"
-        - **描述**: `<uptime>` 占位符用于 [`uptime-command-output`](#uptime-command-output) 的格式。
+        - **描述**: 在 [`uptime-command-output`](#uptime-command-output) 中 `<uptime>` 占位符的格式。
     * ##### day
         - **默认值**: "%02d day, "
         - **描述**: 在 [command.uptime.format](#format) 选项中 `<day>` 占位符的输出格式。
@@ -62,7 +62,7 @@
     * ##### requires-specific-permission
         - 需要 [`minecraft.command.gamemode.<gamemode>`](permissions#minecraftcommandgamemodegamemode) 权限
         - **默认值**: false
-        - **描述**: 如果为 true，那么 时，每种游戏模式都需要相应的权限。
+        - **描述**: 如果为 true，那么切换每种游戏模式都需要相应的权限。
 * #### tpsbar
     * ##### title
       `<tps>` - 当前的 TPS
@@ -128,24 +128,24 @@
       可选项：`PINK`（粉色）、`BLUE`（蓝色）、`RED`（红色）、`GREEN`（绿色）、`YELLOW`（黄色）、`PURPLE`（紫色）、`WHITE`（白色）
         * ###### good
             - **默认值**: GREEN（绿色）
-            - **描述**: 当使用的内存量为“良好”时显示的颜色
+            - **描述**: 当剩余内存量为 “良好” 时显示的颜色。
         * ###### medium
             - **默认值**: YELLOW（黄色）
-            - **描述**: 当使用的内存量为“中等”时显示的颜色
+            - **描述**: 当剩余内存量为 “中等” 时显示的颜色。
         * ###### low
             - **默认值**: RED（红色）
-            - **描述**: 当使用的内存量为“低”时显示的颜色
+            - **描述**: 当剩余内存量为 “低” 时显示的颜色。
     * ##### text-color
       `<text>` - 来自 [`settings.command.tpsbar.title`](#title) 的格式
         * ###### good
             - **默认值**: &lt;gradient:#55ff55:#00aa00>&lt;text>&lt;/gradient>
-            - **描述**: 当使用的内存量为“良好”时 `<text>` 的渐变效果
+            - **描述**: 当剩余内存量为 “良好” 时 `<text>` 的渐变效果
         * ###### medium
             - **默认值**: &lt;gradient:#ffff55:#ffaa00>&lt;text>&lt;/gradient>
-            - **描述**: 当使用的内存量为“中等”时 `<text>` 的渐变效果
+            - **描述**: 当剩余内存量为 “中等” 时 `<text>` 的渐变效果
         * ###### low
             - **默认值**: &lt;gradient:#ff5555:#aa0000>&lt;text>&lt;/gradient>
-            - **描述**: 当使用的内存量为“低”时 `<text>` 的渐变效果
+            - **描述**: 当剩余内存量为 “低” 时 `<text>` 的渐变效果
     * ##### tick-interval
         - **默认值**: 20
         - **描述**: Bossbar 更新的频率
@@ -172,7 +172,7 @@
         - **描述**: Bossbar 更新的频率
 * #### hide-hidden-players-from-entity-selector
     - **默认值**: false
-    - **描述**: 如果为 true，那么 时，隐藏在实体选择器中的被隐藏玩家。
+    - **描述**: 如果为 true，那么隐藏在实体选择器中的被隐藏玩家。
 
 ### allow-water-placement-in-the-end
 
@@ -187,18 +187,18 @@
 ### tps-catchup
 
 - **默认值**: true
-- **描述**: 控制 TPS 追赶。
+- **描述**: 是否打开 TPS 自稳（TPS Catchup）。
 
 ???+ note "注意"
-TPS 追赶会使服务器的 TPS 超过 20，试图在任何低于 20 的时间段后，尽量将平均 TPS 保持在接近 20 的水平，但也会带来一些副作用。例如，在网络延迟高峰期，玩家可能会被怪物瞬间击杀。
+TPS 自稳（TPS Catchup）会使服务器的 TPS 超过 20，试图在任何低于 20 的时间段后，尽量将平均 TPS 保持在接近 20 的水平，但也会带来一些副作用。例如，在网络延迟高峰期，玩家可能会被怪物瞬间击杀。
 
 ### server-mod-name
 - **默认值**: Purpur
-- **描述**: 修改客户端显示的服务器名称，当客户端版本过旧或有人打开调试屏幕 [F3] 时会显示该名称。
+- **描述**: 修改客户端显示的服务器名称，当客户端版本过旧或打开调试屏幕 [F3] 时会显示该名称。
 
 ### fix-projectile-looting-transfer
 - **默认值**: false
-- **描述**: 解决 MC-3304 问题，防止通过弹射物造成的死亡被应用掉落物，除非有插件修改了掉落物修正。
+- **描述**: 解决 MC-3304 问题，防止由于弹射物造成的死亡被应用于掉落物，除非有插件修改了掉落物修正。
 
 ### blast-resistance-overrides
 - **默认值**: {}
@@ -223,23 +223,23 @@ TPS 追赶会使服务器的 TPS 超过 20，试图在任何低于 20 的时间�
 
 ### lagging-threshold
 - **默认值**: 19.0
-- **描述**: Purpur 跟踪何时出现延迟，以便根据情况调整行为。此值为当服务器开始出现延迟时的阈值。~~目前仅用于 `mob.villager.brain-ticks` 设置~~
+- **描述**: Purpur 将会检查何时出现延迟，以便根据情况调整行为。此值为当服务器开始出现延迟时的阈值。~~目前仅用于 `mob.villager.brain-ticks` 设置~~
 
 ### fix-network-serialized-items-in-creative
 - **默认值**: false
-- **描述**: 如果为 true，那么 以修复通过 `NetworkItemSerializeEvent` 修改的物品，这些物品即使是客户端侧的也会持久化，原因是创造模式客户端使用了创造模式的物品操作。
+- **描述**: 如果为 true，那么将会修复通过 `NetworkItemSerializeEvent` 修改的物品，这些物品即使是客户端侧的也会持久化，原因是创造模式客户端使用了创造模式的物品操作。
 
 ### disable-give-dropping
 - **默认值**: false
-- **描述**: 如果为 true，那么 时，当玩家的背包已满时，`/give` 命令将不会在地面上掉落物品。
+- **描述**: 如果为 true，那么当玩家的背包已满时，`/give` 命令将不会在地面上产生掉落物品。
 
 ### player-deaths-always-show-item
 - **默认值**: false
-- **描述**: 如果为 true，那么 时，在玩家死亡消息中总是显示用来击杀玩家的物品。
+- **描述**: 如果为 true，那么在玩家死亡消息中总是显示用来击杀玩家的物品。
 
 ### register-minecraft-debug-commands
 - **默认值**: false
-- **描述**: 如果为 true，那么 时，注册未使用/隐藏的 Minecraft 命令。以下命令将变为可用（并带有其 `minecraft.command.<command_name>` 权限对应项）：`debugconfig`、`serverpack`、`spawn_armor_trims`、`warden_spawn_tracker`、`debugmobspawning`、`debugpath` 和 `raid`。此列表可能不完整，具体取决于这些命令是否被删除或是否有新命令添加到 Minecraft 的新版本中。
+- **描述**: 如果为 true，那么将会注册未使用/隐藏的 Minecraft 命令。以下命令将变为可用（并带有其对应的 `minecraft.command.<command_name>` 权限节点）：`debugconfig`、`serverpack`、`spawn_armor_trims`、`warden_spawn_tracker`、`debugmobspawning`、`debugpath` 和 `raid`。此列表可能不完整，具体取决于这些命令是否被删除或是否有新命令添加到 Minecraft 的新版本中。
 
 ### startup-commands
 设置 `Purpur.IReallyDontWantStartupCommands` 系统属性为 `true` 以禁用此功能。
@@ -249,7 +249,7 @@ TPS 追赶会使服务器的 TPS 超过 20，试图在任何低于 20 的时间�
 
 ### bee-count-payload
 - **默认值**: false
-- **描述**: 如果为 true，那么 时，允许客户端通过自定义数据包请求蜂巢的蜜蜂数量。（主要由 [PurpurClient](https://modrinth.com/mod/PurpurClient) 模组使用）
+- **描述**: 如果为 true，那么将会允许客户端通过自定义数据包获取蜂巢的蜜蜂数量。（主要由 [PurpurClient](https://modrinth.com/mod/PurpurClient) 模组使用）
 
 ### messages
 
@@ -257,7 +257,7 @@ TPS 追赶会使服务器的 TPS 超过 20，试图在任何低于 20 的时间�
 需要将 [`kick-if-idle`](#kick-if-idle) 设置为 `false`
 
 - **默认值**: &lt;yellow>&lt;italic>%s 现在处于离开状态
-- **描述**: 当用户进入离开状态时，广播此消息（必须将 `player-idle-timeout` 设置为大于 0，并且 [`kick-if-idle`](#kick-if-idle) 如果为 false，那么）
+- **描述**: 当用户进入离开状态时，广播此消息（必须将 `player-idle-timeout` 设置为大于 0，并且 [`kick-if-idle`](#kick-if-idle) 为 false）
 
 #### afk-broadcast-back
 需要将 [`kick-if-idle`](#kick-if-idle) 设置为 `false`
@@ -270,7 +270,7 @@ TPS 追赶会使服务器的 TPS 超过 20，试图在任何低于 20 的时间�
 需要 [`afk-broadcast-away`](#afk-broadcast-away) 或 [`afk-broadcast-back`](#afk-broadcast-back) 有非空值
 
 - **默认值**: false
-- **描述**: 在离开状态广播中使用玩家的显示名称（纯文本版本），而不是用户名。
+- **描述**: 在离开状态广播中使用玩家的显示名称（纯文本），而不是用户名。
 - **注意**: 此选项不会设置玩家的 TAB 名称。
 
 #### afk-tab-list-prefix
@@ -295,7 +295,7 @@ TPS 追赶会使服务器的 TPS 超过 20，试图在任何低于 20 的时间�
 需要启用 [`damage-if-sprinting`](#damage-if-sprinting) 选项
 
 - **默认值**: &lt;red>&lt;italic>不要拿着剪刀跑！
-- **描述**: 当玩家尝试拿着剪刀奔跑时，动作条中显示的消息。
+- **描述**: 当玩家尝试拿着剪刀奔跑时，小标题中显示的消息。
 
 #### ping-command-output
 需要 [`bukkit.command.ping`](permissions#bukkitcommandping) 权限
@@ -340,7 +340,7 @@ TPS 追赶会使服务器的 TPS 超过 20，试图在任何低于 20 的时间�
 
 #### unverified-username
 - **默认值**: default
-- **描述**: 当玩家因用户名未验证（玩家处于离线模式）而被踢出时显示的消息。设置为 "default" 时，将显示默认消息 "Failed to verify username!"（未能验证用户名！）
+- **描述**: 当玩家因用户名未验证（玩家处于离线模式）而被踢出时显示的消息。设置为 "default"将会将显示默认消息 "Failed to verify username!"
 
 #### sleep-skipping-night
 - **默认值**: default
@@ -365,7 +365,7 @@ TPS 追赶会使服务器的 TPS 超过 20，试图在任何低于 20 的时间�
 ### network
 #### kick-for-out-of-order-chat
 - **默认值**: true
-- **描述**: 如果为 false，那么 时，服务器不会因为聊天顺序错误而踢出玩家。
+- **描述**: 如果为 false，那么将会服务器不会因为聊天顺序错误而踢出玩家。
 
 #### upnp-port-forwarding
 - **默认值**: false
@@ -373,7 +373,7 @@ TPS 追赶会使服务器的 TPS 超过 20，试图在任何低于 20 的时间�
 
 #### max-joins-per-second
 - **默认值**: false
-- **描述**: 如果为 true，那么 时，使 `max-joins-per-tick` 配置在 `paper.yml` 中按秒而非按刻进行使用。
+- **描述**: 如果为 true，那么将会使 `max-joins-per-tick` 配置在 `paper.yml` 中按秒而非按刻进行使用。
 
 ### blocks
 
@@ -418,7 +418,7 @@ TPS 追赶会使服务器的 TPS 超过 20，试图在任何低于 20 的时间�
 #### crying_obsidian
 * ##### valid-for-portal-frame
     - **默认值**: false
-    - **描述**: 如果为 true，那么 时，可以用哭泣的黑曜石（crying obsidian）制作传送门框架。
+    - **描述**: 如果为 true，那么将会可以用哭泣的黑曜石（crying obsidian）制作传送门框架。
 
 #### twisting_vines
 * ##### max-growth-age
@@ -453,12 +453,12 @@ TPS 追赶会使服务器的 TPS 超过 20，试图在任何低于 20 的时间�
 #### magma-block
 * ##### reverse-bubble-column-flow
     - **默认值**: false
-    - **描述**: 如果为 true，那么 时，当在水源方块下方放置或生成熔岩方块时，会生成向上的气泡柱，而不是向下的气泡柱。
+    - **描述**: 如果为 true，那么将会当在水源方块下方放置或生成熔岩方块时，会生成向上的气泡柱，而不是向下的气泡柱。
 
 #### soul-sand
 * ##### reverse-bubble-column-flow
     - **默认值**: false
-    - **描述**: 如果为 true，那么 时，当在水源方块下方放置或生成灵魂沙时，会生成向下的气泡柱，而不是向上的气泡柱。
+    - **描述**: 如果为 true，那么将会当在水源方块下方放置或生成灵魂沙时，会生成向下的气泡柱，而不是向上的气泡柱。
 ### broadcasts
 
 #### advancement
@@ -534,7 +534,7 @@ spider_eye:                # 要编辑的食物
 
 * ##### clamp-levels
     - **默认值**: true
-    - **描述**: 设置为 `false` 时，允许附魔等级达到 `32767`，通过将等级存储为短整型（short）而非字节（byte）实现。
+    - **描述**: 设置为 `false`将会允许附魔等级达到 `32767`，通过将等级存储为短整型（short）而非字节（byte）实现。
 
 ???+ note "注意"
 客户端不会显示超过 `255` 的附魔等级。
@@ -629,7 +629,7 @@ spider_eye:                # 要编辑的食物
 #### bed
 * ##### explode
     - **默认值**: true
-    - **描述**: 床是否会爆炸。如果为 false，那么 时，床会消失。
+    - **描述**: 床是否会爆炸。如果为 false，那么将会床会消失。
 
 * ##### explode-on-villager-sleep
     - **默认值**: false
@@ -658,25 +658,25 @@ spider_eye:                # 要编辑的食物
 #### blue_ice
 * ##### allow-mob-spawns
     - **默认值**: true
-    - **描述**: 如果为 false，那么 时，不允许在蓝冰上生成怪物。
+    - **描述**: 如果为 false，那么将会不允许在蓝冰上生成怪物。
 
 * ##### allow-snow-formation
     - **默认值**: true
-    - **描述**: 如果为 false，那么 时，不允许在蓝冰上形成雪。
+    - **描述**: 如果为 false，那么将会不允许在蓝冰上形成雪。
 
 #### cactus
 * ##### breaks-from-solid-neighbors
     - **默认值**: true
-    - **描述**: 如果为 true，那么 时，仙人掌会因邻近的实心方块而破裂。
+    - **描述**: 如果为 true，那么将会仙人掌会因邻近的实心方块而破裂。
 
 * ##### affected-by-bonemeal
     - **默认值**: false
-    - **描述**: 如果为 true，那么 时，仙人掌可以使用骨粉。
+    - **描述**: 如果为 true，那么将会仙人掌可以使用骨粉。
 
 #### campfire
 * ##### lit-when-placed
     - **默认值**: true
-    - **描述**: 如果为 false，那么 时，放置篝火时不会点燃。
+    - **描述**: 如果为 false，那么将会放置篝火时不会点燃。
 #### cauldron
 * ##### fill-chances
     * ###### rain
@@ -900,7 +900,7 @@ Value set -> Actual fall distance needed to trample
 #### sculk_shrieker
 * ##### can-summon-default
     - **默认值**: false
-    - **描述**: 如果为 true，那么 时，放置时会将 `can_summon` 设置为 `true`。
+    - **描述**: 如果为 true，那么将会放置时会将 `can_summon` 设置为 `true`。
 
 #### shulker_box
 * ##### allow-oversized-stacks
@@ -916,7 +916,7 @@ Value set -> Actual fall distance needed to trample
 #### slab
 * ##### break-individual-slabs-when-sneaking
     - **默认值**: false
-    - **描述**: 如果为 true，那么 时，玩家在蹲下时可以打破双层板中的单个木板。
+    - **描述**: 如果为 true，那么将会玩家在蹲下时可以打破双层板中的单个木板。
 
 #### spawner
 * ##### deactivate-by-redstone
@@ -929,7 +929,7 @@ Value set -> Actual fall distance needed to trample
 #### sponge
 * ##### absorbs-lava
     - **默认值**: false
-    - **描述**: 如果为 true，那么 时，海绵可以吸收岩浆。
+    - **描述**: 如果为 true，那么将会海绵可以吸收岩浆。
 * ##### absorption
     * ###### area
         - **默认值**: 64
@@ -946,7 +946,7 @@ Value set -> Actual fall distance needed to trample
 #### sugar_cane
 * ##### affected-by-bonemeal
     - **默认值**: false
-    - **描述**: 如果为 true，那么 时，糖果甘蔗可以使用骨粉生长。
+    - **描述**: 如果为 true，那么将会糖果甘蔗可以使用骨粉生长。
 
 #### turtle_egg
 * ##### break-from-exp-orbs
@@ -960,13 +960,13 @@ Value set -> Actual fall distance needed to trample
     - **描述**: 允许矿车损坏/破坏海龟蛋。
 * ##### bypass-mob-griefing
     - **默认值**: false
-    - **描述**: 如果为 true，那么 时，海龟蛋可以绕过生物破坏规则（mob griefing）。
+    - **描述**: 如果为 true，那么将会海龟蛋可以绕过生物破坏规则（mob griefing）。
 * ##### random-tick-crack-chance
     - **默认值**: 500
     - **描述**: 海龟蛋破裂的随机机会。
 * ##### feather-fall-distance-affects-trampling
     - **默认值**: false
-    - **描述**: 如果为 true，那么 时，如果实体从高处掉落，等同于其羽毛掉落等级，且超过足够的高度，便会踏碎海龟蛋。羽毛掉落 1 需要从 3+ 方块高处掉落才能踏碎，羽毛掉落 2 需要从 4+ 方块高处掉落，以此类推。
+    - **描述**: 如果为 true，那么将会如果实体从高处掉落，等同于其羽毛掉落等级，且超过足够的高度，便会踏碎海龟蛋。羽毛掉落 1 需要从 3+ 方块高处掉落才能踏碎，羽毛掉落 2 需要从 4+ 方块高处掉落，以此类推。
 
 #### water
 * ##### infinite-required-sources
@@ -998,7 +998,7 @@ Value set -> Actual fall distance needed to trample
     - **描述**: 使该生物可以使用 WASD 控制。
 * ##### takes-damage-from-water
     - **默认值**: false
-    - **描述**: 如果为 true，那么 时，该生物会受到水的伤害。
+    - **描述**: 如果为 true，那么将会该生物会受到水的伤害。
 * ##### breeding-delay-ticks
     - **默认值**: 6000
     - **描述**: 可再次繁殖前需要等待的 ticks 数量。
@@ -1011,7 +1011,7 @@ Value set -> Actual fall distance needed to trample
         - **描述**: 规模属性。
 * ##### always-drop-exp
     - **默认值**: false
-    - **描述**: 如果为 true，那么 时，该生物总是掉落经验。
+    - **描述**: 如果为 true，那么将会该生物总是掉落经验。
 
 #### bat
 * ##### ridable
@@ -1025,7 +1025,7 @@ Value set -> Actual fall distance needed to trample
     - **描述**: 使该生物可以在水中骑乘（不会将玩家弹出）。
 * ##### takes-damage-from-water
     - **默认值**: false
-    - **描述**: 如果为 true，那么 时，该生物会受到水的伤害。
+    - **描述**: 如果为 true，那么将会该生物会受到水的伤害。
 * ##### ridable-max-y
     - **默认值**: 256
     - **描述**: 该生物在骑乘时最大可飞行的高度。
@@ -1059,7 +1059,7 @@ Value set -> Actual fall distance needed to trample
         - **描述**: 规模属性。
 * ##### always-drop-exp
     - **默认值**: false
-    - **描述**: 如果为 true，那么 时，该生物总是掉落经验。
+    - **描述**: 如果为 true，那么将会该生物总是掉落经验。
 
 #### bee
 * ##### ridable
@@ -1073,7 +1073,7 @@ Value set -> Actual fall distance needed to trample
     - **描述**: 使该生物可以在水中骑乘（不会将玩家弹出）。
 * ##### takes-damage-from-water
     - **默认值**: true
-    - **描述**: 如果为 false，那么 时，该生物停止受到水的伤害。
+    - **描述**: 如果为 false，那么将会该生物停止受到水的伤害。
 * ##### ridable-max-y
     - **默认值**: 256
     - **描述**: 该生物在骑乘时最大可飞行的高度。
@@ -1101,7 +1101,7 @@ Value set -> Actual fall distance needed to trample
         - **描述**: 体型属性
 * ##### always-drop-exp
     - **默认值**: false (否)
-    - **描述**: 如果为 true，那么  时，怪物会总是掉落经验。
+    - **描述**: 如果为 true，那么 将会怪物会总是掉落经验。
 
 #### blaze
 * ##### ridable
@@ -1118,7 +1118,7 @@ Value set -> Actual fall distance needed to trample
     - **描述**: 此怪物在被骑乘时可飞行的最大高度。
 * ##### takes-damage-from-water
     - **默认值**: true 
-    - **描述**: 如果为 false，那么 (否) 时，此怪物将停止受到水的伤害。
+    - **描述**: 如果为 false，那么 (否)将会此怪物将停止受到水的伤害。
 * ##### attributes
     * ###### max_health
         - **默认值**: 20.0
@@ -1128,7 +1128,7 @@ Value set -> Actual fall distance needed to trample
         - **描述**: 体型属性
 * ##### always-drop-exp
     - **默认值**: false (否)
-    - **描述**: 如果为 true，那么  时，怪物会总是掉落经验。
+    - **描述**: 如果为 true，那么 将会怪物会总是掉落经验。
 
 #### camel
 * ##### ridable-in-water
@@ -1171,7 +1171,7 @@ Value set -> Actual fall distance needed to trample
     - **描述**: 使此怪物在水中可骑乘（不会把你弹出）。
 * ##### takes-damage-from-water
     - **默认值**: false (否)
-    - **描述**: 如果为 true，那么  时，此怪物会开始受到水的伤害。
+    - **描述**: 如果为 true，那么 将会此怪物会开始受到水的伤害。
 * ##### default-collar-color
     - **默认值**: RED (红色)
     - **描述**: 设置当猫被驯服时的默认项圈颜色。[可用颜色]({{ project.javadoc }}/org/bukkit/Color.html)
@@ -1197,7 +1197,7 @@ Value set -> Actual fall distance needed to trample
         - **描述**: 体型属性
 * ##### always-drop-exp
     - **默认值**: false (否)
-    - **描述**: 如果为 true，那么  时，怪物会总是掉落经验。
+    - **描述**: 如果为 true，那么 将会怪物会总是掉落经验。
 
 #### cave_spider
 * ##### ridable
@@ -1211,7 +1211,7 @@ Value set -> Actual fall distance needed to trample
     - **描述**: 使此怪物在水中可骑乘（不会把你弹出）。
 * ##### takes-damage-from-water
     - **默认值**: false (否)
-    - **描述**: 如果为 true，那么  时，此怪物会开始受到水的伤害。
+    - **描述**: 如果为 true，那么 将会此怪物会开始受到水的伤害。
 * ##### attributes
     * ###### max_health
         - **默认值**: 12.0
@@ -1221,7 +1221,7 @@ Value set -> Actual fall distance needed to trample
         - **描述**: 体型属性
 * ##### always-drop-exp
     - **默认值**: false (否)
-    - **描述**: 如果为 true，那么  时，怪物会总是掉落经验。
+    - **描述**: 如果为 true，那么 将会怪物会总是掉落经验。
 
 #### chicken
 * ##### ridable
@@ -1235,7 +1235,7 @@ Value set -> Actual fall distance needed to trample
     - **描述**: 使此怪物在水中不可骑乘（不会把你弹出）。
 * ##### takes-damage-from-water
     - **默认值**: false (否)
-    - **描述**: 如果为 true，那么  时，此怪物会开始受到水的伤害。
+    - **描述**: 如果为 true，那么 将会此怪物会开始受到水的伤害。
 * ##### retaliate
     - **默认值**: false (否)
     - **描述**: 如果鸡被击中，它会反击。
@@ -1251,7 +1251,7 @@ Value set -> Actual fall distance needed to trample
         - **描述**: 体型属性
 * ##### always-drop-exp
     - **默认值**: false (否)
-    - **描述**: 如果为 true，那么  时，怪物会总是掉落经验。
+    - **描述**: 如果为 true，那么 将会怪物会总是掉落经验。
 
 #### cod
 * ##### ridable
@@ -1262,7 +1262,7 @@ Value set -> Actual fall distance needed to trample
     - **描述**: 使此怪物可使用 WASD 控制。
 * ##### takes-damage-from-water
     - **默认值**: false (否)
-    - **描述**: 如果为 true，那么  时，此怪物会开始受到水的伤害。
+    - **描述**: 如果为 true，那么 将会此怪物会开始受到水的伤害。
 * ##### attributes
     * ###### max_health
         - **默认值**: 3.0
@@ -1272,7 +1272,7 @@ Value set -> Actual fall distance needed to trample
         - **描述**: 体型属性
 * ##### always-drop-exp
     - **默认值**: false (否)
-    - **描述**: 如果为 true，那么  时，怪物会总是掉落经验。
+    - **描述**: 如果为 true，那么 将会怪物会总是掉落经验。
 
 #### cow
 * ##### ridable
@@ -1286,7 +1286,7 @@ Value set -> Actual fall distance needed to trample
     - **描述**: 使此怪物在水中可骑乘（不会把你弹出）。
 * ##### takes-damage-from-water
     - **默认值**: false (否)
-    - **描述**: 如果为 true，那么  时，此怪物会开始受到水的伤害。
+    - **描述**: 如果为 true，那么 将会此怪物会开始受到水的伤害。
 * ##### feed-mushrooms-for-mooshroom
     - **默认值**: 0
     - **描述**: 喂食多少个蘑菇给牛，才能让它变成蘑菇牛。值为 0 (禁用) 时此功能被禁用。
@@ -2620,7 +2620,7 @@ Value set -> Actual fall distance needed to trample
     - **描述**: 使这个生物可以骑乘
 * ##### can-swim
     - **默认值**: false
-    - **描述**: 骷髅马是否能在水中游泳。如果为 false，那么 时，它们会沉到水底（原版默认）
+    - **描述**: 骷髅马是否能在水中游泳。如果为 false，那么将会它们会沉到水底（原版默认）
 * ##### ridable-in-water
     - **默认值**: true
     - **描述**: 使这个生物在水中可以骑乘（不会把你弹下去）
@@ -3487,167 +3487,167 @@ Value set -> Actual fall distance needed to trample
 #### boat
 * ##### eject-players-on-land
     - **默认值**: false
-    - **描述**: 如果为 true，那么 使船在陆地上将玩家弹出
+    - **描述**: 如果为 true，那么船在陆地上时玩家将会被弹出。
 * ##### do-fall-damage
     - **默认值**: false
-    - **描述**: 如果为 false，那么 使船不会对玩家造成摔落伤害
+    - **描述**: 如果为 false，那么坐在船上时玩家不会受到摔落伤害。
 #### clamp-explosion-radius
 - **默认值**: true
-- **描述**: 如果为 false，那么 允许对爆炸半径设置负值
+- **描述**: 如果为 false，那么允许对爆炸半径设置负值。
 #### daylight-cycle-ticks
 * ##### daytime
     - **默认值**: 12000
-    - **描述**: 设置白天周期的刻数
+    - **描述**: 设置白天的刻数。
 * ##### nighttime
     - **默认值**: 12000
-    - **描述**: 设置夜晚周期的刻数
+    - **描述**: 设置夜晚的刻数。
 #### disable-drops-on-cramming-death
 - **默认值**: false
-- **描述**: 如果生物被压死，则禁用掉落
+- **描述**: 如果生物被压死，则不会掉落物品。
 #### disable-oxidation-proximity-penalty
 - **默认值**: false
-- **描述**: 如果为 true，那么 使铜块在附近没有氧化铜块时不受氧化惩罚
+- **描述**: 如果为 true，那么使铜块在附近没有氧化铜块时不受氧化惩罚。
 #### drowning
 * ##### air-ticks
     - **默认值**: 300
-    - **描述**: 在开始淹死之前，你可以在水下呼吸的时间（以刻为单位）
+    - **描述**: 在开始窒息之前，你可以在水下呼吸的时间（以刻为单位）
 * ##### ticks-per-damage
     - **默认值**: 20
-    - **描述**: 每次淹死伤害之间的刻数
+    - **描述**: 每次窒息伤害之间的间隔刻数。
 * ##### damage-from-drowning
     - **默认值**: 2.0
-    - **描述**: 淹死造成的伤害
+    - **描述**: 窒息造成的伤害。
 #### elytra
 * ##### damage-per-second
     - **默认值**: 1
-    - **描述**: 每秒飞行时，翅膀的耐久度消耗
+    - **描述**: 每秒飞行时，鞘翅的耐久度消耗。
 * ##### damage-multiplied-by-speed
     - **默认值**: 0.0
-    - **描述**: 如果飞行速度大于设定速度，伤害将按速度放大。0 值禁用此乘数
+    - **描述**: 如果飞行速度大于设定速度，伤害将按速度放大。0 值禁用此乘数。
 * ##### kinetic-damage
     - **默认值**: true
-    - **描述**: 玩家飞行撞击墙面时是否受到伤害
+    - **描述**: 玩家飞行撞击墙面时是否受到伤害。
 * ##### ignore-unbreaking
     - **默认值**: false
-    - **描述**: 是否忽略翅膀的耐久修复附魔
+    - **描述**: 是否忽略鞘翅的耐久附魔。
 * ##### damage-per-boost
     * ###### firework
         - **默认值**: 0
-        - **描述**: 当烟花推动激活时，翅膀受到的伤害
+        - **描述**: 当使用烟花加速时，鞘翅的耐久损耗。
     * ###### trident
         - **默认值**: 0
-        - **描述**: 当三叉戟激活时，翅膀受到的伤害
+        - **描述**: 当使用三叉戟加速时，鞘翅的耐久损耗。
 #### entities-can-use-portals
 - **默认值**: true
-- **描述**: 如果为 false，那么 禁止实体使用传送门
+- **描述**: 如果为 false，那么禁止实体使用传送门。
 #### entities-pick-up-loot-bypass-mob-griefing
 - **默认值**: false
-- **描述**: 即使禁用了 `mobGriefing` 游戏规则，可以拾取物品的生物仍然会继续拾取物品
+- **描述**: 即使禁用了 `mobGriefing` 游戏规则，可以拾取物品的生物仍然会继续拾取物品。
 #### entity-blindness-multiplier
 - **默认值**: 1
-- **描述**: 当实体受到盲目药水效果影响时的盲目程度
+- **描述**: 当实体受到失明药水效果影响时的失明程度。
 #### entity-left-handed-chance
 - **默认值**: 0.05
-- **描述**: 实体出生时左撇子的几率（0.0 - 1.0）
+- **描述**: 实体出生时使用左手的几率（0.0 - 1.0）。
 #### entity-lifespan
 - **默认值**: 0
-- **描述**: 默认禁用（0），实体在消失之前生存的刻数。与玩家互动会重置计时器
+- **描述**: 实体在消失之前生存的刻数。与玩家互动会重置计时器。
 #### fireballs-bypass-mob-griefing
 - **默认值**: false
-- **描述**: 如果为 true，那么 使火球绕过生物破坏游戏规则
+- **描述**: 如果为 true，那么使火球绕过生物破坏游戏规则。
 #### halloween
 * ##### force
     - **默认值**: false
-    - **描述**: 如果为 true，那么 强制世界进入万圣节模式
+    - **描述**: 如果为 true，那么强制世界进入万圣节模式。
 * ##### head-chance
     - **默认值**: 0.25
-    - **描述**: 僵尸或骷髅生成时，戴上南瓜灯或雕刻南瓜头的几率
+    - **描述**: 僵尸或骷髅生成时戴着南瓜灯或雕刻南瓜头的几率。
 #### impose-teleport-restrictions-on-end-portals
 - **默认值**: false
-- **描述**: 如果为 true，那么 对末地传送门施加传送限制
+- **描述**: 如果为 true，那么对末地传送门增加传送限制。
 #### impose-teleport-restrictions-on-gateways
 - **默认值**: false
-- **描述**: 如果为 true，那么 对传送门施加传送限制
+- **描述**: 如果为 true，那么对末地折跃门增加传送限制。
 #### impose-teleport-restrictions-on-nether-portals
 - **默认值**: false
-- **描述**: 如果为 true，那么 对下界传送门施加传送限制
+- **描述**: 如果为 true，那么对下界传送门增加传送限制。
 #### infinity-bow
 * ##### works-without-arrows
     - **默认值**: false
-    - **描述**: 如果为 true，那么 使无限弓无需箭矢也能使用
+    - **描述**: 如果为 true，那么使无限弓无需箭矢也能使用。
 #### item
 * ##### end-crystal
     * ###### place-anywhere
         - **默认值**: false
-        - **描述**: 允许将末影水晶放置在任何方块上，而不仅仅是放置在黑曜石或基岩上
+        - **描述**: 允许将末影水晶放置在任何方块上，而不仅仅是放置在黑曜石或基岩上。
 * ##### shears
     * ###### damage-if-sprinting
         - **默认值**: false
-        - **描述**: 在冲刺时持有剪刀会随机对玩家造成伤害（不要跑着拿剪刀！）。对于具有 `item_model` 组件或 `custom_model_data` 组件的剪刀不会激活此效果
+        - **描述**: 在冲刺时手持剪刀是否对玩家造成随机伤害（不要跑着拿剪刀！）。对于具有 `item_model` 组件或 `custom_model_data` 组件的剪刀不会激活此效果。
     * ###### damage-if-sprinting-item-model
         - **默认值**: "purpurmc:scissors"
-        - **描述**: 适用于剪刀并启用 `damage-if-sprinting` 选项时使用的 `item_model` 的资源位置
+        - **描述**: 剪刀使用的 `item_model` 的资源位置。（需要启用 `damage-if-sprinting`）
     * ###### ignore-in-water
         - **默认值**: false
-        - **描述**: 如果启用了 `damage-if-sprinting`，是否在水中忽略伤害
+        - **描述**: 是否在水中忽略冲刺伤害。（需要启用 `damage-if-sprinting`）
     * ###### ignore-in-lava
         - **默认值**: false
-        - **描述**: 如果启用了 `damage-if-sprinting`，是否在岩浆中忽略伤害
+        - **描述**: 是否在岩浆中忽略冲刺伤害。（需要启用 `damage-if-sprinting`）
     * ###### sprinting-damage
         - **默认值**: 1
-        - **描述**: 如果启用了 `damage-if-sprinting`，冲刺时对玩家造成的伤害值
+        - **描述**: 冲刺时对玩家造成的伤害值。（需要启用 `damage-if-sprinting`）
     * ###### defuse-tnt-chance
         - **默认值**: 0.0
-        - **描述**: 右键点击引爆的 TNT 时，解除引爆的几率（0.0 - 1.0）
+        - **描述**: 右键点击引爆的 TNT将会解除引爆的几率（0.0 - 1.0）。
 * ##### snowball
     * ###### extinguish
         * ###### fire
             - **默认值**: false
-            - **描述**: 雪球投掷时是否熄灭火焰
+            - **描述**: 投掷雪球时是否熄灭火焰。
         * ###### candles
             - **默认值**: false
-            - **描述**: 雪球投掷时是否熄灭蜡烛
+            - **描述**: 投掷雪球时是否熄灭蜡烛。
         * ###### campfires
             - **默认值**: false
-            - **描述**: 雪球投掷时是否熄灭篝火
+            - **描述**: 投掷雪球时是否熄灭篝火。
 * ##### shulker_box
     * ###### drop-contents-when-destroyed
         - **默认值**: true
-        - **描述**: 破坏时是否掉落末影箱内的物品
+        - **描述**: 破坏时是否掉落潜影盒内的物品。
 * ##### compass
     * ###### holding-shows-bossbar
         - **默认值**: false
-        - **描述**: 如果持有指南针时应显示 [`/compass`](commands#compass) 命令的 bossbar
+        - **描述**: 手持指南针时是否显示 [`/compass`](commands#compass) 命令的 bossbar。
 * ##### glow_berries
     * ###### eat-glow-duration
         - **默认值**: 0
-        - **描述**: 玩家吃下发光浆果后发光的持续时间（以刻为单位）。设置为 0 以禁用
+        - **描述**: 玩家吃下发光浆果后发光的持续时间（以刻为单位）。设置为 0 以禁用。
 * ##### ender-pearl
     * ###### damage
         - **默认值**: 5
-        - **描述**: 使用末影珍珠传送后所受到的伤害
+        - **描述**: 使用末影珍珠传送后所受到的伤害。
     * ###### cooldown
         - **默认值**: 20
-        - **描述**: 使用末影珍珠后的冷却时间（以刻为单位）
+        - **描述**: 使用末影珍珠后的冷却时间（以刻为单位）。
     * ###### creative-cooldown
         - **默认值**: 20
-        - **描述**: 在创造模式下使用末影珍珠后的冷却时间（以刻为单位）
+        - **描述**: 在创造模式下使用末影珍珠后的冷却时间（以刻为单位）。
     * ###### endermite-spawn-chance
         - **默认值**: 0.05
-        - **描述**: 使用末影珍珠传送后生成末影螨的概率（0.0 - 1.0）
+        - **描述**: 使用末影珍珠传送后生成末影螨的概率（0.0 - 1.0）。
 * ##### immune
     * ###### explosion
         - **默认值**: []
-        - **描述**: 免受爆炸伤害的物品列表
+        - **描述**: 免受爆炸伤害的物品列表。
     * ###### fire
         - **默认值**: []
-        - **描述**: 免受火焰伤害的物品列表
+        - **描述**: 免受火焰伤害的物品列表。
     * ###### lightning
         - **默认值**: []
-        - **描述**: 免受闪电伤害的物品列表
+        - **描述**: 免受闪电伤害的物品列表。
     * ###### cactus
         - **默认值**: []
-        - **描述**: 免受仙人掌伤害的物品列表
+        - **描述**: 免受仙人掌伤害的物品列表。
           ???+ 注释 "物品免疫列表示例:"
         ``` yaml
         explosion:
@@ -3657,70 +3657,70 @@ Value set -> Actual fall distance needed to trample
         ```
 
 ???+ warning "警告"
-这些物品免疫列表可能会导致客户端同步问题，例如地上的物品不可见！这从服务器端代码无法解决。
+这可能会导致客户端的同步问题，例如地上的物品不可见！这从服务器端代码无法解决。
 
 #### mending-multiplier
 - **默认值**: 1.0
 - **描述**: 修复物品的效果强度，数值越高修复物品所消耗的经验越少。（1.0 = 100%）
 #### milk-clears-beneficial-effects
 - **默认值**: true
-- **描述**: 如果为 false，那么 只清除负面状态效果
+- **描述**: 如果为 false，那么牛奶将会只清除负面状态效果。
 #### milk-cures-bad-omen
 - **默认值**: true
-- **描述**: 允许玩家通过喝牛奶来解除恶兆状态效果
+- **描述**: 允许玩家通过喝牛奶来解除不祥之兆效果。
 #### minecart
 * ##### max-speed
     - **默认值**: 0.4
-    - **描述**: 控制的矿车最大速度
+    - **描述**: 矿车最大速度。
 * ##### place-anywhere
     - **默认值**: false
-    - **描述**: 矿车是否可以放置在任何地方，而不仅仅是铁轨上
+    - **描述**: 矿车是否可以放置在任何地方，而不仅仅是铁轨上。
 * ##### powered-rail
     * ###### boost-modifier
         - **默认值**: 0.06
-        - **描述**: 矿车撞到加速铁轨后获得的速度增益（不影响熔炉矿车）
+        - **描述**: 矿车开上充能铁轨后获得的速度增益（熔炉矿车不受影响）。
 * ##### controllable
     * ###### enabled
         - **默认值**: false
-        - **描述**: 矿车是否可以在不在铁轨上时被控制
+        - **描述**: 在不在铁轨上时，矿车是否可以受到玩家的方向控制。
     * ###### fall-damage
         - **默认值**: true
-        - **描述**: 如果为 true，那么 使玩家在矿车中受到坠落伤害
+        - **描述**: 如果为 true，那么玩家在矿车中将会受到摔落伤害。
     * ###### step-height
         - **默认值**: 1.0
-        - **描述**: 矿车可以不跳跃地跨越的高度
+        - **描述**: 矿车可以在不跳跃的情况下，跨越的最大方块高度。
     * ###### hop-boost
         - **默认值**: 0.5
-        - **描述**: 按空格键时矿车的跳跃增益
+        - **描述**: 按空格键时矿车的跳跃增益。
     * ###### base-speed
         - **默认值**: 0.1
-        - **描述**: 控制的矿车基本速度
+        - **描述**: 矿车最低速度。
     * ###### block-speed
         - **默认值**:
             ``` yaml
             grass_block: 0.3
             stone: 0.5
             ```
-        - **描述**: 每种方块类型的速度覆盖列表
+        - **描述**: 矿车在每种不同方块上的移动速度。
 #### mob-effects
 * ##### health-regen-amount
     - **默认值**: 1.0
-    - **描述**: 该效果对实体的生命恢复量
+    - **描述**: 生命恢复效果对实体的生命恢复量。
 * ##### minimal-health-poison-amount
     - **默认值**: 1.0
-    - **描述**: 该效果对实体的毒性影响量
+    - **描述**: 中毒效果对实体的最小毒性影响量。
 * ##### poison-degeneration-amount
     - **默认值**: 1.0
-    - **描述**: 该效果对实体的毒性衰减量
+    - **描述**: 中毒效果对实体的毒性量。
 * ##### wither-degeneration-amount
     - **默认值**: 1.0
-    - **描述**: 该效果对实体的虚弱衰减量
+    - **描述**: 虚弱效果对实体的虚弱量。
 * ##### hunger-exhaustion-amount
     - **默认值**: 0.005
-    - **描述**: 该效果对实体的饥饿消耗量
+    - **描述**: 饥饿效果对实体的饥饿度消耗量。
 * ##### saturation-regen-amount
     - **默认值**: 1.0
-    - **描述**: 该效果对实体的饱和度恢复量
+    - **描述**: 饱和效果对实体的饱和度恢复量。
 #### mob-last-hurt-by-player-time
 - **默认值**: 100
 - **描述**: 允许你改变一个生物在被玩家攻击后死亡计为玩家击杀所需的刻数（通过弹射物或直接攻击）

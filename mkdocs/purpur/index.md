@@ -11,9 +11,9 @@
 [![Purpur 的分支](https://img.shields.io/github/forks/PurpurMC/Purpur?label=forks&logo=github)]({{ project.source }}/network/members)&nbsp;
 [![Purpur 的关注者](https://img.shields.io/github/watchers/PurpurMC/Purpur?label=watchers&logo=github)]({{ project.source }}/watchers)&nbsp;
 
-欢迎访问[Purpur]({{ project.source }}/)&nbsp;项目的官方文档源。
+欢迎访问 [Purpur]({{ project.source }}/)&nbsp; 项目的官方文档。
 
-本文档适用于构建&nbsp;[#{{ project.build.number }}](https://api.purpurmc.org/v2/purpur/{{ project.version }}/{{ project.build.number }}/download)&nbsp;（[`{{ project.build.commit }}`]({{ project.source }}/commit/{{ project.build.commit }})）
+本文档适用于构建 &nbsp;[#{{ project.build.number }}](https://api.purpurmc.org/v2/purpur/{{ project.version }}/{{ project.build.number }}/download)&nbsp;（[`{{ project.build.commit }}`]({{ project.source }}/commit/{{ project.build.commit }})）
 
 Purpur 是 [Paper](https://github.com/PaperMC/Paper) 服务器的一个可配置的、设计新颖且充满乐趣的游戏功能的替代品。
 
@@ -25,9 +25,9 @@ Purpur 是 [Paper](https://github.com/PaperMC/Paper) 服务器的一个可配置
 
 ## 下载
 
-你可以从[下载页面]({{ project.downloads }})或[下载 API](https://api.purpurmc.org/)下载 Purpur。
+你可以从 [下载页面]({{ project.downloads }})或[下载 API](https://api.purpurmc.org/)下载 Purpur。
 
-下载 API 端点：
+下载 API：
 
  * 列出具有可用构建的 Minecraft 版本：  
  `https://api.purpurmc.org/v2/purpur/`
@@ -40,7 +40,7 @@ Purpur 是 [Paper](https://github.com/PaperMC/Paper) 服务器的一个可配置
 
 ## 许可证 [![MIT 许可证](https://img.shields.io/github/license/PurpurMC/Purpur?&logo=github)](./#license)
 
-该项目将所有补丁都授权为 MIT 许可证，除非补丁头部另有说明。
+该项目将所有补丁都授权为 MIT 许可证，除非补丁的最开始处另有说明。
 
 有关此项目使用的材料许可，请参阅[PaperMC/Paper](https://github.com/PaperMC/Paper)。
 
