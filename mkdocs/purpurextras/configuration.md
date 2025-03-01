@@ -1,253 +1,200 @@
-这个页面详细介绍了 PurpurExtras 配置文件中提供的各种配置设置。
+本页面详细说明 PurpurExtras 配置文件中各项功能的设定参数。
 
-## anvil-crushes-blocks
-
-如果启用，将使用块列表。键是要转换的方块材料，值是要转换为的方块材料。在默认配置中，如果铁砧落在鹅卵石方块上，那么该鹅卵石将被转换为沙子。
-
-## anvil-splits-boats
-
-如果启用，从高处将铁砧掉落到装有船只的箱子船上，不会摧毁物品，而是分开船只和箱子并将它们同时掉落。
-
-## anvil-splits-minecarts
-
-如果启用，从高处将铁砧掉落到带有内容（箱子矿车、熔炉矿车等）的矿车上，不会摧毁物品，而是分开矿车和内容并将它们同时掉落。
-
-## block-building-above-nether
-
-### enabled
-
-启用该功能。
-
-### height-limit
-
-玩家在地狱世界中可以建造的最大高度，没有 `purpurextras.netherbuildheightbypass` 权限的玩家无法建造。
-
-### no-permission-message
-
-在尝试在地狱世界中建造超过设定限制时在操作栏中显示的消息。
-
-## blocks
-
-### chorus-flowers-always-drop
-
-使唱诗花总是掉落，无论它们是直接被摧毁还是其他方式。
-
-### shift-right-click-for-invisible-item-frames
-
-潜行右键点击带有物品的物品展示框将使物品展示框变为隐形。需要 `purpurextras.invisibleframes` 权限。
-
-## chat
-
-### escape-commands
-
-允许玩家通过用反斜杠转义以斜杠开头的消息发送到聊天中（`\/command` 将显示为 `/command`）。
-
-### send-sleep-percentage-message
-
-如果启用，将在聊天中发送包含基于 `playersSleepingPercentage` 游戏规则所需睡觉的玩家数量的消息。
-
-## create-suspicious-blocks
-
-如果启用，玩家可以携带物品潜行右键点击沙子和砂砾来创建可疑方块并放入手持物品。手持物品将从玩家手中消失，并作为战利品放入可疑方块中。每个方块只能添加一个物品。
+## unlock-all-recipes-on-join
+玩家加入时自动解锁所有合成配方。拥有 `purpurextras.unlockallrecipesonjoin` 权限的玩家可豁免此功能。
 
 ## creeper-squid
+使鱿鱼具备苦力怕特性 - 当玩家进入 `agro-distance` 范围内时，鱿鱼将在 `fuse-ticks` 刻引信时间后爆炸，并以 `velocity` 速度向玩家移动。爆炸威力/半径可通过 `explosion-radius` 调整。
 
-乌贼将会像苦力怕一样行动 - 如果在`agro-distance`范围内，在`fuse-ticks` ticks的延迟后爆炸，同时以`velocity`的速度向你移动。爆炸威力/半径也可以通过`explosion-radius`进行配置。
-
-### 启用
-
-启用该功能。
+### enabled
+是否启用该功能
 
 ### fuse-ticks
-
-“引线”持续的时间。
+爆炸引信持续时间（刻）
 
 ### agro-distance
-
-探测范围（方块为单位）。
+敌意侦测范围（方块）
 
 ### explosion-radius
-
-爆炸半径。
+爆炸作用半径
 
 ### velocity
+移动速度值
 
-它朝向玩家移动的速度。
+## protect-blocks-with-loot
+对具有战利品表的方块实施防破坏保护。默认情况下潜行状态下可破坏，此行为可配置。拥有 `purpurextras.lootblockprotectionbypass` 权限可绕过保护。提示信息内容可自定义，[消息类型](#message-types) 可配置。
 
-## dispenser
+## create-suspicious-blocks
+启用后，玩家手持物品潜行右击沙砾类方块可生成可疑方块并将手持物品封存其中。手持物品将消失并转化为可疑方块的战利品内容。每个方块仅能存放一件物品。
 
-### break-blocks
+## stonecutter-damage-filter
+当 [切石机造成伤害](https://purpurmc.org/docs/Configuration/stonecutter_1) 功能启用时，可在此设置不受切石机伤害的实体类型白名单。
 
-如果启用了工具类别，从发射器中发出的工具将摧毁其前方的方块。它只会摧毁工具可以摧毁的方块，并且会像使用该工具一样摧毁它们，因此木镐将摧毁钻石矿石，但不会掉落任何物品。
+## anvil-crushes-blocks
+启用后，铁砧从高空坠落到指定方块时将触发方块转化。配置表中键为原始方块材质，值为转化目标材质。默认配置中，铁砧坠落到圆石时会将其转化为沙子。
 
-### interact-with-cauldron
+## use-notarget-permissions
+启用后，拥有 `target.bypass.<mojang_mob_name>` 权限的玩家不会被对应生物锁定为攻击目标。
 
-如果启用，将允许发射器填充和清空炼药锅。
+## anvil-splits-minecarts
+启用后，铁砧从高空坠落到载物矿车（运输矿车、动力矿车等）时将分离矿车与装载物，使其各自以物品形式掉落，而非直接损毁。
 
-### puts-discs-in-jukebox
-
-如果启用，发射器将能够插入或交换音乐唱片到唱片机中。
-
-### shears-shear-pumpkin
-
-如果启用，当剪刀被发射并且发射器前方有南瓜时，将使用剪刀，制作雕刻南瓜。
+## anvil-splits-boats
+启用后，铁砧从高空坠落到储物船时将分离船只与箱子，使其各自以物品形式掉落，而非直接损毁。
 
 ## dye-boss-bars
-
-如果启用，玩家可以通过右键点击带着染料物品的boss来染色boss的生命条。
-
-## furnace
-
-### burn-time
-
-如果启用，乘数字段将用于修改熔炉中燃料燃烧时间。
-
-## gameplay-settings
-
-### cancel-damage-from-pet-owner
-
-如果启用，宠物主人将无法伤害自己的宠物。
-
-### fall-damage-when-jump-boost-applied
-
-切换是否给予具有跳跃提升效果的实体摔落伤害。
-
-### open-iron-doors-with-hand
-
-允许使用手打开铁门，就像打开木门一样。可以通过`purpurextras.openirondoors`权限进行控制（默认为true）。
-
-### open-iron-trapdoors-with-hand
-
-允许使用手打开铁活板门，就像打开木活板门一样。可以通过`purpurextras.openirontrapdoors`权限进行控制（默认为true）。
-
-### respawn-anchor-needs-charges
-
-如果为false，使重生锚永远不会用尽次数。
-
-### run-faster-on-paths
-
-如果`speed-multiplier`值大于0，玩家将获得该数值级别的速度药水效果。这只接受整数值。哪些方块被视为路径可以通过在`path-blocks`列表中列出它们来进行配置。
-
-### spawner-placement-requires-specific-permission
-
-玩家将需要`purpurextras.spawnerplace.<mobtype>`权限来放置该类型的刷怪笼。
-
-## grindstone
-
-### gives-enchants-back
-
-如果启用，并且玩家在磨石中解除附魔物品时背包中有书籍，书籍将被消耗，将从物品中移除的附魔返回给玩家。这样做时不会掉落经验。
-
-## items
-
-### beehive-lore
-
-如果为true，将向捡起的蜂巢添加有关蜜蜂数量和蜂蜜的描述。
-
-## leash-snap
-
-如果启用，当牵引绳由于距离过大而断开时会播放声音。
-
-### pitch
-
-播放声音的音调。这是一个介于-1和1之间的浮点数。
-
-### sound
-
-牵引绳断开时播放的声音。可以在[这里](https://minecraft.wiki/w/Sounds.json)找到声音列表。
-
-### volume
-
-播放声音的音量。这是一个大于0的整数。
+启用后，玩家可用染料右击 Boss 来染色其血条。
 
 ## loom
 
 ### max-layers
+旗帜可添加的最大图案层数。默认6层，客户端可能无法显示超过6层的效果。
 
-可以添加到旗帜的最大层数。默认情况下为6。客户端可能一次不会显示超过6层。
+## raid-totem-drops
+
+### enabled
+是否可配置袭击事件中唤魔者的图腾掉落率
+
+### chance
+唤魔者在袭击中掉落图腾的概率（0到1之间的浮点数）
+
+## shields
+
+### damage-reduction
+伤害减免系数（0到1之间）。代表盾牌格挡时减免的伤害百分比，默认1.0（完全减免）
+
+### cooldown
+斧类暴击盾牌后触发的冷却时间（刻，1刻=0.05秒）。默认100刻（5秒）
+
+## items
+
+### beehive-lore
+启用后，采集蜂箱时会显示包含蜜蜂数量和蜂蜜量的物品描述
 
 ## lightning-transforms-entities
+启用后，左侧实体类型被闪电击中时将转化为右侧实体类型（覆盖原版转化规则）。使用原版生物ID进行识别，特殊案例包括：
+- `killer_bunny` - 杀手兔
+- `jeb_sheep` - 彩虹羊
+- `johnny` - 敌对所有生物的卫道士
+- `toast` - 特殊品种兔子
 
-如果启用，左侧具有类型的实体将被转换为右侧类型的实体。这将覆盖原版的转换。使用原版的mob id来识别怪物。也有特殊情况：
+## blocks
+## anvil-splits-minecarts
 
-- `killer_bunny` - 凶兔
-- `jeb_sheep` - 彩色羊
-- `johnny` - 对大多数怪物具有攻击性的报复者
-- `toast` - 兔子的特殊变种
+### shift-right-click-for-invisible-item-frames
+潜行状态下右击含物品的展示框可使其隐形。需要 `purpurextras.invisibleframes` 权限
+
+### chorus-flowers-always-drop
+确保紫颂花在任何破坏方式下都会掉落
+
+## block-building-above-nether
+
+### enabled
+是否启用下界建筑高度限制
+
+### height-limit
+无 `purpurextras.netherbuildheightbypass` 权限玩家在下界维度可建造的最大高度
+
+### no-permission-message
+玩家尝试在下界超限建造时在动作栏显示的消息
+
+## gameplay-settings
+
+### respawn-anchor-needs-charges
+设为 false 时，重生锚将无需充能即可无限使用
+
+## blocks
+
+### open-iron-doors-with-hand
+允许徒手开启铁门（类似木门）。可通过 `purpurextras.openirondoors` 权限控制（默认开启）
+
+### open-iron-trapdoors-with-hand
+允许徒手开启铁活板门（类似木活板门）。可通过 `purpurextras.openirontrapdoors` 权限控制（默认开启）
+
+### spawner-placement-requires-specific-permission
+放置刷怪笼需要 `purpurextras.spawnerplace.<生物类型>` 权限
+
+### cancel-damage-from-pet-owner
+启用后，宠物主人无法伤害自己的宠物
+
+### fall-damage-when-jump-boost-applied
+控制带有跳跃提升效果的实体是否会承受跌落伤害
+
+### run-faster-on-paths
+当 `speed-multiplier` 值大于0时，玩家在指定路径方块上会获得对应等级的速度效果。仅接受整数值，路径方块类型可在 `path-blocks` 列表中配置
+
+## chat
+
+### escape-commands
+允许玩家通过反斜杠转义发送以斜杠开头的消息（例如输入 `\/command` 将显示为 /command）
+
+### send-sleep-percentage-message
+启用后在聊天栏显示基于 playersSleepingPercentage 游戏规则计算的入睡玩家需求数量
+
+## dispenser
+
+### break-blocks
+启用工具类别后，发射器发射对应工具可破坏前方方块。仅破坏该工具可采集的方块，并模拟工具采集效果（例如木镐可破坏钻石矿但不掉落物品）
+
+### shears-shear-pumpkin
+启用后，发射剪刀时若前方有南瓜会自动雕刻为南瓜头
+
+### interact-with-cauldron
+允许发射器与炼药锅进行液体存取交互
+
+### puts-discs-in-jukebox
+允许发射器向唱片机放入或更换音乐唱片
+
+## furnace
+
+### burn-time
+启用后，通过燃料燃烧时间系数调整熔炉燃料效率
+
+## grindstone
+
+### gives-enchants-back
+启用后，玩家在砂轮解除附魔时若有书在物品栏，将消耗书籍返还被移除的附魔（此过程不产生经验）
+
+## leash-snap
+
+### mob-needs-to-be-nametagged-to-ride
+启用后，仅有名牌的生物可通过 Purpur 骑乘系统进行骑乘操控
+
+### pitch
+牵引绳断裂音效的音调（-1到1之间的浮点数）
+
+### sound
+牵引绳断裂时播放的音效（音效列表参见[此处](https://minecraft.wiki/w/Sounds.json)）
+
+### volume
+音效播放音量（大于0的整数）
 
 ## mobs
 
 ### sheep
 
 #### jeb-shear-random-color
-
-剪羊毛时，名为`jeb_`的羊将掉落带有随机颜色的羊毛块。
+剪切名为 jeb_ 的绵羊会掉落随机颜色的羊毛
 
 ### snow_golem
 
 #### drop-pumpkin-when-sheared
-
-如果设置为false，阻止雪傀儡在被剪毛时当它们头上戴着南瓜时掉落雕刻南瓜。
-
-## protect-blocks-with-loot
-
-使具有战利品表的方块免受破坏。默认情况下，它们可以在潜行时被破坏，但可进行配置。可以通过`purpurextras.lootblockprotectionbypass`权限绕过。可以配置显示的消息。可以配置[消息类型](#message-types)。
-
-## raid-totem-drops
-
-### enabled
-
-如果启用，可以配置围攻中唤魔者掉落图腾的掉落率。
-
-### chance
-
-围攻中唤魔者掉落图腾的几率。这是一个介于0和1之间的浮点数。
-
-## rideables
-
-### mob-needs-to-be-nametagged-to-ride
-
-如果启用，只有被命名标签的生物才能使用Purpur的可骑乘选项骑乘/操纵。
-
-## shields
-
-### cooldown
-
-在用斧头爆击盾牌后的冷却时间（1/20秒）。默认情况下为100 ticks（5秒）。
-
-### damage-reduction
-
-0到1之间的值。这是使用盾牌进行防御提供的伤害减少的百分比。默认情况下，盾牌减少100%的伤害（1.0）。
-
-## stonecutter-damage-filter
-
-如果启用，允许过滤哪些实体类型不会受到石切机对其造成伤害的影响，如果启用了[石切机造成伤害](https://purpurmc.org/docs/Configuration/stonecutter_1) Purpur功能。
+控制是否允许通过剪切雪傀儡获得其佩戴的雕刻南瓜
 
 ## totem
 
 ### work-on-void-death
-
-如果启用，不死图腾将在虚空中拯救玩家免于死亡，并将其传送到最后一次接触地面的位置。如果找不到该位置，他们将被传送到世界生成点。
+启用后，不死图腾可在虚空致死时生效，将玩家传送到最后接触的实体地面位置。若无法定位则传送至世界出生点
 
 ## twerk-to-reduce-burn-time
 
 ### amount
-
-减少燃烧时间的百分比。
+通过扭动减少燃烧时间的百分比
 
 ### chance
+扭动成功减少燃烧时间的概率（0到1之间的浮点数）
 
-减少燃烧时间的twert成功几率。这是一个介于0和1之间的浮点数。
-
-## unlock-all-recipes-on-join
-
-解锁所有可用配方。玩家可以通过拒绝`purpurextras.unlockallrecipesonjoin`权限来豁免。
-
-## use-notarget-permissions
-
-如果启用，拥有`target.bypass.<mojang_mob_name>`权限的玩家不会被该类型的怪物瞄准。
-
-## 消息类型
+## Message types
 
 ### CHAT
 常规系统聊天消息
