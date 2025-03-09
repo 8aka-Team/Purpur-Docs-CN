@@ -109,3 +109,5 @@ extra:
       name: Purpur Discord Server
   purpur_packs:
     source: https://github.com/PurpurMC/PurpurPacks
+extra_javascript:
+  - javascripts/ad.js
