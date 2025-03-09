@@ -3,33 +3,33 @@ site_name: PurpurMC 文档
 site_url: https://purpur.8aka.org/
 site_author: granny
 site_description: >-
-    Purpur的官方文档。
-    Purpur是Pufferfish（以及Paper）的一个分支，旨在提供新颖有趣的配置选项，这些选项可以创造独一无二的游戏体验，让玩家体验到其他地方所没有的乐趣。
+  Purpur的官方文档。
+  Purpur是Pufferfish（以及Paper）的一个分支，旨在提供新颖有趣的配置选项，这些选项可以创造独一无二的游戏体验，让玩家体验到其他地方所没有的乐趣。
 docs_dir: mkdocs
 nav:
-    - index.md
-    - Purpur:
+  - index.md
+  - Purpur:
       - Purpur: purpur/index.md
       - 安装: purpur/installation.md
       - 配置: purpur/configuration.md
       - 命令: purpur/commands.md
       - 权限: purpur/permissions.md
       - 常见问题: purpur/faq.md
-    - PurpurExtras:
+  - PurpurExtras:
       - PurpurExtras: purpurextras/index.md
       - 安装: purpurextras/installation.md
       - 配置: purpurextras/configuration.md
       - 命令: purpurextras/commands.md
-      # - Permissions: purpurextras/permissions.md
-      # - Frequently Asked Questions: purpurextras/faq.md
-    - PurpurPacks:
+    # - Permissions: purpurextras/permissions.md
+    # - Frequently Asked Questions: purpurextras/faq.md
+  - PurpurPacks:
       - PurpurPacks: purpurpacks/index.md
       - 安装: purpurpacks/installation.md
       - 包列表: purpurpacks/packs.md
-      # - Configuration: purpurpacks/configuration.md
-      # - Commands: purpurpacks/commands.md
-      # - Permissions: purpurpacks/permissions.md
-      # - Frequently Asked Questions: purpurpacks/faq.md
+    # - Configuration: purpurpacks/configuration.md
+    # - Commands: purpurpacks/commands.md
+    # - Permissions: purpurpacks/permissions.md
+    # - Frequently Asked Questions: purpurpacks/faq.md
 repo_url: https://github.com/8aka-Team/Purpur-Docs-CN
 repo_name: PurpurDocs
 edit_uri: edit/main/mkdocs/
@@ -39,27 +39,28 @@ plugins:
   - search
   - ezlinks
   - markdownextradata
+  - minify
   - autolink_references:
       autolinks:
-          - reference_prefix: MC-
-            target_url: https://bugs.mojang.com/browse/MC-<num>
-          - reference_prefix: PaperMC/Paper#
-            target_url: https://github.com/PaperMC/Paper/issues/<num>
+        - reference_prefix: MC-
+          target_url: https://bugs.mojang.com/browse/MC-<num>
+        - reference_prefix: PaperMC/Paper#
+          target_url: https://github.com/PaperMC/Paper/issues/<num>
   - redirects:
       redirect_maps:
-          'commands.md': 'purpur/commands.md'
-          'cmds.md': 'purpur/commands.md'
-          'configuration.md': 'purpur/configuration.md'
-          'config.md': 'purpur/configuration.md'
-          'permissions.md': 'purpur/permissions.md'
-          'perms.md': 'purpur/permissions.md'
-          'faq.md': 'purpur/faq.md'
-          'Commands.md': 'purpur/commands.md'
-          'Configuration.md': 'purpur/configuration.md'
-          'FAQ.md': 'purpur/faq.md'
-          'Installation.md': 'purpur/installation.md'
-          'Log4j.md': 'purpur/log4j.md'
-          'Permissions.md': 'purpur/permissions.md'
+        'commands.md': 'purpur/commands.md'
+        'cmds.md': 'purpur/commands.md'
+        'configuration.md': 'purpur/configuration.md'
+        'config.md': 'purpur/configuration.md'
+        'permissions.md': 'purpur/permissions.md'
+        'perms.md': 'purpur/permissions.md'
+        'faq.md': 'purpur/faq.md'
+        'Commands.md': 'purpur/commands.md'
+        'Configuration.md': 'purpur/configuration.md'
+        'FAQ.md': 'purpur/faq.md'
+        'Installation.md': 'purpur/installation.md'
+        'Log4j.md': 'purpur/log4j.md'
+        'Permissions.md': 'purpur/permissions.md'
 theme:
   name: material
   custom_dir: overrides

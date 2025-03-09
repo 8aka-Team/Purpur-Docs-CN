@@ -105,6 +105,6 @@
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', injectExternLink);
     } else {
-        injectExternLink();
+        await injectExternLink();
     }
 })();
