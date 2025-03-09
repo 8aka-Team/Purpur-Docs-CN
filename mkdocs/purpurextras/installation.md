@@ -1,1 +1,1 @@
-PurpurExtras只是一个普通的插件。只需将其放入你的`plugins`目录中，然后重新启动服务器。
+PurpurExtras 只是一个普通的插件。只需将其放入你的 `plugins` 目录中，然后重新启动服务器。

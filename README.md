@@ -1,10 +1,10 @@
 # PurpurDocs
 
-这是用[Mkdocs](https://github.com/mkdocs/mkdocs)生成的静态站点文档，托管在[Purpur](https://purpurmc.org/)的https://purpurmc.org/docs上。其中包含一个Python脚本，用于比较两个提交哈希的差异，并将配置/权限的添加/移除输出到一个YAML文件中。
+这是用 [Mkdocs](https://github.com/mkdocs/mkdocs) 生成的静态站点文档，托管在 [Purpur](https://purpurmc.org/) 的 [网站](https://purpurmc.org/docs) 上。其中包含一个 Python 脚本，用于比较两个提交哈希的差异，并将配置 / 权限的添加 / 移除输出到一个 YAML 文件中。
 
 ## 构建
 
-[创建并激活一个Python 3虚拟环境](https://docs.python.org/3/tutorial/venv.html)
+[创建并激活一个 Python 3 虚拟环境](https://docs.python.org/3/tutorial/venv.html)
 ```sh
 $ pip install --user virtualenv
 $ virtualenv env
@@ -18,7 +18,7 @@ pip install -r requirements.txt
 
 #### 预览更改
 
-要预览文档的更改，运行 `mkdocs serve`。这将启动一个Web服务器，用于预览文档并在您进行更改时重新编译它。更多信息请参见：https://www.mkdocs.org/#getting-started
+要预览文档的更改，运行 `mkdocs serve`。这将启动一个Web服务器，用于预览文档并在你进行更改时重新编译它。更多信息请参见：https://www.mkdocs.org/#getting-started
 ```sh
 $ mkdocs serve
 ```
@@ -29,7 +29,7 @@ $ mkdocs serve
 
 <details>
 <summary><code>./compare-commits.sh &lt;prev_hash> &lt;curr_hash> </code></summary>
-您还可以将两个提交哈希作为命令行参数添加，这样将跳过脚本的交互部分。
+你还可以将两个提交哈希作为命令行参数添加，这样将跳过脚本的交互部分。
 
 ```sh
 $ ./compare-commits.sh 885092 22b876
